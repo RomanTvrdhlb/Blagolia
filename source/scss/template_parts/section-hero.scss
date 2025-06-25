@@ -1,0 +1,132 @@
+//@use "../mixins/breakpoint" as *;
+//@use "../mixins/disable-mob-hover" as *;
+//@use "../components/reviews" as *;
+//@use "../components/cta-box" as *;
+//
+//.hero-slider {
+//  max-width: 100%;
+//  overflow: hidden;
+//  position: relative;
+//  z-index: 1;
+//
+//
+//  &__nav {
+//    position: absolute;
+//    z-index: 20;
+//    display: flex;
+//    top: 50%;
+//    transform: translateY(-50%);
+//    left: 0;
+//    right: 0;
+//    justify-content: space-between;
+//  }
+//
+//  &__btn {
+//    opacity: .5;
+//    transition: all .2s ease;
+//
+//    @include hover {
+//      opacity: 1;
+//    }
+//
+//    &:active {
+//      transform: scale(.8);
+//    }
+//
+//    &:before {
+//      content: '';
+//      width: clamp(30px, 5.22vw, 50px);
+//      display: flex;
+//      aspect-ratio: 1;
+//      border-right: clamp(8px, 1.56vw, 15px) solid var(--cl-b);
+//      border-top: clamp(8px, 1.56vw, 15px) solid var(--cl-b);
+//      transform-origin: center center;
+//      transform: rotate(45deg) translate(-15%, 15%);
+//    }
+//
+//    &.swiper-button-lock {
+//      opacity: .5;
+//    }
+//
+//    &.next {
+//      right: 0;
+//    }
+//
+//    &.prev{
+//      left: 0;
+//
+//      &:before {
+//        transform: rotate(45deg) translate(-15%, 15%) scale(-1);
+//      }
+//    }
+//  }
+//
+//  &__card {
+//    display: flex;
+//    position: relative;
+//  }
+//
+//  &__image {
+//    position: relative;
+//    z-index: 1;
+//    display: flex;
+//    min-height: calc(100dvh - var(--header-height));
+//    max-height: 900px;
+//    width: 100%;
+//
+//    img,picture {
+//      display: flex;
+//      height: 100%;
+//      width: 100%;
+//      object-position: center;
+//    }
+//
+//    &:before {
+//      inset: 0;
+//      background: linear-gradient(0deg, rgba(27,27,27,1) 0%, rgba(27,27,27,0) 100%);
+//      position: absolute;
+//      content: '';
+//      z-index: 1;
+//    }
+//  }
+//
+//  &__content {
+//    position: absolute;
+//    display: flex;
+//    align-items: flex-start;
+//    gap: 15px clamp(15px, 3.91vw, 50px);
+//    bottom: clamp(20px, 4.56vw, 55px);
+//    left: 0;
+//    right: 0;
+//    z-index: 2;
+//
+//    font-family: var(--font-family2);
+//    font-size: clamp(22px, 3.65vw, 30px);
+//    font-weight: bold;
+//    font-stretch: normal;
+//    font-style: normal;
+//    line-height: 150%;
+//    letter-spacing: normal;
+//    text-align: left;
+//    color: var(--cl-b);
+//
+//    @include tablet {
+//      flex-direction: column-reverse;
+//      align-items: flex-start;
+//    }
+//
+//    small {
+//      font-size: 60%;
+//    }
+//  }
+//
+//  &__wrapp {
+//    p {
+//      @include tablet {
+//        display: none;
+//      }
+//    }
+//  }
+//
+//  @include cta-box;
+//}

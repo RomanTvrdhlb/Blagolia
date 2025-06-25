@@ -1,0 +1,69 @@
+@use '../../mixins/breakpoint' as *;
+
+.breadcrumbs-section{
+  margin:  calc(clamp(31px, 4.236vw, 61px) + 20px + var(--header-height)) 0 clamp(31px, 4.236vw, 61px);
+}
+
+.breadcrumbs{
+  position: relative;
+  width: 100%;
+
+  ul{
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  li{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    span{
+      display: inline-block;
+      color: var(--cl-g);
+      text-align: center;
+      font-family: var(--font-family);
+      font-size: clamp(12px, 1.197vw, 16px);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+    }
+
+    &:not(:last-child) {
+
+      &::after{
+        content: "\e902";
+        color: inherit;
+        font-family: 'icomoon' !important;
+        speak: never;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        font-size: clamp(12px, 1.197vw, 16px);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    }
+
+
+    a{
+      transition: all .3s;
+      display: inline-block;
+      color: var(--cl-i);
+      text-align: center;
+      font-family: var(--font-family);
+      font-size: clamp(12px, 1.197vw, 16px);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+
+      &:hover{
+        color: var(--cl-h);
+      }
+    }
+  }
+}

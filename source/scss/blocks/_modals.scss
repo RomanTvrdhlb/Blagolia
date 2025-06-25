@@ -1,0 +1,96 @@
+@use "../mixins/mini" as *;
+@use "../mixins/breakpoint" as *;
+
+.modal {
+  max-width: 420px;
+  border-radius: 24px;
+  width: 90vw;
+  background-color: #fff;
+  padding: 24px 50px;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+    padding: 12px 24px;
+    background: var(--cl-h);
+    width: calc(100% + 48px);
+    margin-left: -24px;
+    border-radius: 24px 24px 0 0;
+  }
+
+  &__subtitle {
+    color: var(--cl-a);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  &.mode {
+    max-width: 794px;
+    padding: 0 24px 33px;
+
+    .close{
+      position: static;
+      width: 24px;
+      height: 24px;
+      opacity: 1;
+      color: var(--cl-a);
+
+      &:hover{
+        opacity: 0.5;
+      }
+    }
+
+    .modal {
+
+      &__container {
+        flex-direction: column;
+        gap: 24px;
+
+        @include  mobile{
+          gap: initial;
+        }
+      }
+    }
+
+    .editor{
+      .h3{
+        font-size: 36px;
+      }
+
+      .h4{
+        font-weight: 400;
+        font-size: 24px;
+      }
+
+      p{
+        font-size: 18px;
+      }
+
+      @include mobile {
+        max-height: 545px;
+        overflow-y: auto;
+        padding: 24px 0 33px;
+
+        @include headers {
+          text-align: start;
+        }
+      }
+    }
+
+    @include  mobile{
+      padding-bottom: 0;
+    }
+  }
+}

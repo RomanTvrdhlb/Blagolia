@@ -1,0 +1,24 @@
+@use "../mixins/breakpoint" as *;
+
+.mobile {
+  @include tablet{
+    position: fixed;
+    top: var(--header-height);
+    height: calc(100dvh - var(--header-height));
+    left: 0;
+    width: 100%;
+    background: var(--cl-a);
+    z-index: 60;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: translateX(-110%);
+    flex-shrink: 0;
+    max-width: 320px;
+  }
+
+  &.active {
+    display: flex;
+    transform: translateX(0);
+  }
+
+}

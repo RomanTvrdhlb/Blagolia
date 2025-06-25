@@ -1,0 +1,156 @@
+.acf-repeater .acf-row-handle.order {
+  background: #2271b1 !important;
+  color: #fff !important;
+  flex-shrink: 0;
+}
+
+.acf-repeater .acf-row-handle.remove {
+  background: #dc3232;
+  color: #fff;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.acf-repeater .acf-row-handle.remove:hover {
+  background: #aa0000;
+}
+
+.acf-repeater .acf-row {
+  border: 1px solid #ccd0d4;
+  margin-bottom: 15px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#edittag {
+  max-width: 100% !important;
+
+
+  .description, h2 {
+    display: none;
+  }
+}
+
+
+.link-wrap {
+  width: -webkit-fill-available;
+
+  .link-title,
+  .link-url {
+    padding: 0 !important;
+    grid-column: 1 / -1;
+    width: 100%;
+    display: flex;
+  }
+}
+
+.hero-images-list {
+  .acf-row {
+    margin: 0;
+  }
+
+  .acf-table {
+    tbody {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+
+      .acf-label {
+        display: none;
+      }
+
+      .acf-field-image {
+        padding: 0;
+
+        img {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+
+div.acf-postbox.seamless>.inside {
+  margin-left: -5px !important;
+  margin-right: -5px !important;
+}
+
+.acf-fields>.acf-field {
+  padding: 5px !important;
+}
+
+// Генерация col-2 до col-8
+@for $i from 2 through 8 {
+  .col-#{$i} > .acf-input > .acf-repeater {
+    .acf-table {
+      tbody {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(#{$i}, 1fr);
+
+        tbody {
+          grid-template-columns: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+[class*="col-"] {
+  .acf-row {
+    margin: 0;
+  }
+
+  .acf-table {
+    tbody {
+      .acf-label {
+        display: none;
+      }
+
+      tr {
+        margin-bottom: 0 !important;
+        flex-grow: 1;
+        display: flex;
+
+        td:nth-of-type(2) {
+          flex-grow: 1;
+        }
+      }
+
+      .image-wrap {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .acf-field-image {
+        //padding: 0;
+
+        img {
+          margin: 0 auto;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+
+@for $i from 2 through 8 {
+  .flexible-#{$i}  .acf-flexible-content > .values {
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(#{$i}, 1fr);
+    gap: 10px;
+
+    .layout {
+      margin: 0!important;
+    }
+
+  }
+}

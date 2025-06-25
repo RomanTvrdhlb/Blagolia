@@ -1,0 +1,56 @@
+@mixin pagination {
+  .pagination-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    .pagination {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--cl-j);
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        gap: 8px;
+        display: flex;
+        height: 40px;
+        min-width: 40px;
+        padding: 8px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 8px;
+        background: var(--bg-l);
+
+        .icon-next {
+          font-size: 16px;
+        }
+
+        &.active {
+          color: var(--cl-a);
+          border-radius: 8px;
+          background: var(--bg-h);
+        }
+
+        &:not(.active) {
+            &:hover {
+            background-color: var(--bg-c);
+            }
+        }
+      }
+    }
+
+    &:empty{
+      display: none;
+    }
+  }
+}
