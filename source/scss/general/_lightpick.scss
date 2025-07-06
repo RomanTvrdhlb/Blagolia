@@ -1,0 +1,58 @@
+.lightpick {
+  box-shadow: 0 5px 16px 0 rgba(1, 0, 73, 0.08);
+  background: var(--bg-a);
+  border-radius: 12px;
+  border: none;
+  padding: 10px;
+  transform: translate(0, 8px);
+
+  .lightpick__day.is-start-date.is-in-range,
+  .lightpick__day.is-end-date.is-in-range.is-flipped {
+	background-color: var(--bg-k);
+  }
+  .lightpick__select{
+	color: var(--cl-i);
+  }
+  .lightpick__day.is-end-date.is-in-range, .lightpick__day.is-start-date.is-in-range.is-flipped{
+	background-color: var(--bg-k);
+  }
+
+  .lightpick__previous-action, .lightpick__next-action, .lightpick__close-action{
+	background-color: rgba(4, 77, 214, 0.17);
+  }
+
+  .lightpick__day.is-start-date, .lightpick__day.is-end-date, .lightpick__day.is-start-date:hover, .lightpick__day.is-end-date:hover{
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='%23044dd6' cx='16' cy='16' r='16'/%3E%3C/svg%3E");
+  }
+
+  &__day {
+	&.is-in-range {
+	  background-color: rgba(4, 77, 214, 0.1);
+	}
+  }
+}
+
+[data-calendar]{
+  position: relative;
+  z-index: 1;
+
+  input{
+	color: var(--cl-b) !important;
+  }
+
+  button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	right: 16px;
+	bottom: 13px;
+	z-index: 2;
+	i,svg{
+	  width: 100%;
+	  height: auto;
+	}
+  }
+}

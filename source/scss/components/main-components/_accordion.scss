@@ -1,0 +1,80 @@
+@use "../../mixins/breakpoint" as *;
+@use '../../mixins/mini' as *;
+
+@mixin accordion {
+  .accordion {
+	display: flex;
+	flex-direction: column;
+	grid-gap: 16px;
+
+	&__item {
+	  border-radius: clamp(16px, 3.1291vw, 24px);
+	  border: 1px solid var(--cl-d);
+	  background: var(--bg-a);
+	  padding: clamp(16px, 3.1291vw, 24px);
+	}
+
+	&__btn {
+	  width: 100%;
+	  display: flex;
+	  grid-gap: 10px;
+	  justify-content: space-between;
+	  align-items: center;
+	  text-align: start;
+	  transition: all .3s;
+	  border-radius: 24px;
+
+	  &:after {
+		content: "\e901";
+		color: inherit;
+		font-family: 'icomoon' !important;
+		speak: never;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		font-size: 24px;
+		transition: all .3s;
+		/* Better Font Rendering =========== */
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	  }
+
+	  &.active {
+		&:after {
+		  transform: scaleY(-1);
+		}
+	  }
+
+	  &:hover {
+		color: var(--cl-j);
+	  }
+
+	  @include mobile {
+		align-items: flex-start;
+	  }
+	}
+
+	&__content {
+	  width: 100%;
+	}
+
+	.editor {
+	  border-radius: inherit;
+	  width: 100%;
+	  display: inline-block;
+	  padding: 13px clamp(10px, 2.6076vw, 20px) 0;
+
+	  @include headers {
+		@include mobile {
+		  text-align: start;
+		}
+	  }
+
+	  @include mobile {
+		padding-top: 13px;
+	  }
+	}
+  }
+}

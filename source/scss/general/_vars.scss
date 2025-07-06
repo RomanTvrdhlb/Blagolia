@@ -1,0 +1,68 @@
+@use '../mixins/breakpoint' as *;
+
+:root {
+  // --------------- default global variables ---------------
+  --frame-width: 1920;
+  --rem-function: 16px;
+
+  //--rem-function: calc(100vw / var(--frame-width));
+
+  --error-bg: #d01f1f;
+  --body-bg: #ffffff;
+  --body-font-size: 16px;
+  --content-width: 1240px;
+  --content-width-mode: 1920px;
+  --container-offset: clamp(15px, 2.083vw, 40px);
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-width-mode: calc(var(--content-width-mode) + (var(--container-offset) * 2));
+
+  // --------------- default JS variables ---------------
+
+  //--header-height: 83px;
+  --btn-size: clamp(40px, 6.52vw, 57px);
+
+  //@include laptop {
+  //  --header-height: 78px;
+  //}
+  //
+  //@include tablet {
+  //  --header-height: 67px;
+  //}
+  //
+  //@include small-tablet {
+  //  --header-height: 64px;
+  //}
+
+
+  // --------------- default scroll variables ---------------
+  --scrollbar-thumb: #1397D6;
+
+  // --scrollbar-thumb-hover: #00aff0;
+  --scrollbar-track: rgba(0, 0, 0, 0.07);
+  --scrollbar-track-hover: transparent;
+  --overlay-bg: rgba(0, 0, 0, 0.5);
+
+  // --------------- default select variables ---------------
+  --select-inner-bg: #404040;
+  --select-inner-border: #FDFDFD;
+  --select-focus-border: #FDFDFD;
+  --main-button-size: 50px;
+
+  // --------------- default font-family variables ---------------
+
+  --font-family: "RobotoCondensed-Bold"; // var(--font-family);
+  --font-family2: "EuropeExtBold", sans-serif; // var(--font-family2);
+  --font-family3: "MyriadPro-Regular", sans-serif; // var(--font-family3);
+
+  // --------------- default text color variables ---------------
+  --cl-a: #1b1b1b; // var(--cl-a);
+  --cl-b: #ffffff; // var(--cl-b);
+  --cl-c: #007833; // var(--cl-c);
+
+
+  //-----------------custom loader----------------------------------
+  --loader: linear-gradient(90deg, rgba(108, 214, 133, 1) 0%, rgba(255, 255, 255, 1) 45%, rgba(255, 255, 255, 1) 55%, rgba(9, 146, 196, 1) 100%); // var(--loader);
+
+}
+
+

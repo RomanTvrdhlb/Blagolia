@@ -1,0 +1,100 @@
+@use '../mixins/breakpoint' as *;
+@use '../mixins/burger' as *;
+@use '../mixins/disable-mob-hover' as *;
+@use "../mixins/mini" as *;
+@use '../components/main-components/main-nav' as *;
+
+@keyframes boxShadow {
+  0% {
+	box-shadow: 0px 10px 25px -3px #363F4D00;
+  }
+  100% {
+	box-shadow: 0px 10px 25px -3px #363F4D26;
+  }
+}
+
+.header {
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  z-index: 20;
+  background-color: var(--cl-c);
+
+
+  &__inner {
+	padding: clamp(15px, 2.61vw, 25px) 0;
+	display: grid;
+	grid-template-columns: clamp(50px, 13.04vw, 195px) 1fr auto;
+	align-items: center;
+	gap: clamp(20px, 2.61vw, 45px);
+
+	@include tablet {
+	  grid-template-columns: auto clamp(110px, 25.42vw,195px) 1fr auto;
+	}
+  }
+
+  &__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+
+	@include tablet {
+	  overflow-y: auto;
+	  width: 100%;
+	  align-items: flex-start;
+	  background-color: var(--cl-a);
+	  flex-direction: column-reverse;
+	  padding: 20px;
+	  gap: 40px;
+	}
+
+
+	.trigger-button {
+	  @include tablet {
+		order: -1;
+		width: 100%;
+		margin-top: auto;
+		flex-shrink: 0;
+	  }
+	}
+
+
+  }
+
+  .trigger-button {
+	&.hidden-for-tablet {
+	  @include tablet {
+		margin-left: auto;
+	  }
+
+	  @include mobile {
+		span {
+		  display: none;
+		}
+	  }
+	}
+  }
+
+  .burger {
+	color: var(--cl-h);
+
+	&.active {
+	  color: var(--cl-e);
+	}
+
+	@include for-tablet {
+	  display: none;
+	}
+
+	@include tablet {
+	  justify-self: end;
+	  @include burger;
+	}
+  }
+
+  @include main-nav;
+}
+
+

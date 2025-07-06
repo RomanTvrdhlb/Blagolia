@@ -1,0 +1,26 @@
+@use "../mixins/breakpoint" as *;
+
+.footer {
+  position: relative;
+  background-color: var(--cl-c);
+ 
+  .logo {
+    @include for-mobile {
+      margin-right: auto;
+    }
+  }
+
+  &__inner {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr clamp(200px, 29.99vw, 350px) auto;
+    gap: 40px clamp(15px, 1.96vw, 20px);
+    padding: clamp(45px, 7.17vw, 75px) 0;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
