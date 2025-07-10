@@ -135,95 +135,28 @@
   height: auto;
 }
 
-.trigger-button {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 37px 1fr;
-  background-color: var(--cl-c);
-  border-radius: 8px;
-  overflow: hidden;
-  color: var(--cl-b);
-  transition: all 0.3s;
-  font-family: var(--font-family);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 100%;
-}
-.trigger-button i {
-  display: flex;
-  width: 100%;
-  aspect-ratio: 1;
-  background-color: var(--cl-d);
-  border-radius: 8px;
-  transition: all 0.2s;
-}
-.trigger-button span {
-  padding: 0 clamp(10px, 1.3vw, 16px);
-  text-align: center;
-}
-
-.phone-link {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  color: var(--cl-b);
-  font-family: var(--font-family);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 109%;
-  white-space: nowrap;
-  transition: all 0.3s;
-}
-.phone-link svg {
-  width: 30px;
-  height: 30px;
-  color: var(--cl-e);
-  flex-shrink: 0;
-}
-
 .main-button {
-  width: 100%;
   max-width: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: var(--btn-size);
-  background-color: var(--cl-e);
   transition: all 0.3s;
-  color: var(--cl-b);
-  font-family: var(--font-family3);
-  font-size: clamp(14px, 2.09vw, 18px);
-  font-weight: 700;
-  line-height: 100%;
-  padding: 2px 10px;
+  border: 2px solid var(--main-yellow);
+  padding: 16px 64px;
+  height: 59px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  background: var(--main-yellow);
+  width: -moz-fit-content;
+  width: fit-content;
+  color: var(--neutral-700);
 }
-.main-button--accent {
-  background-color: var(--cl-f);
-}
-.main-button--dark {
-  background-color: var(--cl-a);
-  color: var(--cl-b);
-}
-.main-button--whatsapp {
-  background-color: var(--cl-d);
-  color: var(--cl-b);
-  gap: 5px;
-  transition: all 0.3s;
-}
-.main-button--whatsapp span {
-  transition: all 0.3s;
-  padding: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: 1px solid currentColor;
-  background-color: var(--cl-d);
-}
-.main-button--whatsapp span svg {
-  margin: 0px;
-  max-width: clamp(25px, 3.91vw, 35px);
-  height: auto;
+.main-button--transparent {
+  color: var(--main-yellow);
+  background: transparent;
 }
 
 .telegram-btn {
@@ -685,9 +618,6 @@
   }
 }
 @media (min-width: 1025px) {
-  .phone-link {
-    font-size: clamp(14px, 1.83vw, 16px);
-  }
   .mobile {
     display: none;
   }
@@ -817,23 +747,14 @@
   }
 }
 @media (hover: hover) {
-  .trigger-button:hover {
-    background-color: var(--cl-e);
-  }
-  .trigger-button:hover i {
-    background-color: var(--cl-i);
-  }
-  .phone-link:hover {
-    color: var(--cl-e);
-  }
   .main-button:hover {
-    background-color: var(--cl-a);
+    background: rgb(248.347826087, 185.0434782609, 3.652173913);
+    box-shadow: 0 8px 16px rgba(252, 200, 51, 0.3);
   }
-  .main-button--dark:hover {
-    background-color: var(--cl-e);
-  }
-  .main-button--whatsapp:hover {
-    background-color: #384236;
+  .main-button--transparent:hover {
+    background: var(--main-yellow);
+    color: var(--neutral-700);
+    box-shadow: 0 8px 16px rgba(252, 200, 51, 0.3);
   }
   .telegram-btn:hover {
     background-color: var(--cl-j);
@@ -849,23 +770,14 @@
   }
 }
 @media (hover: none) {
-  .trigger-button:active {
-    background-color: var(--cl-e);
-  }
-  .trigger-button:active i {
-    background-color: var(--cl-i);
-  }
-  .phone-link:active {
-    color: var(--cl-e);
-  }
   .main-button:active {
-    background-color: var(--cl-a);
+    background: rgb(248.347826087, 185.0434782609, 3.652173913);
+    box-shadow: 0 8px 16px rgba(252, 200, 51, 0.3);
   }
-  .main-button--dark:active {
-    background-color: var(--cl-e);
-  }
-  .main-button--whatsapp:active {
-    background-color: #384236;
+  .main-button--transparent:active {
+    background: var(--main-yellow);
+    color: var(--neutral-700);
+    box-shadow: 0 8px 16px rgba(252, 200, 51, 0.3);
   }
   .telegram-btn:active {
     background-color: var(--cl-j);

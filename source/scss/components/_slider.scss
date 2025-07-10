@@ -1,0 +1,66 @@
+@use '../mixins/breakpoint' as *;
+
+@mixin main-slider{
+    .main-slider{
+        width: 100%;
+
+        .swiper-container{
+            width: 100%;
+        }
+
+
+        .slider-pagination{
+            @include for-tablet{
+                display: none;
+            }
+        }
+
+        .swiper-wrapper{
+            @include for-tablet{
+                transform: none !important;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: var(--gap);
+            }
+        }
+
+        .swiper-slide{
+            @include for-tablet{
+                width: 100%;
+                height: 100%;
+            }
+
+            @include tablet{
+                width: 464px;
+            }
+        }
+
+        &.mode{
+
+        .swiper-slide{
+            a{
+                display: flex;
+                aspect-ratio: 1;
+                width: 100%;
+                overflow: hidden;
+
+                img,picture{
+                    transition: all .3s;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &:hover{
+                    img,picture{
+                        transform: scale(1.04);
+                    }
+                }
+                @include tablet{
+                    max-height: 550px;
+                }
+            }
+
+        }
+        }
+    }
+}

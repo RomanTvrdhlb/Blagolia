@@ -1,6 +1,25 @@
 @use "../mixins/breakpoint" as *;
-@use "../mixins/disable-mob-hover" as *;
+@use "../mixins/mini" as *;
+@use "../components/post-card" as *;
 
 .section-blog {
+  padding-bottom: var(--default-padding);
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--default-gap);
+  }
+
+  &__posts{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: var(--gap);
+
+    @include mobile{
+        grid-template-columns: 100%;
+    }
+}
+
+  @include post-card;
 
 }

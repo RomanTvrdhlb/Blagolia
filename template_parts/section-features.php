@@ -6,35 +6,35 @@
 	if ( ! $shower ) : ?>
         <section class="section-features" <?php if (get_sub_field( 'section_id' )) : ?> id="<?php echo get_sub_field( 'section_id' ); ?>" <?php endif; ?>>
             <div class="container">
-                <div class="section-team__inner">
+                <div class="section-features__inner">
                     <?php if (!empty($editor)) : ?>
                         <div class="editor">
                             <?= $editor; ?>
                         </div>
                     <?php endif; ?>
 
+                      <ul class="section-features__list">
                     <?php foreach ( $list as $index => $item ) :
                         $icon = $item['icon'];
                         $title = $item['title'];
                         $text = $item['text']; ?>
-                        <ul class="list">
-                            <li class="list__item">
-                                <?= display_image( $icon, 27, 36, 'list__item-icon' ); ?>
+                      
+                            <li class="section-features__item">
+                                <?= display_image( $icon, 27, 36, 'section-features__icon' ); ?>
 
-                                <div class="list__item">
-                                    <div class="list__item">
+                                <div class="section-features__wrapp">
                                         <?php if ( $title ) : ?>
-                                            <span class="list__item-title"><?= $title; ?></span>
+                                            <span class="section-features__title pretitle"><?= $title; ?></span>
                                         <?php endif; ?>
 
                                         <?php if ( $text ) : ?>
-                                            <span class="list__item-text"><?= $text; ?></span>
+                                            <p class="section-features__text"><?= $text; ?></p>
                                         <?php endif; ?>
-                                    </div>
                                 </div>
                             </li>
-                        </ul>
+                    
                     <?php endforeach; ?>
+                        </ul>
                 </div>
             </div>
         </section>

@@ -1,80 +1,81 @@
 @use "../../mixins/breakpoint" as *;
-@use '../../mixins/mini' as *;
+@use "../../mixins/mini" as *;
 
 @mixin accordion {
   .accordion {
-	display: flex;
-	flex-direction: column;
-	grid-gap: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
 
-	&__item {
-	  border-radius: clamp(16px, 3.1291vw, 24px);
-	  border: 1px solid var(--cl-d);
-	  background: var(--bg-a);
-	  padding: clamp(16px, 3.1291vw, 24px);
-	}
+    &__item {
+      border: 1px solid var(--neutral-200);
+      padding: var(--gap);
+    }
 
-	&__btn {
-	  width: 100%;
-	  display: flex;
-	  grid-gap: 10px;
-	  justify-content: space-between;
-	  align-items: center;
-	  text-align: start;
-	  transition: all .3s;
-	  border-radius: 24px;
+    &__btn {
+      width: 100%;
+      display: flex;
+      grid-gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+      text-align: start;
+      transition: all 0.3s;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: clamp(22px, 1.9444vw, 28px);
+      color: var(--neutral-700);
 
-	  &:after {
-		content: "\e901";
-		color: inherit;
-		font-family: 'icomoon' !important;
-		speak: never;
-		font-style: normal;
-		font-weight: normal;
-		font-variant: normal;
-		text-transform: none;
-		line-height: 1;
-		font-size: 24px;
-		transition: all .3s;
-		/* Better Font Rendering =========== */
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	  }
+      i.sprite {
+        width: 24px;
+        height: 24px;
+        transition: all 0.3s;
+        display: flex;
 
-	  &.active {
-		&:after {
-		  transform: scaleY(-1);
+        svg {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &.active {
+        .sprite {
+          transform: scaleY(-1);
+        }
+      }
+
+      &:hover {
+        color: var(--neutral-600);
+      }
+    }
+
+    &__content {
+      width: 100%;
+    }
+
+    .editor {
+      border-radius: inherit;
+      width: 100%;
+      display: inline-block;
+      padding: 16px 60px 0 0;
+
+      p {
+        text-align: start;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        color: var(--neutral-600);
+
+		@include mobile{
+			line-height: 110%;
 		}
-	  }
+      }
 
-	  &:hover {
-		color: var(--cl-j);
-	  }
-
-	  @include mobile {
-		align-items: flex-start;
-	  }
-	}
-
-	&__content {
-	  width: 100%;
-	}
-
-	.editor {
-	  border-radius: inherit;
-	  width: 100%;
-	  display: inline-block;
-	  padding: 13px clamp(10px, 2.6076vw, 20px) 0;
-
-	  @include headers {
-		@include mobile {
-		  text-align: start;
-		}
-	  }
-
-	  @include mobile {
-		padding-top: 13px;
-	  }
-	}
+      @include headers {
+        @include mobile {
+          text-align: start;
+        }
+      }
+    }
   }
 }

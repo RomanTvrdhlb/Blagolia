@@ -15,11 +15,11 @@
 		<?php endif; ?>
 
 		<div class="product-card__body">
-			<span class="h4"><?= $title; ?></span>
+			<span class="pretitle"><?= $title; ?></span>
 
 			<p><?= $excerpt; ?></p>
 
-			<a class="product-card__link" href="<?= esc_url( get_permalink($post_id) );?>">View Product</a>
+			<a class="main-button main-button--transparent" href="<?= esc_url( get_permalink($post_id) );?>">View Product</a>
 		</div>
 	</div>
 	<?php

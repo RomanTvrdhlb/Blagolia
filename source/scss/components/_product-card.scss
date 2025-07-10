@@ -1,0 +1,74 @@
+@use "../mixins/breakpoint" as *;
+@use "../mixins/disable-mob-hover" as *;
+
+@mixin product-card {
+  .product-card {
+    padding: var(--gap);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(16px, 2.2222vw, 32px);
+    border: 1px solid var(--neutral-200);
+    height: clamp(521px, 63.09vw, 646px);
+
+    &__thumb {
+      display: flex;
+      align-items: center;
+      height: clamp(300px, 34.18vw, 350px);
+      justify-content: center;
+      overflow: hidden;
+      flex-shrink: 0;
+      background: rgba(242, 243, 242, 0.5);
+
+      img,
+      picture {
+        transition: all 0.3s;
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      gap: clamp(8px, 1.1111vw, 16px);
+
+      p {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: clamp(16px, 1.25vw, 18px);
+        line-height: 150%;
+        margin-bottom: auto;
+        color: var(--neutral-600);
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        @include tablet {
+          @include for-mobile {
+            -webkit-line-clamp: 2;
+          }
+        }
+      }
+
+      .main-button {
+        height: clamp(53px, 4.0972vw, 59px);
+        margin-top: clamp(8px, 1.1111vw, 16px);
+        max-width: 100%;
+        width: 100%;
+        color: var(--neutral-700);
+      }
+    }
+
+    @include hover {
+      .product-card__thumb {
+        img,
+        picture {
+          transform: scale(1.03);
+        }
+      }
+    }
+  }
+}

@@ -1,310 +1,6 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
-
-/***/ "./node_modules/moment/locale sync recursive ^\\.\\/.*$":
-/*!***************************************************!*\
-  !*** ./node_modules/moment/locale/ sync ^\.\/.*$ ***!
-  \***************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-var map = {
-	"./af": "./node_modules/moment/locale/af.js",
-	"./af.js": "./node_modules/moment/locale/af.js",
-	"./ar": "./node_modules/moment/locale/ar.js",
-	"./ar-dz": "./node_modules/moment/locale/ar-dz.js",
-	"./ar-dz.js": "./node_modules/moment/locale/ar-dz.js",
-	"./ar-kw": "./node_modules/moment/locale/ar-kw.js",
-	"./ar-kw.js": "./node_modules/moment/locale/ar-kw.js",
-	"./ar-ly": "./node_modules/moment/locale/ar-ly.js",
-	"./ar-ly.js": "./node_modules/moment/locale/ar-ly.js",
-	"./ar-ma": "./node_modules/moment/locale/ar-ma.js",
-	"./ar-ma.js": "./node_modules/moment/locale/ar-ma.js",
-	"./ar-ps": "./node_modules/moment/locale/ar-ps.js",
-	"./ar-ps.js": "./node_modules/moment/locale/ar-ps.js",
-	"./ar-sa": "./node_modules/moment/locale/ar-sa.js",
-	"./ar-sa.js": "./node_modules/moment/locale/ar-sa.js",
-	"./ar-tn": "./node_modules/moment/locale/ar-tn.js",
-	"./ar-tn.js": "./node_modules/moment/locale/ar-tn.js",
-	"./ar.js": "./node_modules/moment/locale/ar.js",
-	"./az": "./node_modules/moment/locale/az.js",
-	"./az.js": "./node_modules/moment/locale/az.js",
-	"./be": "./node_modules/moment/locale/be.js",
-	"./be.js": "./node_modules/moment/locale/be.js",
-	"./bg": "./node_modules/moment/locale/bg.js",
-	"./bg.js": "./node_modules/moment/locale/bg.js",
-	"./bm": "./node_modules/moment/locale/bm.js",
-	"./bm.js": "./node_modules/moment/locale/bm.js",
-	"./bn": "./node_modules/moment/locale/bn.js",
-	"./bn-bd": "./node_modules/moment/locale/bn-bd.js",
-	"./bn-bd.js": "./node_modules/moment/locale/bn-bd.js",
-	"./bn.js": "./node_modules/moment/locale/bn.js",
-	"./bo": "./node_modules/moment/locale/bo.js",
-	"./bo.js": "./node_modules/moment/locale/bo.js",
-	"./br": "./node_modules/moment/locale/br.js",
-	"./br.js": "./node_modules/moment/locale/br.js",
-	"./bs": "./node_modules/moment/locale/bs.js",
-	"./bs.js": "./node_modules/moment/locale/bs.js",
-	"./ca": "./node_modules/moment/locale/ca.js",
-	"./ca.js": "./node_modules/moment/locale/ca.js",
-	"./cs": "./node_modules/moment/locale/cs.js",
-	"./cs.js": "./node_modules/moment/locale/cs.js",
-	"./cv": "./node_modules/moment/locale/cv.js",
-	"./cv.js": "./node_modules/moment/locale/cv.js",
-	"./cy": "./node_modules/moment/locale/cy.js",
-	"./cy.js": "./node_modules/moment/locale/cy.js",
-	"./da": "./node_modules/moment/locale/da.js",
-	"./da.js": "./node_modules/moment/locale/da.js",
-	"./de": "./node_modules/moment/locale/de.js",
-	"./de-at": "./node_modules/moment/locale/de-at.js",
-	"./de-at.js": "./node_modules/moment/locale/de-at.js",
-	"./de-ch": "./node_modules/moment/locale/de-ch.js",
-	"./de-ch.js": "./node_modules/moment/locale/de-ch.js",
-	"./de.js": "./node_modules/moment/locale/de.js",
-	"./dv": "./node_modules/moment/locale/dv.js",
-	"./dv.js": "./node_modules/moment/locale/dv.js",
-	"./el": "./node_modules/moment/locale/el.js",
-	"./el.js": "./node_modules/moment/locale/el.js",
-	"./en-au": "./node_modules/moment/locale/en-au.js",
-	"./en-au.js": "./node_modules/moment/locale/en-au.js",
-	"./en-ca": "./node_modules/moment/locale/en-ca.js",
-	"./en-ca.js": "./node_modules/moment/locale/en-ca.js",
-	"./en-gb": "./node_modules/moment/locale/en-gb.js",
-	"./en-gb.js": "./node_modules/moment/locale/en-gb.js",
-	"./en-ie": "./node_modules/moment/locale/en-ie.js",
-	"./en-ie.js": "./node_modules/moment/locale/en-ie.js",
-	"./en-il": "./node_modules/moment/locale/en-il.js",
-	"./en-il.js": "./node_modules/moment/locale/en-il.js",
-	"./en-in": "./node_modules/moment/locale/en-in.js",
-	"./en-in.js": "./node_modules/moment/locale/en-in.js",
-	"./en-nz": "./node_modules/moment/locale/en-nz.js",
-	"./en-nz.js": "./node_modules/moment/locale/en-nz.js",
-	"./en-sg": "./node_modules/moment/locale/en-sg.js",
-	"./en-sg.js": "./node_modules/moment/locale/en-sg.js",
-	"./eo": "./node_modules/moment/locale/eo.js",
-	"./eo.js": "./node_modules/moment/locale/eo.js",
-	"./es": "./node_modules/moment/locale/es.js",
-	"./es-do": "./node_modules/moment/locale/es-do.js",
-	"./es-do.js": "./node_modules/moment/locale/es-do.js",
-	"./es-mx": "./node_modules/moment/locale/es-mx.js",
-	"./es-mx.js": "./node_modules/moment/locale/es-mx.js",
-	"./es-us": "./node_modules/moment/locale/es-us.js",
-	"./es-us.js": "./node_modules/moment/locale/es-us.js",
-	"./es.js": "./node_modules/moment/locale/es.js",
-	"./et": "./node_modules/moment/locale/et.js",
-	"./et.js": "./node_modules/moment/locale/et.js",
-	"./eu": "./node_modules/moment/locale/eu.js",
-	"./eu.js": "./node_modules/moment/locale/eu.js",
-	"./fa": "./node_modules/moment/locale/fa.js",
-	"./fa.js": "./node_modules/moment/locale/fa.js",
-	"./fi": "./node_modules/moment/locale/fi.js",
-	"./fi.js": "./node_modules/moment/locale/fi.js",
-	"./fil": "./node_modules/moment/locale/fil.js",
-	"./fil.js": "./node_modules/moment/locale/fil.js",
-	"./fo": "./node_modules/moment/locale/fo.js",
-	"./fo.js": "./node_modules/moment/locale/fo.js",
-	"./fr": "./node_modules/moment/locale/fr.js",
-	"./fr-ca": "./node_modules/moment/locale/fr-ca.js",
-	"./fr-ca.js": "./node_modules/moment/locale/fr-ca.js",
-	"./fr-ch": "./node_modules/moment/locale/fr-ch.js",
-	"./fr-ch.js": "./node_modules/moment/locale/fr-ch.js",
-	"./fr.js": "./node_modules/moment/locale/fr.js",
-	"./fy": "./node_modules/moment/locale/fy.js",
-	"./fy.js": "./node_modules/moment/locale/fy.js",
-	"./ga": "./node_modules/moment/locale/ga.js",
-	"./ga.js": "./node_modules/moment/locale/ga.js",
-	"./gd": "./node_modules/moment/locale/gd.js",
-	"./gd.js": "./node_modules/moment/locale/gd.js",
-	"./gl": "./node_modules/moment/locale/gl.js",
-	"./gl.js": "./node_modules/moment/locale/gl.js",
-	"./gom-deva": "./node_modules/moment/locale/gom-deva.js",
-	"./gom-deva.js": "./node_modules/moment/locale/gom-deva.js",
-	"./gom-latn": "./node_modules/moment/locale/gom-latn.js",
-	"./gom-latn.js": "./node_modules/moment/locale/gom-latn.js",
-	"./gu": "./node_modules/moment/locale/gu.js",
-	"./gu.js": "./node_modules/moment/locale/gu.js",
-	"./he": "./node_modules/moment/locale/he.js",
-	"./he.js": "./node_modules/moment/locale/he.js",
-	"./hi": "./node_modules/moment/locale/hi.js",
-	"./hi.js": "./node_modules/moment/locale/hi.js",
-	"./hr": "./node_modules/moment/locale/hr.js",
-	"./hr.js": "./node_modules/moment/locale/hr.js",
-	"./hu": "./node_modules/moment/locale/hu.js",
-	"./hu.js": "./node_modules/moment/locale/hu.js",
-	"./hy-am": "./node_modules/moment/locale/hy-am.js",
-	"./hy-am.js": "./node_modules/moment/locale/hy-am.js",
-	"./id": "./node_modules/moment/locale/id.js",
-	"./id.js": "./node_modules/moment/locale/id.js",
-	"./is": "./node_modules/moment/locale/is.js",
-	"./is.js": "./node_modules/moment/locale/is.js",
-	"./it": "./node_modules/moment/locale/it.js",
-	"./it-ch": "./node_modules/moment/locale/it-ch.js",
-	"./it-ch.js": "./node_modules/moment/locale/it-ch.js",
-	"./it.js": "./node_modules/moment/locale/it.js",
-	"./ja": "./node_modules/moment/locale/ja.js",
-	"./ja.js": "./node_modules/moment/locale/ja.js",
-	"./jv": "./node_modules/moment/locale/jv.js",
-	"./jv.js": "./node_modules/moment/locale/jv.js",
-	"./ka": "./node_modules/moment/locale/ka.js",
-	"./ka.js": "./node_modules/moment/locale/ka.js",
-	"./kk": "./node_modules/moment/locale/kk.js",
-	"./kk.js": "./node_modules/moment/locale/kk.js",
-	"./km": "./node_modules/moment/locale/km.js",
-	"./km.js": "./node_modules/moment/locale/km.js",
-	"./kn": "./node_modules/moment/locale/kn.js",
-	"./kn.js": "./node_modules/moment/locale/kn.js",
-	"./ko": "./node_modules/moment/locale/ko.js",
-	"./ko.js": "./node_modules/moment/locale/ko.js",
-	"./ku": "./node_modules/moment/locale/ku.js",
-	"./ku-kmr": "./node_modules/moment/locale/ku-kmr.js",
-	"./ku-kmr.js": "./node_modules/moment/locale/ku-kmr.js",
-	"./ku.js": "./node_modules/moment/locale/ku.js",
-	"./ky": "./node_modules/moment/locale/ky.js",
-	"./ky.js": "./node_modules/moment/locale/ky.js",
-	"./lb": "./node_modules/moment/locale/lb.js",
-	"./lb.js": "./node_modules/moment/locale/lb.js",
-	"./lo": "./node_modules/moment/locale/lo.js",
-	"./lo.js": "./node_modules/moment/locale/lo.js",
-	"./lt": "./node_modules/moment/locale/lt.js",
-	"./lt.js": "./node_modules/moment/locale/lt.js",
-	"./lv": "./node_modules/moment/locale/lv.js",
-	"./lv.js": "./node_modules/moment/locale/lv.js",
-	"./me": "./node_modules/moment/locale/me.js",
-	"./me.js": "./node_modules/moment/locale/me.js",
-	"./mi": "./node_modules/moment/locale/mi.js",
-	"./mi.js": "./node_modules/moment/locale/mi.js",
-	"./mk": "./node_modules/moment/locale/mk.js",
-	"./mk.js": "./node_modules/moment/locale/mk.js",
-	"./ml": "./node_modules/moment/locale/ml.js",
-	"./ml.js": "./node_modules/moment/locale/ml.js",
-	"./mn": "./node_modules/moment/locale/mn.js",
-	"./mn.js": "./node_modules/moment/locale/mn.js",
-	"./mr": "./node_modules/moment/locale/mr.js",
-	"./mr.js": "./node_modules/moment/locale/mr.js",
-	"./ms": "./node_modules/moment/locale/ms.js",
-	"./ms-my": "./node_modules/moment/locale/ms-my.js",
-	"./ms-my.js": "./node_modules/moment/locale/ms-my.js",
-	"./ms.js": "./node_modules/moment/locale/ms.js",
-	"./mt": "./node_modules/moment/locale/mt.js",
-	"./mt.js": "./node_modules/moment/locale/mt.js",
-	"./my": "./node_modules/moment/locale/my.js",
-	"./my.js": "./node_modules/moment/locale/my.js",
-	"./nb": "./node_modules/moment/locale/nb.js",
-	"./nb.js": "./node_modules/moment/locale/nb.js",
-	"./ne": "./node_modules/moment/locale/ne.js",
-	"./ne.js": "./node_modules/moment/locale/ne.js",
-	"./nl": "./node_modules/moment/locale/nl.js",
-	"./nl-be": "./node_modules/moment/locale/nl-be.js",
-	"./nl-be.js": "./node_modules/moment/locale/nl-be.js",
-	"./nl.js": "./node_modules/moment/locale/nl.js",
-	"./nn": "./node_modules/moment/locale/nn.js",
-	"./nn.js": "./node_modules/moment/locale/nn.js",
-	"./oc-lnc": "./node_modules/moment/locale/oc-lnc.js",
-	"./oc-lnc.js": "./node_modules/moment/locale/oc-lnc.js",
-	"./pa-in": "./node_modules/moment/locale/pa-in.js",
-	"./pa-in.js": "./node_modules/moment/locale/pa-in.js",
-	"./pl": "./node_modules/moment/locale/pl.js",
-	"./pl.js": "./node_modules/moment/locale/pl.js",
-	"./pt": "./node_modules/moment/locale/pt.js",
-	"./pt-br": "./node_modules/moment/locale/pt-br.js",
-	"./pt-br.js": "./node_modules/moment/locale/pt-br.js",
-	"./pt.js": "./node_modules/moment/locale/pt.js",
-	"./ro": "./node_modules/moment/locale/ro.js",
-	"./ro.js": "./node_modules/moment/locale/ro.js",
-	"./ru": "./node_modules/moment/locale/ru.js",
-	"./ru.js": "./node_modules/moment/locale/ru.js",
-	"./sd": "./node_modules/moment/locale/sd.js",
-	"./sd.js": "./node_modules/moment/locale/sd.js",
-	"./se": "./node_modules/moment/locale/se.js",
-	"./se.js": "./node_modules/moment/locale/se.js",
-	"./si": "./node_modules/moment/locale/si.js",
-	"./si.js": "./node_modules/moment/locale/si.js",
-	"./sk": "./node_modules/moment/locale/sk.js",
-	"./sk.js": "./node_modules/moment/locale/sk.js",
-	"./sl": "./node_modules/moment/locale/sl.js",
-	"./sl.js": "./node_modules/moment/locale/sl.js",
-	"./sq": "./node_modules/moment/locale/sq.js",
-	"./sq.js": "./node_modules/moment/locale/sq.js",
-	"./sr": "./node_modules/moment/locale/sr.js",
-	"./sr-cyrl": "./node_modules/moment/locale/sr-cyrl.js",
-	"./sr-cyrl.js": "./node_modules/moment/locale/sr-cyrl.js",
-	"./sr.js": "./node_modules/moment/locale/sr.js",
-	"./ss": "./node_modules/moment/locale/ss.js",
-	"./ss.js": "./node_modules/moment/locale/ss.js",
-	"./sv": "./node_modules/moment/locale/sv.js",
-	"./sv.js": "./node_modules/moment/locale/sv.js",
-	"./sw": "./node_modules/moment/locale/sw.js",
-	"./sw.js": "./node_modules/moment/locale/sw.js",
-	"./ta": "./node_modules/moment/locale/ta.js",
-	"./ta.js": "./node_modules/moment/locale/ta.js",
-	"./te": "./node_modules/moment/locale/te.js",
-	"./te.js": "./node_modules/moment/locale/te.js",
-	"./tet": "./node_modules/moment/locale/tet.js",
-	"./tet.js": "./node_modules/moment/locale/tet.js",
-	"./tg": "./node_modules/moment/locale/tg.js",
-	"./tg.js": "./node_modules/moment/locale/tg.js",
-	"./th": "./node_modules/moment/locale/th.js",
-	"./th.js": "./node_modules/moment/locale/th.js",
-	"./tk": "./node_modules/moment/locale/tk.js",
-	"./tk.js": "./node_modules/moment/locale/tk.js",
-	"./tl-ph": "./node_modules/moment/locale/tl-ph.js",
-	"./tl-ph.js": "./node_modules/moment/locale/tl-ph.js",
-	"./tlh": "./node_modules/moment/locale/tlh.js",
-	"./tlh.js": "./node_modules/moment/locale/tlh.js",
-	"./tr": "./node_modules/moment/locale/tr.js",
-	"./tr.js": "./node_modules/moment/locale/tr.js",
-	"./tzl": "./node_modules/moment/locale/tzl.js",
-	"./tzl.js": "./node_modules/moment/locale/tzl.js",
-	"./tzm": "./node_modules/moment/locale/tzm.js",
-	"./tzm-latn": "./node_modules/moment/locale/tzm-latn.js",
-	"./tzm-latn.js": "./node_modules/moment/locale/tzm-latn.js",
-	"./tzm.js": "./node_modules/moment/locale/tzm.js",
-	"./ug-cn": "./node_modules/moment/locale/ug-cn.js",
-	"./ug-cn.js": "./node_modules/moment/locale/ug-cn.js",
-	"./uk": "./node_modules/moment/locale/uk.js",
-	"./uk.js": "./node_modules/moment/locale/uk.js",
-	"./ur": "./node_modules/moment/locale/ur.js",
-	"./ur.js": "./node_modules/moment/locale/ur.js",
-	"./uz": "./node_modules/moment/locale/uz.js",
-	"./uz-latn": "./node_modules/moment/locale/uz-latn.js",
-	"./uz-latn.js": "./node_modules/moment/locale/uz-latn.js",
-	"./uz.js": "./node_modules/moment/locale/uz.js",
-	"./vi": "./node_modules/moment/locale/vi.js",
-	"./vi.js": "./node_modules/moment/locale/vi.js",
-	"./x-pseudo": "./node_modules/moment/locale/x-pseudo.js",
-	"./x-pseudo.js": "./node_modules/moment/locale/x-pseudo.js",
-	"./yo": "./node_modules/moment/locale/yo.js",
-	"./yo.js": "./node_modules/moment/locale/yo.js",
-	"./zh-cn": "./node_modules/moment/locale/zh-cn.js",
-	"./zh-cn.js": "./node_modules/moment/locale/zh-cn.js",
-	"./zh-hk": "./node_modules/moment/locale/zh-hk.js",
-	"./zh-hk.js": "./node_modules/moment/locale/zh-hk.js",
-	"./zh-mo": "./node_modules/moment/locale/zh-mo.js",
-	"./zh-mo.js": "./node_modules/moment/locale/zh-mo.js",
-	"./zh-tw": "./node_modules/moment/locale/zh-tw.js",
-	"./zh-tw.js": "./node_modules/moment/locale/zh-tw.js"
-};
-
-
-function webpackContext(req) {
-	var id = webpackContextResolve(req);
-	return __webpack_require__(id);
-}
-function webpackContextResolve(req) {
-	if(!__webpack_require__.o(map, req)) {
-		var e = new Error("Cannot find module '" + req + "'");
-		e.code = 'MODULE_NOT_FOUND';
-		throw e;
-	}
-	return map[req];
-}
-webpackContext.keys = function webpackContextKeys() {
-	return Object.keys(map);
-};
-webpackContext.resolve = webpackContextResolve;
-module.exports = webpackContext;
-webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
-
-/***/ }),
 
 /***/ "./source/js/_components.js":
 /*!**********************************!*\
@@ -312,42 +8,31 @@ webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_dinamicHeight__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/dinamicHeight */ "./source/js/components/dinamicHeight.js");
 /* harmony import */ var _components_modals__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/modals */ "./source/js/components/modals.js");
-/* harmony import */ var _components_select__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/select */ "./source/js/components/select.js");
-/* harmony import */ var _components_form_validate__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/form-validate */ "./source/js/components/form-validate.js");
-/* harmony import */ var _components_acc__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/acc */ "./source/js/components/acc.js");
-/* harmony import */ var _components_comments__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/comments */ "./source/js/components/comments.js");
-/* harmony import */ var _components_post_filter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/post-filter */ "./source/js/components/post-filter.js");
-/* harmony import */ var _components_sliders__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/sliders */ "./source/js/components/sliders.js");
-/* harmony import */ var _components_big_calculator__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/big-calculator */ "./source/js/components/big-calculator.js");
-/* harmony import */ var _components_mobile_menu__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/mobile-menu */ "./source/js/components/mobile-menu.js");
-/* harmony import */ var _components_tabs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/tabs */ "./source/js/components/tabs.js");
-/* harmony import */ var _components_calc__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/calc */ "./source/js/components/calc.js");
-/* harmony import */ var _components_quiz__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/quiz */ "./source/js/components/quiz.js");
-/* harmony import */ var _components_quiz_settings__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/quiz-settings */ "./source/js/components/quiz-settings.js");
-/* harmony import */ var _components_anchor__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/anchor */ "./source/js/components/anchor.js");
-/* harmony import */ var _components_hiddenText__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/hiddenText */ "./source/js/components/hiddenText.js");
-/* harmony import */ var _components_calendar__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/calendar */ "./source/js/components/calendar.js");
+/* harmony import */ var _components_form_validate__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/form-validate */ "./source/js/components/form-validate.js");
+/* harmony import */ var _components_acc__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/acc */ "./source/js/components/acc.js");
+/* harmony import */ var _components_post_filter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/post-filter */ "./source/js/components/post-filter.js");
+/* harmony import */ var _components_sliders__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/sliders */ "./source/js/components/sliders.js");
+/* harmony import */ var _components_mobile_menu__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/mobile-menu */ "./source/js/components/mobile-menu.js");
 
 
+// import './components/select';
 
 
+// import './components/comments';
 
 
+// import './components/big-calculator';
 
-
-
-
-
-
-
-
-
-
-
+// import './components/tabs';
+// import './components/calc';
+// import './components/quiz';
+// import './components/quiz-settings';
+// import './components/anchor';
+// import './components/hiddenText';
+// import './components/calendar';
 // import './components/toTop';
 // import './components/post';
 // import './components/filters';
@@ -365,7 +50,6 @@ __webpack_require__.r(__webpack_exports__);
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -393,7 +77,6 @@ __webpack_require__.r(__webpack_exports__);
   \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _functions_scripts_acc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/scripts/acc */ "./source/js/functions/scripts/acc.js");
 
@@ -405,497 +88,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /***/ }),
 
-/***/ "./source/js/components/anchor.js":
-/*!****************************************!*\
-  !*** ./source/js/components/anchor.js ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _vars_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars.js */ "./source/js/_vars.js");
-/* harmony import */ var smooth_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! smooth-scroll */ "./node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js");
-/* harmony import */ var smooth_scroll__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(smooth_scroll__WEBPACK_IMPORTED_MODULE_1__);
-
-const {
-  header
-} = _vars_js__WEBPACK_IMPORTED_MODULE_0__["default"];
-
-document.addEventListener("DOMContentLoaded", function () {
-  const headerHeight = header ? header.offsetHeight : 0;
-  const scroll = new (smooth_scroll__WEBPACK_IMPORTED_MODULE_1___default())('a[href*="#"]', {
-    speed: 600,
-    updateURL: false,
-    offset: (anchor, toggle) => {
-      if (window.matchMedia('(max-width: 1024px)').matches) {
-        return headerHeight;
-      }
-      return 0;
-    }
-  });
-});
-
-/***/ }),
-
-/***/ "./source/js/components/big-calculator.js":
-/*!************************************************!*\
-  !*** ./source/js/components/big-calculator.js ***!
-  \************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var html2pdf_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! html2pdf.js */ "./node_modules/html2pdf.js/dist/html2pdf.js");
-/* harmony import */ var html2pdf_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(html2pdf_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _functions_customFunctions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../functions/customFunctions */ "./source/js/functions/customFunctions.js");
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  const calculateBtn = document.getElementById('m-calculator');
-  if (!calculateBtn) return;
-  const homePriceInput = document.getElementById('homePrice');
-  const downPaymentAmountInput = document.getElementById('downPaymentAmount');
-  const mortgageTermSelect = document.querySelector('[name="mortgage_type"]');
-  const paymentFrequencySelect = document.querySelector('[name="payment_frequency"]');
-  const amortizationPeriodSelect = document.querySelector('[name="amortizationPeriod"]');
-  const errorMessageDiv = document.getElementById('error-message');
-  const periodicPaymentResult = document.getElementById('periodicPaymentResult');
-  const mortgageInsuranceResult = document.getElementById('mortgageInsuranceResult');
-  const totalMortgageResult = document.getElementById('totalMortgageResult');
-  const interestPaidOverTermResult = document.getElementById('interestPaidOverTermResult');
-  const principalPaidOverTermResult = document.getElementById('principalPaidOverTermResult');
-  const balanceAtEndTermResult = document.getElementById('balanceAtEndTermResult');
-  const amortizationReducedResult = document.getElementById('amortizationReducedResult');
-  const amortizationTableBody = document.getElementById('amortizationTableBody');
-  const pdfContainer = document.getElementById('pdf-container');
-  document.querySelectorAll('input[type="number"]').forEach(input => {
-    input.addEventListener('blur', () => {
-      const min = parseFloat(input.min);
-      const max = parseFloat(input.max);
-      let value = parseFloat(input.value);
-      if (isNaN(value)) return;
-      if (!isNaN(min) && value < min) input.value = min;
-      if (!isNaN(max) && value > max) input.value = max;
-    });
-    input.addEventListener('keydown', e => {
-      if ([46, 8, 9, 27, 13, 110, 190].includes(e.keyCode) ||
-      // Ctrl+A, Ctrl+C, Ctrl+V, Ctrl+X
-      e.ctrlKey && [65, 67, 86, 88].includes(e.keyCode) ||
-      // стрелки
-      e.keyCode >= 35 && e.keyCode <= 39) {
-        return;
-      }
-
-      // Если не цифра
-      if ((e.shiftKey || e.keyCode < 48 || e.keyCode > 57) && (e.keyCode < 96 || e.keyCode > 105)) {
-        e.preventDefault();
-      }
-    });
-  });
-  const formatCurrency = value => parseFloat(value).toLocaleString('en-US', {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2
-  });
-  const show_error = message => {
-    errorMessageDiv.textContent = message;
-    errorMessageDiv.classList.remove('hidden');
-    setTimeout(function () {
-      clear_error();
-    }, 5000);
-  };
-  const clear_error = () => {
-    [homePriceInput, downPaymentAmountInput, mortgageTermSelect].forEach(el => el.classList.remove('error'));
-    errorMessageDiv.classList.add('hidden');
-  };
-  calculateBtn.addEventListener('click', calculateMortgage);
-  function calculateMortgage() {
-    (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_1__.fadeOut)(pdfContainer, 0);
-    clear_error();
-    const homePrice = parseFloat(homePriceInput.value) || 0;
-    const downPaymentAmount = parseFloat(downPaymentAmountInput.value) || 0;
-    const annualInterestRate = (parseFloat(mortgageTermSelect.value) || 0) / 100;
-    const amortizationYears = parseInt(amortizationPeriodSelect.value);
-    const termYears = parseFloat(mortgageTermSelect.value);
-    const paymentFrequency = paymentFrequencySelect.value;
-
-    // if (homePrice <= 0 || downPaymentAmount < 0 || annualInterestRate < 0 || homePrice <= downPaymentAmount) {
-    //     show_error("Please enter valid inputs. Home price must be greater than down payment.");
-    //     return;
-    // }
-
-    let hasError = false;
-    if (homePrice <= 0) {
-      homePriceInput.classList.add('error');
-      hasError = true;
-    }
-    if (downPaymentAmount < 0) {
-      downPaymentAmountInput.classList.add('error');
-      hasError = true;
-    }
-    if (annualInterestRate < 0) {
-      mortgageTermSelect.classList.add('error');
-      hasError = true;
-    }
-    if (homePrice <= downPaymentAmount) {
-      homePriceInput.classList.add('error');
-      downPaymentAmountInput.classList.add('error');
-      hasError = true;
-    }
-    if (hasError) {
-      show_error("Please enter valid inputs. Home price must be greater than down payment.");
-      return;
-    }
-    let loanAmountBeforeInsurance = homePrice - downPaymentAmount;
-    let downPaymentPercent = downPaymentAmount / homePrice * 100;
-    let mortgageInsurancePremium = 0;
-    if (downPaymentPercent < 20) {
-      if (downPaymentPercent >= 5 && downPaymentPercent < 10) mortgageInsurancePremium = loanAmountBeforeInsurance * 0.04;else if (downPaymentPercent >= 10 && downPaymentPercent < 15) mortgageInsurancePremium = loanAmountBeforeInsurance * 0.031;else if (downPaymentPercent >= 15 && downPaymentPercent < 20) mortgageInsurancePremium = loanAmountBeforeInsurance * 0.028;
-    }
-    const totalMortgagePrincipal = loanAmountBeforeInsurance + mortgageInsurancePremium;
-    let paymentsPerYear;
-    const basePaymentsPerYearForAccel = 12;
-    switch (paymentFrequency) {
-      case 'monthly':
-        paymentsPerYear = 12;
-        break;
-      case 'semi-monthly':
-        paymentsPerYear = 24;
-        break;
-      case 'bi-weekly':
-        paymentsPerYear = 26;
-        break;
-      case 'bi-weekly-accelerated':
-        paymentsPerYear = 26;
-        break;
-      case 'weekly':
-        paymentsPerYear = 52;
-        break;
-      case 'weekly-accelerated':
-        paymentsPerYear = 52;
-        break;
-    }
-    const periodicInterestRateForPmtCalc = annualInterestRate / (paymentFrequency.includes('accelerated') ? basePaymentsPerYearForAccel : paymentsPerYear);
-    const totalNumberOfPaymentsForAmortization = amortizationYears * (paymentFrequency.includes('accelerated') ? basePaymentsPerYearForAccel : paymentsPerYear);
-    let monthlyPaymentForAccel;
-    if (annualInterestRate > 0) {
-      const pmtNumerator = totalMortgagePrincipal * periodicInterestRateForPmtCalc * Math.pow(1 + periodicInterestRateForPmtCalc, totalNumberOfPaymentsForAmortization);
-      const pmtDenominator = Math.pow(1 + periodicInterestRateForPmtCalc, totalNumberOfPaymentsForAmortization) - 1;
-      monthlyPaymentForAccel = pmtNumerator / pmtDenominator;
-    } else {
-      monthlyPaymentForAccel = totalMortgagePrincipal / totalNumberOfPaymentsForAmortization;
-    }
-    let periodicPayment;
-    if (paymentFrequency === 'bi-weekly-accelerated') periodicPayment = monthlyPaymentForAccel / 2;else if (paymentFrequency === 'weekly-accelerated') periodicPayment = monthlyPaymentForAccel / 4;else {
-      const ppr = annualInterestRate / paymentsPerYear;
-      const tnp = amortizationYears * paymentsPerYear;
-      const num = totalMortgagePrincipal * ppr * Math.pow(1 + ppr, tnp);
-      const den = Math.pow(1 + ppr, tnp) - 1;
-      periodicPayment = annualInterestRate > 0 ? num / den : totalMortgagePrincipal / tnp;
-    }
-    const amortizationSchedule = [];
-    let remainingBalance = totalMortgagePrincipal;
-    let totalInterestPaidForTerm = 0;
-    let totalPrincipalPaidForTerm = 0;
-    const periodicInterestRate = annualInterestRate / paymentsPerYear;
-    const numberOfPaymentsInTerm = Math.round(termYears * paymentsPerYear);
-    for (let i = 1; i <= numberOfPaymentsInTerm && remainingBalance > 0.01; i++) {
-      const interestForPeriod = remainingBalance * periodicInterestRate;
-      let principalForPeriod = periodicPayment - interestForPeriod;
-      if (remainingBalance < periodicPayment) {
-        principalForPeriod = remainingBalance;
-        periodicPayment = principalForPeriod + interestForPeriod;
-      }
-      remainingBalance -= principalForPeriod;
-      totalInterestPaidForTerm += interestForPeriod;
-      totalPrincipalPaidForTerm += principalForPeriod;
-      amortizationSchedule.push({
-        paymentNumber: i,
-        paymentAmount: periodicPayment,
-        interestPaid: interestForPeriod,
-        principalPaid: principalForPeriod,
-        remainingBalance: remainingBalance < 0 ? 0 : remainingBalance
-      });
-    }
-    let amortizationReducedByMonthsText = "N/A";
-    if (paymentFrequency.includes('accelerated')) {
-      const actualNumPaymentsToZero = -Math.log(1 - totalMortgagePrincipal * periodicInterestRate / periodicPayment) / Math.log(1 + periodicInterestRate);
-      if (isFinite(actualNumPaymentsToZero) && actualNumPaymentsToZero > 0) {
-        const reductionInMonths = amortizationYears * 12 - actualNumPaymentsToZero / paymentsPerYear * 12;
-        if (reductionInMonths > 0.1) amortizationReducedByMonthsText = `${reductionInMonths.toFixed(1)} Months`;
-      }
-    }
-    periodicPaymentResult.textContent = `$${formatCurrency(periodicPayment)}`;
-    mortgageInsuranceResult.textContent = `$${formatCurrency(mortgageInsurancePremium)}`;
-    totalMortgageResult.textContent = `$${formatCurrency(totalMortgagePrincipal)}`;
-    interestPaidOverTermResult.textContent = `$${formatCurrency(totalInterestPaidForTerm)}`;
-    principalPaidOverTermResult.textContent = `$${formatCurrency(totalPrincipalPaidForTerm)}`;
-    balanceAtEndTermResult.textContent = `$${formatCurrency(remainingBalance)}`;
-    amortizationReducedResult.textContent = amortizationReducedByMonthsText;
-
-    // Populate amortization table
-    amortizationTableBody.innerHTML = '';
-    let currentYear = 1;
-    let paymentsInYear = [];
-    amortizationSchedule.forEach((p, index) => {
-      paymentsInYear.push(p);
-      const isLastInYear = (index + 1) % paymentsPerYear === 0;
-      const isLastOverall = index + 1 === amortizationSchedule.length;
-      if (isLastInYear || isLastOverall) {
-        const yearInterest = paymentsInYear.reduce((acc, curr) => acc + curr.interestPaid, 0);
-        const yearPrincipal = paymentsInYear.reduce((acc, curr) => acc + curr.principalPaid, 0);
-        const yearTotalPaid = yearInterest + yearPrincipal;
-        const endOfYearBalance = paymentsInYear[paymentsInYear.length - 1].remainingBalance;
-        const summaryRow = amortizationTableBody.insertRow();
-        summaryRow.innerHTML = `
-						<td colspan="4" style="padding:6px; border:1px solid #ccc; background:#eee; font-weight:bold;">
-							Year ${currentYear}: Total Paid $${formatCurrency(yearTotalPaid)}
-							&nbsp;|&nbsp; Interest: $${formatCurrency(yearInterest)}
-							&nbsp;|&nbsp; Principal: $${formatCurrency(yearPrincipal)}
-							&nbsp;|&nbsp; Balance: $${formatCurrency(endOfYearBalance)}
-						</td>`;
-        paymentsInYear.forEach(payment => {
-          const row = amortizationTableBody.insertRow();
-          row.innerHTML = `
-							<td style="padding:6px; border:1px solid #ccc;">Payment ${payment.paymentNumber} – $${formatCurrency(payment.paymentAmount)}</td>
-							<td style="padding:6px; border:1px solid #ccc;">$${formatCurrency(payment.interestPaid)}</td>
-							<td style="padding:6px; border:1px solid #ccc;">$${formatCurrency(payment.principalPaid)}</td>
-							<td style="padding:6px; border:1px solid #ccc;">$${formatCurrency(payment.remainingBalance)}</td>
-						`;
-        });
-        if ((index + 1) % 30 === 0) {
-          const spacer = document.createElement('tr');
-          spacer.innerHTML = `<td colspan="4" style="page-break-after: always;"></td>`;
-          amortizationTableBody.appendChild(spacer);
-        }
-        paymentsInYear = [];
-        currentYear++;
-      }
-    });
-    setTimeout(function () {
-      (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_1__.fadeIn)(pdfContainer, '300', 'flex');
-    }, 50);
-  }
-  document.getElementById('save-pdf').addEventListener('click', () => {
-    const element = document.querySelector('#pdf-container');
-    const opt = {
-      margin: [0.5, 0.5, 0.5, 0.5],
-      // top, left, bottom, right (в inch — 0.5 = ~12.7мм)
-      filename: 'document.pdf',
-      image: {
-        type: 'jpeg',
-        quality: 0.98
-      },
-      html2canvas: {
-        scale: 2,
-        useCORS: true,
-        allowTaint: false
-      },
-      jsPDF: {
-        unit: 'in',
-        format: 'a4',
-        orientation: 'portrait'
-      }
-    };
-    html2pdf_js__WEBPACK_IMPORTED_MODULE_0___default()().set(opt).from(element).toPdf().get('pdf').then(function (pdf) {
-      const blob = pdf.output('blob');
-      const url = URL.createObjectURL(blob);
-      window.open(url, '_blank');
-    });
-  });
-});
-
-/***/ }),
-
-/***/ "./source/js/components/calc.js":
-/*!**************************************!*\
-  !*** ./source/js/components/calc.js ***!
-  \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _functions_scripts_range__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/scripts/range */ "./source/js/functions/scripts/range.js");
-
-document.addEventListener('DOMContentLoaded', function () {
-  const FIXED_LOAN_TERM_YEARS = 25;
-  const range = document.querySelector(".range");
-  if (range) {
-    const rangeEl = range.querySelector('.range input[type="range"]');
-    const valueEl = range.querySelector(".range__value input");
-    const symbol = range.dataset.symbol || "$";
-    const background = "var(--range-bg)";
-    new _functions_scripts_range__WEBPACK_IMPORTED_MODULE_0__["default"](rangeEl, valueEl, symbol, background);
-  }
-  const rangeInput = document.querySelector('.section-range__coll input[type="range"]');
-  const thumbLabel = document.querySelector('.range__thumb-label');
-  const rows = document.querySelectorAll('.calc-table__row');
-  function formatMoney(value) {
-    return `$${Math.round(value).toLocaleString('en-US')} <i>/mo</i>`;
-  }
-  function calculatePayment(principal, annualRate, years) {
-    const r = annualRate / 100 / 12;
-    const n = years * 12;
-    if (n === 0) return 0;
-    if (r === 0) return principal / n;
-    return principal * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
-  }
-  function updateTable(principal) {
-    rows.forEach(row => {
-      const rateEl = row.querySelector('[data-rates]');
-      const paymentCell = row.querySelector('[data-payments]');
-      if (!rateEl || !paymentCell) return;
-      const rate = parseFloat(rateEl.dataset.rates || 0);
-      if (isNaN(rate)) return;
-      const payment = calculatePayment(principal, rate, FIXED_LOAN_TERM_YEARS);
-      paymentCell.innerHTML = formatMoney(payment);
-      paymentCell.dataset.payments = payment.toFixed(2);
-    });
-  }
-  function updateThumbLabel(val) {
-    if (!thumbLabel) return;
-    const formatted = `$ ${Number(val).toLocaleString('en-US')}`;
-    thumbLabel.innerHTML = formatted.replace(/ /g, '&nbsp;');
-  }
-  if (rangeInput) {
-    const handleUpdate = () => {
-      const val = parseInt(rangeInput.value, 10);
-      updateThumbLabel(val);
-      updateTable(val);
-    };
-    rangeInput.addEventListener('input', handleUpdate);
-    handleUpdate(); // первичный вызов
-  }
-});
-
-/***/ }),
-
-/***/ "./source/js/components/calendar.js":
-/*!******************************************!*\
-  !*** ./source/js/components/calendar.js ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var lightpick__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lightpick */ "./node_modules/lightpick/lightpick.js");
-/* harmony import */ var lightpick__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lightpick__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
-/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_1__);
-
-
-
-// Получаем язык
-const rawLang = document.documentElement.lang || "en";
-const currentLang = rawLang.toLowerCase().split('-')[0];
-
-// Подключаем локаль moment
-try {
-  __webpack_require__("./node_modules/moment/locale sync recursive ^\\.\\/.*$")(`./${currentLang}`);
-  moment__WEBPACK_IMPORTED_MODULE_1___default().locale(currentLang);
-} catch (e) {
-  console.warn(`Moment locale for "${currentLang}" not found. Falling back to 'en'.`);
-  moment__WEBPACK_IMPORTED_MODULE_1___default().locale("en");
-}
-const calendarWrappers = document.querySelectorAll('[data-calendar]');
-calendarWrappers.forEach(wrapper => {
-  const type = wrapper.getAttribute('data-calendar');
-  const input = wrapper.querySelector('input');
-  const button = wrapper.querySelector('button');
-  if (!input) return;
-  let picker;
-  if (type === 'single') {
-    picker = new (lightpick__WEBPACK_IMPORTED_MODULE_0___default())({
-      field: input,
-      singleDate: true,
-      format: 'DD.MM.YYYY',
-      lang: currentLang,
-      onSelect: function () {
-        input.dispatchEvent(new Event('input', {
-          bubbles: true
-        }));
-      }
-    });
-  } else if (type === 'range') {
-    picker = new (lightpick__WEBPACK_IMPORTED_MODULE_0___default())({
-      field: input,
-      singleDate: false,
-      format: 'DD.MM.YYYY',
-      lang: currentLang,
-      onSelect: function (start, end) {
-        if (start && end) {
-          input.value = `${start.format('DD.MM.YYYY')} - ${end.format('DD.MM.YYYY')}`;
-          input.dispatchEvent(new Event('input', {
-            bubbles: true
-          }));
-        }
-      },
-      onClear: function () {
-        input.value = '';
-        input.dispatchEvent(new Event('input', {
-          bubbles: true
-        }));
-      }
-    });
-  }
-  button?.addEventListener("click", () => input.focus());
-});
-
-/***/ }),
-
-/***/ "./source/js/components/comments.js":
-/*!******************************************!*\
-  !*** ./source/js/components/comments.js ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _functions_ajax_get_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/ajax-get-data */ "./source/js/functions/ajax-get-data.js");
-/* harmony import */ var _modals__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modals */ "./source/js/components/modals.js");
-
-
-document.addEventListener('DOMContentLoaded', () => {
-  const {
-    ajax_url,
-    once
-  } = ajax_params;
-  const form = document.querySelector('.js-comment-form');
-  if (!form) return;
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    const button = form.querySelector('button[type="submit"]');
-    button.disabled = true;
-    const params = {
-      comment_post_ID: form.querySelector('[name="comment_post_ID"]').value,
-      comment: form.querySelector('#comment').value,
-      author: form.querySelector('#author').value,
-      email: form.querySelector('#email').value,
-      nonce: once
-    };
-    (0,_functions_ajax_get_data__WEBPACK_IMPORTED_MODULE_0__.getAjaxData)(ajax_url, 'submit_comment_ajax', params, response => {
-      if (response.success) {
-        form.reset();
-        _modals__WEBPACK_IMPORTED_MODULE_1__.modalManagerObject.openModal(`modal_265`);
-      } else {
-        alert('Ошибка: ' + (response.data?.message || 'Неизвестно'));
-      }
-      button.disabled = false;
-    }, () => {
-      alert('Ошибка соединения');
-      button.disabled = false;
-    });
-  });
-});
-
-/***/ }),
-
 /***/ "./source/js/components/dinamicHeight.js":
 /*!***********************************************!*\
   !*** ./source/js/components/dinamicHeight.js ***!
   \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vars_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars.js */ "./source/js/_vars.js");
 /* harmony import */ var _functions_customFunctions_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../functions/customFunctions.js */ "./source/js/functions/customFunctions.js");
@@ -945,7 +143,6 @@ document.addEventListener("DOMContentLoaded", function () {
   \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _functions_customFunctions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/customFunctions */ "./source/js/functions/customFunctions.js");
 /* harmony import */ var _modals__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modals */ "./source/js/components/modals.js");
@@ -1047,60 +244,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /***/ }),
 
-/***/ "./source/js/components/hiddenText.js":
-/*!********************************************!*\
-  !*** ./source/js/components/hiddenText.js ***!
-  \********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _functions_customFunctions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/customFunctions */ "./source/js/functions/customFunctions.js");
-
-const dataHidden = document.querySelectorAll('[data-clip]');
-if (dataHidden) {
-  dataHidden.forEach(function (item) {
-    const btn = item.querySelector('[data-clip-btn]');
-    const box = item.querySelector('[data-clip-item]');
-    const computedStyle = window.getComputedStyle(box);
-    const originalHeight = parseInt(computedStyle.getPropertyValue('max-height'));
-    btn.addEventListener('click', function (e) {
-      e.preventDefault();
-      const isOpen = box.getAttribute('data-clip-item') === 'true';
-      if (!isOpen) {
-        box.style.webkitLineClamp = 'initial';
-        box.style.maxHeight = box.scrollHeight + 'px';
-        (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_0__.toggleCustomClass)(btn, 'active');
-        (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_0__.toggleCustomClass)(box, 'active');
-        btn.innerHTML = 'Hide';
-        setTimeout(() => {
-          box.style.overflow = 'auto';
-        }, 450);
-      } else {
-        box.style.maxHeight = originalHeight + 'px';
-        box.style.overflow = 'hidden';
-        (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_0__.toggleCustomClass)(btn, 'active');
-        (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_0__.toggleCustomClass)(box, 'active');
-        btn.innerHTML = 'More';
-        setTimeout(() => {
-          box.style.webkitLineClamp = '';
-        }, 450);
-      }
-      box.setAttribute('data-clip-item', !isOpen);
-    });
-    box.style.transition = 'max-height 0.4s linear';
-  });
-}
-
-/***/ }),
-
 /***/ "./source/js/components/mobile-menu.js":
 /*!*********************************************!*\
   !*** ./source/js/components/mobile-menu.js ***!
   \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _functions_scripts_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/scripts/burger */ "./source/js/functions/scripts/burger.js");
 /* harmony import */ var _functions_customFunctions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../functions/customFunctions */ "./source/js/functions/customFunctions.js");
@@ -1135,7 +284,6 @@ document.addEventListener("DOMContentLoaded", function () {
   \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   modalManagerObject: () => (/* binding */ modalManagerObject)
@@ -1156,7 +304,6 @@ const modalManagerObject = new _functions_scripts_modals__WEBPACK_IMPORTED_MODUL
   \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _functions_ajax_get_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/ajax-get-data */ "./source/js/functions/ajax-get-data.js");
 /* harmony import */ var _functions_scripts_loaderInstanse__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../functions/scripts/loaderInstanse */ "./source/js/functions/scripts/loaderInstanse.js");
@@ -1366,629 +513,125 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /***/ }),
 
-/***/ "./source/js/components/quiz-settings.js":
-/*!***********************************************!*\
-  !*** ./source/js/components/quiz-settings.js ***!
-  \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _functions_disable_scroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/disable-scroll */ "./source/js/functions/disable-scroll.js");
-/* harmony import */ var _functions_enable_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../functions/enable-scroll */ "./source/js/functions/enable-scroll.js");
-/* harmony import */ var _functions_customFunctions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../functions/customFunctions */ "./source/js/functions/customFunctions.js");
-
-
-
-const QuizModalManager = {
-  activeClass: 'active',
-  modals: {},
-  overlay: document.querySelector(".overlay"),
-  menu: document.querySelector(".option-menu"),
-  submenu: null,
-  init() {
-    this.submenu = this.menu?.querySelector('.option-menu__wrapp');
-    this.bindMenuTriggers();
-    this.bindOverlayClose();
-    this.registerModals([{
-      trigger: '[data-exit]',
-      modalClass: 'leave'
-    }, {
-      trigger: '[data-continue]',
-      modalClass: 'continue'
-    }, {
-      trigger: '[data-choice]',
-      modalClass: 'choice'
-    }]);
-  },
-  bindMenuTriggers() {
-    const openBtns = document.querySelectorAll('.section-quiz__setting:not(.close-btn)');
-    const langBtn = document.querySelector('.option-menu__lang');
-    const closeBtn = this.menu?.querySelector('.option-menu__close');
-    const backBtn = this.menu?.querySelector('.option-menu__back');
-    openBtns.forEach(btn => {
-      btn.addEventListener('click', () => this.openMenu());
-    });
-    closeBtn?.addEventListener('click', () => this.closeMenu());
-    backBtn?.addEventListener('click', () => this.closeSubmenu());
-    langBtn?.addEventListener('click', () => {
-      if (this.menu?.classList.contains(this.activeClass)) {
-        (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_2__.toggleCustomClass)(this.submenu, this.activeClass);
-      }
-    });
-  },
-  bindOverlayClose() {
-    this.overlay?.addEventListener('click', () => {
-      this.closeMenu();
-      this.closeAllModals();
-    });
-  },
-  registerModals(configs) {
-    configs.forEach(_ref => {
-      let {
-        trigger,
-        modalClass
-      } = _ref;
-      const triggers = document.querySelectorAll(trigger);
-      const modal = document.querySelector(`.section-quiz__modal.${modalClass}`);
-      if (!triggers.length || !modal) return;
-      this.modals[modalClass] = modal;
-      const closeBtns = modal.querySelectorAll('.close-btn');
-      triggers.forEach(t => {
-        t.addEventListener('click', e => {
-          e.preventDefault();
-          this.closeMenu();
-          this.open(modalClass);
-        });
-      });
-      closeBtns.forEach(btn => {
-        btn.addEventListener('click', e => {
-          e.preventDefault();
-          this.close(modalClass);
-        });
-      });
-    });
-  },
-  open(modalClass) {
-    const modal = this.modals[modalClass];
-    if (!modal) return;
-    modal.classList.add(this.activeClass);
-    this.overlay?.classList.add(this.activeClass);
-    (0,_functions_disable_scroll__WEBPACK_IMPORTED_MODULE_0__.disableScroll)();
-  },
-  close(modalClass) {
-    const modal = this.modals[modalClass];
-    if (!modal) return;
-    modal.classList.remove(this.activeClass);
-    this.overlay?.classList.remove(this.activeClass);
-    (0,_functions_enable_scroll__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
-  },
-  closeAllModals() {
-    Object.values(this.modals).forEach(modal => modal.classList.remove(this.activeClass));
-    this.overlay?.classList.remove(this.activeClass);
-    (0,_functions_enable_scroll__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
-  },
-  openMenu() {
-    (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_2__.toggleCustomClass)(this.menu, this.activeClass);
-    (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_2__.toggleCustomClass)(this.overlay, this.activeClass);
-    (0,_functions_disable_scroll__WEBPACK_IMPORTED_MODULE_0__.disableScroll)();
-  },
-  closeMenu() {
-    (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_2__.removeCustomClass)(this.menu, this.activeClass);
-    (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_2__.removeCustomClass)(this.overlay, this.activeClass);
-    (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_2__.removeCustomClass)(this.submenu, this.activeClass);
-    (0,_functions_enable_scroll__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
-  },
-  closeSubmenu() {
-    (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_2__.removeCustomClass)(this.submenu, this.activeClass);
-  }
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (QuizModalManager);
-
-/***/ }),
-
-/***/ "./source/js/components/quiz.js":
-/*!**************************************!*\
-  !*** ./source/js/components/quiz.js ***!
-  \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.mjs");
-/* harmony import */ var swiper_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/modules */ "./node_modules/swiper/modules/index.mjs");
-/* harmony import */ var _modals__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modals */ "./source/js/components/modals.js");
-/* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! uuid */ "./node_modules/uuid/dist/esm-browser/v4.js");
-/* harmony import */ var _functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../functions/customFunctions */ "./source/js/functions/customFunctions.js");
-/* harmony import */ var _functions_ajax_get_data__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../functions/ajax-get-data */ "./source/js/functions/ajax-get-data.js");
-/* harmony import */ var _quiz_settings__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./quiz-settings */ "./source/js/components/quiz-settings.js");
-
-
-
-
-
-
-
-const QuizSlider = {
-  init() {
-    this.initSliders();
-    this.bindEvents();
-    this.updateButtonState();
-    this.preventDefaultFormSubmit();
-  },
-  initSliders() {
-    this.leftSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.section-quiz__coll.swiper-container--left', {
-      modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.EffectFade, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Controller],
-      effect: 'fade',
-      fadeEffect: {
-        crossFade: true
-      },
-      allowTouchMove: false,
-      autoHeight: true
-    });
-    this.rightSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.section-quiz__coll.swiper-container--right', {
-      modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.EffectFade, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Controller, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
-      effect: 'fade',
-      fadeEffect: {
-        crossFade: true
-      },
-      autoHeight: true,
-      slidesPerView: 1,
-      watchSlidesProgress: true,
-      watchSlidesVisibility: true,
-      allowTouchMove: false,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-      },
-      controller: {
-        control: this.leftSwiper
-      }
-    });
-  },
-  bindEvents() {
-    this.nextButton = document.querySelector('.section-quiz__buttons .next');
-    this.prevButton = document.querySelector('.section-quiz__buttons .prev');
-    if (this.nextButton) {
-      this.nextButton.addEventListener('click', e => {
-        e.preventDefault();
-        const isValid = this.validateCurrentSlide(true);
-        if (!isValid) return;
-        if (this.isLastSlide()) {
-          this.collectFormData();
-        } else {
-          this.rightSwiper.slideNext();
-        }
-      });
-    }
-    if (this.prevButton) {
-      this.prevButton.addEventListener('click', e => {
-        e.preventDefault();
-        this.rightSwiper.slidePrev();
-      });
-    }
-    document.addEventListener('input', e => this.onInputChange(e));
-    document.addEventListener('change', e => this.onInputChange(e));
-    this.rightSwiper.on('slideChange', () => {
-      this.updateButtonState();
-    });
-  },
-  preventDefaultFormSubmit() {
-    const form = document.getElementById('quiz_data')?.closest('form');
-    if (form) {
-      form.addEventListener('submit', e => {
-        e.preventDefault();
-        console.log('Default form submit blocked.');
-      });
-    }
-  },
-  validateCurrentSlide() {
-    let showErrors = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-    const currentSlide = this.rightSwiper.slides[this.rightSwiper.activeIndex];
-    const requiredInputs = currentSlide.querySelectorAll('[required]');
-    if (requiredInputs.length === 0) return true;
-    let isValid = true;
-    requiredInputs.forEach(input => {
-      if (input.type === 'checkbox' || input.type === 'radio') {
-        const name = input.name;
-        const group = currentSlide.querySelectorAll(`[name="${name}"]`);
-        const isChecked = Array.from(group).some(el => el.checked);
-        if (!isChecked) {
-          isValid = false;
-          if (showErrors) input.closest('label')?.classList.add('error');
-        } else {
-          if (showErrors) input.closest('label')?.classList.remove('error');
-        }
-      } else {
-        if (!input.value.trim()) {
-          isValid = false;
-          if (showErrors) input.classList.add('error');
-        } else {
-          if (showErrors) input.classList.remove('error');
-        }
-      }
-    });
-    return isValid;
-  },
-  updateButtonState() {
-    if (this.nextButton) {
-      this.nextButton.textContent = this.isLastSlide() ? 'Send Mortgage Application' : 'Next';
-    }
-    if (this.prevButton) {
-      this.prevButton.textContent = 'Back';
-      this.prevButton.disabled = this.rightSwiper.activeIndex === 0;
-    }
-  },
-  isLastSlide() {
-    return this.rightSwiper.activeIndex === this.rightSwiper.slides.length - 1;
-  },
-  resetQuiz() {
-    const form = document.getElementById('quiz_data')?.closest('form');
-    const hiddenInput = document.getElementById('quiz_data');
-    if (form) {
-      form.reset();
-    }
-    if (hiddenInput) {
-      hiddenInput.value = '';
-    }
-    const slides = this.rightSwiper.slides;
-    slides.forEach(slide => {
-      const inputs = slide.querySelectorAll('input, textarea, select');
-      inputs.forEach(input => {
-        if (input.type === 'checkbox' || input.type === 'radio') {
-          input.checked = false;
-        } else {
-          input.value = '';
-        }
-      });
-    });
-    document.querySelectorAll('.error, .done').forEach(el => {
-      el.classList.remove('error', 'done');
-    });
-    this.rightSwiper.slideTo(0);
-    this.leftSwiper?.slideTo?.(0);
-    this.updateButtonState();
-  },
-  onInputChange(e) {
-    const currentSlide = this.rightSwiper.slides[this.rightSwiper.activeIndex];
-    if (!currentSlide.contains(e.target)) return;
-    const input = e.target;
-    if (input.classList.contains('error')) {
-      input.classList.remove('error');
-    }
-    if (input.closest('label')?.classList.contains('error')) {
-      input.closest('label')?.classList.remove('error');
-    }
-    input.classList.add('done');
-    clearTimeout(input._doneTimer);
-    input._doneTimer = setTimeout(() => {
-      input.classList.remove('done');
-    }, 2000);
-    this.updateButtonState();
-  },
-  collectFormData() {
-    const slides = this.rightSwiper.slides;
-    let formData = {};
-    slides.forEach((slide, index) => {
-      const slideName = slide.dataset.slideName?.trim() || `slide_${index + 1}`;
-      const inputs = slide.querySelectorAll('input, select, textarea');
-      formData[slideName] = formData[slideName] || {};
-      inputs.forEach(input => {
-        const name = input.name || `input_${Math.random().toString(36).substr(2, 5)}`;
-        if (input.type === 'checkbox') {
-          formData[slideName][name] = input.checked ? input.value : '';
-        } else if (input.type === 'radio') {
-          if (!(name in formData[slideName])) {
-            formData[slideName][name] = null;
-          }
-          if (input.checked) {
-            formData[slideName][name] = input.value;
-          }
-        } else {
-          formData[slideName][name] = input.value.trim();
-        }
-      });
-    });
-    const hiddenInput = document.getElementById('quiz_data');
-    const form = hiddenInput?.closest('form');
-    if (hiddenInput && form) {
-      hiddenInput.value = JSON.stringify(formData);
-      const formDataToSend = new FormData(form);
-      fetch(form.getAttribute('action'), {
-        method: 'POST',
-        body: formDataToSend
-      }).then(response => response.text()).then(responseText => {
-        _modals__WEBPACK_IMPORTED_MODULE_2__.modalManagerObject.openModal(`modal_226`);
-        setTimeout(() => {
-          _modals__WEBPACK_IMPORTED_MODULE_2__.modalManagerObject.closeModal();
-        }, 600);
-        this.resetQuiz();
-      }).catch(error => {
-        console.error('Ошибка отправки формы:', error);
-      });
-    }
-  }
-};
-function getQuizData(rightSwiperInstance) {
-  const slides = rightSwiperInstance.slides;
-  const formData = {};
-  slides.forEach((slide, index) => {
-    const slideName = slide.dataset.slideName?.trim() || `slide_${index + 1}`;
-    const inputs = slide.querySelectorAll('input, select, textarea');
-    formData[slideName] = {};
-    inputs.forEach(input => {
-      const name = input.name || `input_${Math.random().toString(36).substr(2, 5)}`;
-      if (input.type === 'checkbox') {
-        formData[slideName][name] = input.checked ? input.value : '';
-      } else if (input.type === 'radio') {
-        if (!(name in formData[slideName])) {
-          formData[slideName][name] = null;
-        }
-        if (input.checked) {
-          formData[slideName][name] = input.value;
-        }
-      } else {
-        formData[slideName][name] = input.value.trim();
-      }
-    });
-  });
-  return formData;
-}
-function applyQuizData(data, swiperInstance) {
-  const slides = swiperInstance.slides;
-  slides.forEach((slide, index) => {
-    const slideName = slide.dataset.slideName?.trim() || `slide_${index + 1}`;
-    const inputs = slide.querySelectorAll('input, select, textarea');
-    if (!data[slideName]) return;
-    inputs.forEach(input => {
-      const name = input.name;
-      if (!name || !(name in data[slideName])) return;
-      const value = data[slideName][name];
-      if (input.type === 'checkbox' || input.type === 'radio') {
-        input.checked = input.value === value;
-      } else if (input.type === 'hidden') {
-        const wrapper = input.closest('.custom-select');
-        if (wrapper?.CustomSelectInstance) {
-          if (value.includes && value.includes('|')) {
-            wrapper.CustomSelectInstance.setValues(value.split('|'));
-          } else {
-            wrapper.CustomSelectInstance.setValue(value);
-          }
-        }
-      } else {
-        input.value = value;
-      }
-      input.classList.add('done');
-    });
-  });
-}
-const {
-  ajax_url,
-  once
-} = ajax_params;
-console.log(ajax_url);
-function restoreQuizFromUrl() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const quizId = urlParams.get('quiz-id');
-  const {
-    ajax_url,
-    once
-  } = ajax_params;
-  console.log(ajax_url);
-  if (!quizId) return;
-  (0,_functions_ajax_get_data__WEBPACK_IMPORTED_MODULE_4__.getAjaxData)(ajax_url, 'quiz_load', {
-    'quiz-id': quizId
-  }, response => {
-    if (response.success && response.data) {
-      applyQuizData(response.data, QuizSlider.rightSwiper);
-      const url = new URL(window.location.href);
-      url.searchParams.delete('quiz-id');
-      window.history.replaceState({}, document.title, url.pathname + url.search);
-    } else {
-      console.warn(response.data?.message);
-    }
-  });
-}
-document.addEventListener('DOMContentLoaded', () => {
-  const {
-    ajax_url,
-    once
-  } = ajax_params;
-  if (document.querySelector('.section-quiz')) {
-    QuizSlider.init();
-    _quiz_settings__WEBPACK_IMPORTED_MODULE_5__["default"].init();
-    restoreQuizFromUrl();
-    const emailInput = document.getElementById('save-user-email');
-    const saveBtn = document.getElementById('save-my-data');
-    const savedReminder = localStorage.getItem('quiz_reminder_permission');
-    const storedEmail = localStorage.getItem('quiz_user_email');
-    if (emailInput && storedEmail) {
-      emailInput.setAttribute('value', storedEmail);
-    }
-    if (saveBtn && emailInput) {
-      saveBtn.addEventListener('click', e => {
-        e.preventDefault();
-        const email = emailInput.value.trim();
-        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-          emailInput.classList.add('error');
-          return;
-        }
-        emailInput.classList.remove('error');
-        localStorage.setItem('quiz_user_email', email);
-        const quizId = (0,uuid__WEBPACK_IMPORTED_MODULE_6__["default"])();
-        const data = getQuizData(QuizSlider.rightSwiper);
-        (0,_functions_ajax_get_data__WEBPACK_IMPORTED_MODULE_4__.getAjaxData)(ajax_url, 'quiz_save', {
-          id: quizId,
-          email,
-          data: JSON.stringify(data)
-        }, response => {
-          if (response.success && response.data?.link) {
-            console.log('🔗 Magic link:', response.data.link);
-            alert('A magic link has been sent to your email.');
-            _quiz_settings__WEBPACK_IMPORTED_MODULE_5__["default"].closeAllModals();
-          } else {
-            console.error('Ошибка при сохранении:', response);
-          }
-        });
-      });
-    }
-    if (savedReminder) {
-      const radio = document.querySelector(`input[type="radio"][name="reminder_permission"][value="${savedReminder}"]`);
-      if (radio) radio.checked = true;
-    }
-    document.querySelectorAll('input[type="radio"][name="reminder_permission"]').forEach(radio => {
-      radio.addEventListener('change', () => {
-        if (radio.checked) {
-          localStorage.setItem('quiz_reminder_permission', radio.value);
-        }
-      });
-    });
-
-    // === DONE: ===
-    document.getElementById('done')?.addEventListener('click', e => {
-      e.preventDefault();
-      const selected = document.querySelector('input[type="radio"][name="reminder_permission"]:checked');
-      if (selected) {
-        localStorage.setItem('quiz_reminder_permission', selected.value);
-      }
-      _quiz_settings__WEBPACK_IMPORTED_MODULE_5__["default"].closeAllModals();
-    });
-
-    // === CLEANING: ===
-    document.getElementById('cleaning')?.addEventListener('click', e => {
-      e.preventDefault();
-      if (confirm('Are you sure you want to erase all current form data?')) {
-        QuizSlider.resetQuiz();
-        localStorage.removeItem('quiz_reminder_permission');
-        Object.keys(sessionStorage).forEach(key => {
-          if (key.startsWith('quiz-session')) {
-            sessionStorage.removeItem(key);
-          }
-        });
-        const hiddenInput = document.getElementById('quiz_data');
-        if (hiddenInput) hiddenInput.value = '';
-        _quiz_settings__WEBPACK_IMPORTED_MODULE_5__["default"].closeAllModals();
-        console.log('All quiz data erased.');
-      }
-    });
-
-    // === CONTACTS: ===
-    document.getElementById('contacts')?.addEventListener('click', e => {
-      e.preventDefault();
-      _quiz_settings__WEBPACK_IMPORTED_MODULE_5__["default"].closeAllModals();
-      _quiz_settings__WEBPACK_IMPORTED_MODULE_5__["default"].open('continue');
-    });
-
-    // === SAVE EMAIL: ===
-    document.getElementById('save-email')?.addEventListener('click', e => {
-      e.preventDefault();
-      _quiz_settings__WEBPACK_IMPORTED_MODULE_5__["default"].closeAllModals();
-      const emailInput = document.getElementById('save-user-email');
-      if (!emailInput) return;
-      const email = emailInput.value.trim();
-      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        emailInput.classList.add('error');
-        return;
-      }
-      emailInput.classList.remove('error');
-      localStorage.setItem('quiz_user_email', email);
-      console.log('Email saved without sending:', email);
-    });
-  }
-});
-
-/***/ }),
-
-/***/ "./source/js/components/select.js":
-/*!****************************************!*\
-  !*** ./source/js/components/select.js ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _functions_scripts_select__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/scripts/select */ "./source/js/functions/scripts/select.js");
-
-document.addEventListener('DOMContentLoaded', () => {
-  const selects = document.querySelectorAll('.default-select');
-  selects.forEach(function (select) {
-    const isMultiple = select.classList.contains('multiple');
-    const customSelect = new _functions_scripts_select__WEBPACK_IMPORTED_MODULE_0__["default"](select, {
-      mode: isMultiple ? 'multiple' : 'single',
-      placeholder: 'Select option',
-      name: select.getAttribute('data-name') || '',
-      hideOnSelect: !isMultiple,
-      hideOnClear: isMultiple,
-      showRemoveButton: isMultiple
-    });
-    select.CustomSelectInstance = customSelect;
-    if (select.getAttribute('data-additional')) {
-      customSelect.onSelect(value => {
-        document.querySelector(`[data-target='${select.getAttribute('data-additional')}']`).innerHTML = value;
-      });
-    }
-  });
-});
-
-/***/ }),
-
 /***/ "./source/js/components/sliders.js":
 /*!*****************************************!*\
   !*** ./source/js/components/sliders.js ***!
   \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.mjs");
 /* harmony import */ var swiper_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/modules */ "./node_modules/swiper/modules/index.mjs");
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const mainSliders = document.querySelectorAll('.hero-slider');
-  mainSliders.forEach(function (slider) {
-    const container = slider.querySelector('.swiper-container');
-    const nextBtn = slider.querySelector(".next");
-    const prevBtn = slider.querySelector(".prev");
-    const mainSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
-      modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.EffectFade, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay],
-      spaceBetween: 0,
-      slidesPerView: 1,
-      effect: 'fade',
-      loop: true,
-      speed: 800,
-      autoplay: {
-        delay: 3500
-      },
+  const mainSwiperBreakPoint = window.matchMedia("(min-width: 1024px)");
+  const reviewSwiperBreakPoint = window.matchMedia("(min-width: 1240px)");
+  const productSlider = document.querySelector(".products-slider");
+  const mainSwiperContainers = document.querySelectorAll(".main-slider .swiper-container");
+  const reviewSwiperContainers = document.querySelectorAll(".review-slider .swiper-container");
+  const mainSwiperInstances = new Map();
+  const reviewSwiperInstances = new Map();
+  function initOrDestroyMainSwipers() {
+    mainSwiperContainers.forEach(container => {
+      const mainSlider = container.closest(".main-slider");
+      const type = mainSlider?.dataset.slider;
+      const paginationEl = mainSlider?.querySelector(".slider-pagination");
+      const isActive = mainSwiperInstances.has(container);
+      if (mainSwiperBreakPoint.matches) {
+        if (isActive) {
+          mainSwiperInstances.get(container).destroy(true, true);
+          mainSwiperInstances.delete(container);
+        }
+      } else {
+        if (!isActive) {
+          const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](container, {
+            modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
+            spaceBetween: 16,
+            loop: false,
+            breakpoints: {
+              0: {
+                slidesPerView: 1
+              },
+              531: {
+                slidesPerView: type === "auto" ? "auto" : 1
+              }
+            },
+            pagination: {
+              el: paginationEl,
+              clickable: true
+            }
+          });
+          mainSwiperInstances.set(container, swiper);
+        }
+      }
+    });
+  }
+  function initOrDestroyReviewSwipers() {
+    reviewSwiperContainers.forEach(container => {
+      const reviewSlider = container.closest(".review-slider");
+      const paginationEl = reviewSlider?.querySelector(".slider-pagination");
+      const isActive = reviewSwiperInstances.has(container);
+      if (reviewSwiperBreakPoint.matches) {
+        if (isActive) {
+          reviewSwiperInstances.get(container).destroy(true, true);
+          reviewSwiperInstances.delete(container);
+        }
+      } else {
+        if (!isActive) {
+          const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](container, {
+            modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination],
+            spaceBetween: 16,
+            loop: false,
+            slidesPerView: "auto",
+            breakpoints: {
+              0: {
+                slidesPerView: 1
+              },
+              531: {
+                slidesPerView: "auto"
+              }
+            },
+            pagination: {
+              el: paginationEl,
+              clickable: true
+            }
+          });
+          reviewSwiperInstances.set(container, swiper);
+        }
+      }
+    });
+  }
+  if (productSlider) {
+    const container = productSlider.querySelector(".swiper-container");
+    const contorls = document.querySelector('.product-controls');
+    const prevBtn = contorls.querySelector(".slider-btn.prev");
+    const nextBtn = contorls.querySelector(".slider-btn.next");
+    const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](container, {
+      modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation],
+      spaceBetween: 16,
+      loop: false,
       navigation: {
         nextEl: nextBtn,
         prevEl: prevBtn
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1
+        },
+        650: {
+          slidesPerView: 2
+        },
+        1100: {
+          slidesPerView: 3
+        }
       }
     });
-  });
-});
-
-/***/ }),
-
-/***/ "./source/js/components/tabs.js":
-/*!**************************************!*\
-  !*** ./source/js/components/tabs.js ***!
-  \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _functions_scripts_tabs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/scripts/tabs */ "./source/js/functions/scripts/tabs.js");
-// import Tabs from '../functions/scripts/tabs';
-
-// --------------- tabs custom function --------------- //
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  window.tabsInstance = new _functions_scripts_tabs__WEBPACK_IMPORTED_MODULE_0__["default"]("[data-tabs-parent]", "data-tab", "data-tab-content");
+  }
+  mainSwiperBreakPoint.addEventListener("change", initOrDestroyMainSwipers);
+  reviewSwiperBreakPoint.addEventListener("change", initOrDestroyReviewSwipers);
+  initOrDestroyMainSwipers();
+  initOrDestroyReviewSwipers();
 });
 
 /***/ }),
@@ -1999,7 +642,6 @@ document.addEventListener("DOMContentLoaded", function () {
   \**********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getAjaxData: () => (/* binding */ getAjaxData)
@@ -2051,7 +693,6 @@ function getAjaxData(url, action) {
   \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   addClassInArray: () => (/* binding */ addClassInArray),
@@ -2303,7 +944,6 @@ const scrollToElement = (element, direction) => {
   \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   disableScroll: () => (/* binding */ disableScroll)
@@ -2332,7 +972,6 @@ const disableScroll = () => {
   \**********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   enableScroll: () => (/* binding */ enableScroll)
@@ -2366,7 +1005,6 @@ const enableScroll = () => {
   \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2538,7 +1176,6 @@ class Accordion {
   \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2654,7 +1291,6 @@ class MobileMenu {
   \*******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   loaderInstanse: () => (/* binding */ loaderInstanse)
@@ -2672,7 +1308,6 @@ const loaderInstanse = function (loader) {
   \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2809,100 +1444,12 @@ class ModalManager {
 
 /***/ }),
 
-/***/ "./source/js/functions/scripts/range.js":
-/*!**********************************************!*\
-  !*** ./source/js/functions/scripts/range.js ***!
-  \**********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-class RangeSlider {
-  constructor(rangeElement) {
-    let valueElement = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
-    let symbol = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
-    let background = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : '#000';
-    this.rangeElement = rangeElement;
-    console.log(this.rangeElement);
-    this.valueElement = valueElement;
-    this.symbol = symbol;
-    this.background = background;
-    this.thumbLabel = rangeElement.closest('.range').querySelector('.range__thumb-label');
-    this.step = parseFloat(this.rangeElement.getAttribute('step')) || 1;
-    this.rangeElement.addEventListener('input', this.updateSlider.bind(this));
-    if (this.valueElement) {
-      this.valueElement.addEventListener('input', this.updateValue.bind(this));
-    }
-    this.init();
-  }
-  init() {
-    requestAnimationFrame(() => this.updateSlider());
-  }
-  formatNumber(value) {
-    return this.symbol + ' ' + Number(value).toLocaleString('ru-RU').replace(/,/g, ' ');
-  }
-  parseNumber(value) {
-    return parseFloat(value.replace(this.symbol, '').replace(/\s/g, '').replace(',', '.'));
-  }
-  generateBackground() {
-    let percentage = (this.rangeElement.value - this.rangeElement.min) / (this.rangeElement.max - this.rangeElement.min) * 100;
-    return `background: linear-gradient(to right, ${this.background} ${percentage}%, transparent ${percentage}%)`;
-  }
-  updateThumbLabel() {
-    if (!this.thumbLabel) return;
-    const value = parseFloat(this.rangeElement.value);
-    this.thumbLabel.textContent = this.formatNumber(value);
-
-    // Ждём, пока текст вставится и элемент реально отрендерится
-    requestAnimationFrame(() => {
-      const rangeWidth = this.rangeElement.offsetWidth;
-      const thumbWidth = parseFloat(getComputedStyle(this.rangeElement).getPropertyValue('--thumb-size')) || 16;
-      const rangeMin = parseFloat(this.rangeElement.min);
-      const rangeMax = parseFloat(this.rangeElement.max);
-      const percentage = (value - rangeMin) / (rangeMax - rangeMin);
-      const left = percentage * (rangeWidth - thumbWidth) + thumbWidth / 2;
-      const tooltipOffset = this.thumbLabel.offsetWidth / 2;
-      this.thumbLabel.style.left = `${left - tooltipOffset}px`;
-    });
-  }
-  updateSlider() {
-    const value = this.rangeElement.value;
-    if (this.valueElement) {
-      this.valueElement.value = this.formatNumber(value);
-    }
-    this.rangeElement.setAttribute('value', value);
-    this.rangeElement.style = this.generateBackground();
-    this.updateThumbLabel();
-  }
-  updateValue() {
-    let newValue = this.parseNumber(this.valueElement.value);
-    if (isNaN(newValue) || newValue === '') {
-      newValue = parseFloat(this.rangeElement.min);
-    }
-
-    // Применяем step
-    const rangeMin = parseFloat(this.rangeElement.min);
-    const rangeMax = parseFloat(this.rangeElement.max);
-    newValue = Math.round((newValue - rangeMin) / this.step) * this.step + rangeMin;
-    newValue = Math.max(rangeMin, Math.min(newValue, rangeMax));
-    this.rangeElement.value = newValue;
-    this.updateSlider();
-  }
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RangeSlider);
-
-/***/ }),
-
 /***/ "./source/js/functions/scripts/select.js":
 /*!***********************************************!*\
   !*** ./source/js/functions/scripts/select.js ***!
   \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3123,63 +1670,12 @@ class CustomSelect {
 
 /***/ }),
 
-/***/ "./source/js/functions/scripts/tabs.js":
-/*!*********************************************!*\
-  !*** ./source/js/functions/scripts/tabs.js ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _customFunctions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../customFunctions */ "./source/js/functions/customFunctions.js");
-
-class Tabs {
-  constructor(parentSelector, navAttr, contentAttr) {
-    let activeClass = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : "active";
-    this.parentSelector = parentSelector;
-    this.navAttr = navAttr;
-    this.contentAttr = contentAttr;
-    this.activeClass = activeClass;
-    this.tabsParents = document.querySelectorAll(this.parentSelector);
-    this.init();
-  }
-  init() {
-    this.tabsParents.forEach(tabParent => {
-      if (tabParent) {
-        const tabNav = [...tabParent.querySelectorAll(`[${this.navAttr}]`)];
-        const tabContent = [...tabParent.querySelectorAll(`[${this.contentAttr}]`)];
-        tabNav.forEach(nav => {
-          nav.addEventListener("click", e => {
-            e.preventDefault();
-            const activeTabAttr = e.target.getAttribute(`${this.navAttr}`);
-            (0,_customFunctions__WEBPACK_IMPORTED_MODULE_0__.removeClassInArray)(tabNav, this.activeClass);
-            (0,_customFunctions__WEBPACK_IMPORTED_MODULE_0__.removeClassInArray)(tabContent, this.activeClass);
-            (0,_customFunctions__WEBPACK_IMPORTED_MODULE_0__.addCustomClass)(tabParent.querySelector(`[${this.navAttr}="${activeTabAttr}"]`), this.activeClass);
-            (0,_customFunctions__WEBPACK_IMPORTED_MODULE_0__.addCustomClass)(tabParent.querySelector(`[${this.contentAttr}="${activeTabAttr}"]`), this.activeClass);
-          });
-        });
-      }
-    });
-  }
-  reinit() {
-    this.tabsParents = document.querySelectorAll(this.parentSelector);
-    this.init();
-  }
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Tabs);
-
-/***/ }),
-
 /***/ "./source/js/main.js":
 /*!***************************!*\
   !*** ./source/js/main.js ***!
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_components.js */ "./source/js/_components.js");
 
@@ -3200,16 +1696,13 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			id: moduleId,
-/******/ 			loaded: false,
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Flag the module as loaded
-/******/ 		module.loaded = true;
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -3251,48 +1744,6 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/create fake namespace object */
-/******/ 	(() => {
-/******/ 		var getProto = Object.getPrototypeOf ? (obj) => (Object.getPrototypeOf(obj)) : (obj) => (obj.__proto__);
-/******/ 		var leafPrototypes;
-/******/ 		// create a fake namespace object
-/******/ 		// mode & 1: value is a module id, require it
-/******/ 		// mode & 2: merge all properties of value into the ns
-/******/ 		// mode & 4: return value when already ns object
-/******/ 		// mode & 16: return value when it's Promise-like
-/******/ 		// mode & 8|1: behave like require
-/******/ 		__webpack_require__.t = function(value, mode) {
-/******/ 			if(mode & 1) value = this(value);
-/******/ 			if(mode & 8) return value;
-/******/ 			if(typeof value === 'object' && value) {
-/******/ 				if((mode & 4) && value.__esModule) return value;
-/******/ 				if((mode & 16) && typeof value.then === 'function') return value;
-/******/ 			}
-/******/ 			var ns = Object.create(null);
-/******/ 			__webpack_require__.r(ns);
-/******/ 			var def = {};
-/******/ 			leafPrototypes = leafPrototypes || [null, getProto({}), getProto([]), getProto(getProto)];
-/******/ 			for(var current = mode & 2 && value; typeof current == 'object' && !~leafPrototypes.indexOf(current); current = getProto(current)) {
-/******/ 				Object.getOwnPropertyNames(current).forEach((key) => (def[key] = () => (value[key])));
-/******/ 			}
-/******/ 			def['default'] = () => (value);
-/******/ 			__webpack_require__.d(ns, def);
-/******/ 			return ns;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -3303,26 +1754,6 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 				}
 /******/ 			}
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/ensure chunk */
-/******/ 	(() => {
-/******/ 		// The chunk loading function for additional chunks
-/******/ 		// Since all referenced chunks are already included
-/******/ 		// in this file, this function is empty here.
-/******/ 		__webpack_require__.e = () => (Promise.resolve());
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -3338,15 +1769,6 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/node module decorator */
-/******/ 	(() => {
-/******/ 		__webpack_require__.nmd = (module) => {
-/******/ 			module.paths = [];
-/******/ 			if (!module.children) module.children = [];
-/******/ 			return module;
 /******/ 		};
 /******/ 	})();
 /******/ 	

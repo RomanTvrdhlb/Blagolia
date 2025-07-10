@@ -1,3 +1,135 @@
 /* stylelint-disable */
 /* stylelint-disable */
+.section-request {
+  padding: clamp(24px, 3.3333vw, 48px) 0 clamp(18px, 4.4444vw, 64px);
+  background: rgba(217, 219, 218, 0.55);
+  margin-bottom: 0 !important;
+}
+.section-request__inner .editor .wpcf7 {
+  max-width: 952px;
+  align-self: center;
+  margin-top: clamp(20px, 2.7778vw, 40px);
+}
+.section-request .main-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.section-request .main-form label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+.section-request .main-form label > span:not([class]) {
+  padding-left: 16px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--neutral-700);
+  padding-left: 16px;
+  order: -1;
+}
+.section-request .main-form label > span:not([class]) i {
+  font-family: var(--font3);
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+  color: var(--error-bg);
+  margin-left: 4px;
+  display: inline-block;
+  position: relative;
+  top: -5px;
+}
+.section-request .main-form label input {
+  border: 1px solid var(--neutral-300);
+  padding: 0px 10px 0px 16px;
+  width: 100%;
+  height: 50px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--neutral-700);
+  transition: all 0.3s;
+}
+.section-request .main-form label input::-moz-placeholder {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--neutral-500);
+}
+.section-request .main-form label input::placeholder {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--neutral-500);
+}
+.section-request .main-form label input:focus {
+  border-color: var(--main-green);
+}
+.section-request .main-form label textarea {
+  border: 1px solid var(--neutral-300);
+  padding: 0px 10px 0px 16px;
+  width: 100%;
+  height: 50px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--neutral-700);
+  min-height: 150px;
+  transition: all 0.3s;
+  background: transparent;
+}
+.section-request .main-form label textarea:focus {
+  border-color: var(--main-green);
+}
+.section-request .main-form label textarea::-moz-placeholder {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--neutral-500);
+}
+.section-request .main-form label textarea::placeholder {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--neutral-500);
+}
+.section-request .main-form .main-button {
+  width: 100%;
+  position: relative;
+  max-width: 245px;
+  margin-top: clamp(12px, 2.7778vw, 40px);
+  align-self: center;
+}
+.section-request .main-form .wpcf7 {
+  position: relative;
+  z-index: 1;
+}
+.section-request .main-form .wpcf7-form-control-wrap {
+  display: flex;
+}
+.section-request .main-form .wpcf7-spinner {
+  display: none;
+}
+.section-request .main-form .wpcf7-not-valid-tip {
+  bottom: 2px;
+  left: 20px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.2s;
+  transition-delay: 0.2s;
+}
+.section-request .main-form .wpcf7-response-output {
+  display: none;
+  position: absolute;
+}
 /*# sourceMappingURL=section-request.css.map */

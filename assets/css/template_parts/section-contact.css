@@ -1,3 +1,107 @@
 /* stylelint-disable */
 /* stylelint-disable */
+.section-contact {
+  padding-bottom: var(--default-padding);
+}
+.section-contact__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--default-gap);
+}
+.section-contact__inner .editor {
+  max-width: 900px;
+  align-self: center;
+}
+.section-contact__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px var(--gap);
+}
+.section-contact__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px var(--gap);
+}
+.section-contact__image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.section-contact__image img,
+.section-contact__image picture {
+  height: 100%;
+  width: 100%;
+}
+.section-contact__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: var(--gap);
+  border: 1px solid var(--neutral-200);
+  width: 100%;
+  height: 100%;
+}
+.section-contact__item:first-of-type a {
+  max-width: 230px;
+}
+.section-contact__item a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: clamp(16px, 1.76vw, 18px);
+  line-height: 150%;
+  color: var(--neutral-600);
+  transition: all 0.3s;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.section-contact__item a b {
+  color: var(--neutral-600);
+  font-weight: 500;
+}
+.section-contact__item p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: clamp(16px, 1.25vw, 18px);
+  line-height: 150%;
+  color: var(--neutral-600);
+}
+@media (min-width: 576px) {
+  .section-contact__item .pretitle {
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 1024px) {
+  .section-contact__box {
+    grid-template-columns: 100%;
+  }
+  .section-contact__image {
+    max-height: 400px;
+    order: -1;
+  }
+}
+@media (max-width: 1024px) and (min-width: 576px) {
+  .section-contact__item {
+    gap: 24px;
+    padding: 24px;
+  }
+}
+@media (max-width: 575px) {
+  .section-contact__item a {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+@media (hover: hover) {
+  .section-contact__item a:hover {
+    color: var(--neutral-900);
+  }
+}
+@media (hover: none) {
+  .section-contact__item a:active {
+    color: var(--neutral-900);
+  }
+}
 /*# sourceMappingURL=section-contact.css.map */

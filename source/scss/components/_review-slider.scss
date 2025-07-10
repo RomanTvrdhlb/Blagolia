@@ -1,0 +1,38 @@
+
+@use "../mixins/breakpoint" as *;
+
+@mixin review-slider{
+    .review-slider{
+        width: 100%;
+
+        .swiper-container{
+            width: 100%;
+        }
+
+        .slider-pagination{
+            @include for-laptop{
+                display: none;
+            }
+        }
+
+        .swiper-wrapper{
+            @include for-laptop{
+                transform: none !important;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: var(--gap);
+            }
+        }
+
+        .swiper-slide{
+            @include for-laptop{
+                width: 100%;
+                height: 100%;
+            }
+
+            @include laptop{
+                width: 358px;
+            }
+        }
+    }
+}

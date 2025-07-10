@@ -7,19 +7,20 @@
 
   //--rem-function: calc(100vw / var(--frame-width));
 
-  --error-bg: #d01f1f;
-  --body-bg: #ffffff;
+  --error-bg: #f00;
+  --body-bg:#fefefe;
   --body-font-size: 16px;
-  --content-width: 1240px;
+  --content-width: 1440px;
   --content-width-mode: 1920px;
-  --container-offset: clamp(15px, 2.083vw, 40px);
+  --container-offset: clamp(16px, 2.7778vw, 40px);
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   --container-width-mode: calc(var(--content-width-mode) + (var(--container-offset) * 2));
 
   // --------------- default JS variables ---------------
-
+  --default-padding: clamp(72px, 10.4167vw, 150px);
+  --default-gap: clamp(36px, 4.4444vw, 64px);
+  --gap: clamp(16px, 1.6667vw, 24px);
   //--header-height: 83px;
-  --btn-size: clamp(40px, 6.52vw, 57px);
 
   //@include laptop {
   //  --header-height: 78px;
@@ -33,6 +34,18 @@
   //  --header-height: 64px;
   //}
 
+  // --------------- figma vars -----------------------------
+  --neutral-100: #f2f3f2;
+	--neutral-200: #d9dbda;
+	--neutral-300: #cccfcd;
+	--neutral-400: #bfc3c1;
+	--neutral-500: #8c938f;
+	--neutral-600: #59635d;
+	--neutral-700: #333f38;
+	--neutral-800: #19271f;
+	--neutral-900: #000f06;
+	--main-green: #007833;
+	--main-yellow: #fcc833;
 
   // --------------- default scroll variables ---------------
   --scrollbar-thumb: #1397D6;
@@ -50,14 +63,15 @@
 
   // --------------- default font-family variables ---------------
 
-  --font-family: "RobotoCondensed-Bold"; // var(--font-family);
-  --font-family2: "EuropeExtBold", sans-serif; // var(--font-family2);
-  --font-family3: "MyriadPro-Regular", sans-serif; // var(--font-family3);
+  --font-family: "Gilroy"; // var(--font-family);
+  --font-family2: "Gilroy-Medium", sans-serif; // var(--font-family2);
+  --font-family3: "TT-Firs", sans-serif; // var(--font-family3);
+  --font3: "Poppins", sans-serif; // var(--font3);
 
   // --------------- default text color variables ---------------
   --cl-a: #1b1b1b; // var(--cl-a);
   --cl-b: #ffffff; // var(--cl-b);
-  --cl-c: #007833; // var(--cl-c);
+  --cl-c: #fcc833; // var(--cl-c);
 
 
   //-----------------custom loader----------------------------------

@@ -1,0 +1,14 @@
+@mixin products-slider{
+    .products-slider{
+           width: 100%;
+
+        .swiper-container{
+            width: 100%;
+        }
+
+        .swiper-slide{
+           height: 100%;
+            display: flex;
+        }
+    }
+}

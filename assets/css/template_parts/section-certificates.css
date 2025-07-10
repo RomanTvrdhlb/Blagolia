@@ -1,3 +1,83 @@
-
-/*# sourceMappingURL=to.css.map */
+/* stylelint-disable */
+/* stylelint-disable */
+/* stylelint-disable */
+.section-certificates {
+  padding-bottom: var(--default-padding);
+}
+.section-certificates__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--default-gap);
+}
+.section-certificates__inner .editor {
+  max-width: 900px;
+  align-self: center;
+}
+.section-certificates__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--gap);
+}
+.section-certificates .certificate {
+  padding: clamp(8px, 1.6667vw, 24px);
+  border: 1px solid var(--neutral-300);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(8px, 1.1111vw, 16px);
+}
+.section-certificates .certificate__thumb {
+  display: flex;
+  width: 100%;
+  height: clamp(220px, 29.1667vw, 420px);
+  overflow: hidden;
+}
+.section-certificates .certificate__thumb img,
+.section-certificates .certificate__thumb picture {
+  transition: all 0.3s;
+  width: 100%;
+  height: 100%;
+}
+.section-certificates .certificate__title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: clamp(16px, 2.73vw, 28px);
+  text-align: center;
+  color: var(--neutral-700);
+  line-height: 100%;
+}
+.section-certificates .certificate p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: clamp(12px, 1.76vw, 18px);
+  line-height: 150%;
+  text-align: center;
+  color: var(--neutral-600);
+  max-width: 280px;
+}
+@media (min-width: 576px) {
+  .section-certificates .certificate__thumb {
+    margin-bottom: clamp(8px, 1.1111vw, 16px);
+  }
+}
+@media (max-width: 1024px) {
+  .section-certificates__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-certificates .certificate__thumb {
+    height: clamp(220px, 46.88vw, 480px);
+  }
+}
+@media (hover: hover) {
+  .section-certificates .certificate:hover .certificate__thumb img, .section-certificates .certificate:hover .certificate__thumb picture {
+    transform: scale(1.04);
+  }
+}
+@media (hover: none) {
+  .section-certificates .certificate:active .certificate__thumb img, .section-certificates .certificate:active .certificate__thumb picture {
+    transform: scale(1.04);
+  }
+}
 /*# sourceMappingURL=section-certificates.css.map */

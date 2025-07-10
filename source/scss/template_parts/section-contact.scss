@@ -2,5 +2,113 @@
 @use "../mixins/disable-mob-hover" as *;
 
 .section-contact {
+  padding-bottom: var(--default-padding);
 
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--default-gap);
+
+    .editor {
+      max-width: 900px;
+      align-self: center;
+    }
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px var(--gap);
+
+    @include tablet {
+      grid-template-columns: 100%;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px var(--gap);
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    img,
+    picture {
+      height: 100%;
+      width: 100%;
+    }
+
+    @include tablet {
+      max-height: 400px;
+      order: -1;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: var(--gap);
+    border: 1px solid var(--neutral-200);
+    width: 100%;
+    height: 100%;
+
+    &:first-of-type {
+      a {
+        max-width: 230px;
+      }
+    }
+
+    .pretitle {
+      @include for-mobile {
+        margin-bottom: 8px;
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: clamp(16px, 1.76vw, 18px);
+      line-height: 150%;
+      color: var(--neutral-600);
+      transition: all 0.3s;
+      width: fit-content;
+
+      @include hover {
+        color: var(--neutral-900);
+      }
+
+      b {
+        color: var(--neutral-600);
+        font-weight: 500;
+      }
+
+      @include mobile {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+
+    p {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: clamp(16px, 1.25vw, 18px);
+      line-height: 150%;
+      color: var(--neutral-600);
+    }
+
+    @include tablet {
+      @include for-mobile {
+        gap: 24px;
+        padding: 24px;
+      }
+    }
+  }
 }

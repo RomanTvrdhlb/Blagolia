@@ -7,42 +7,41 @@
 	if ( ! $shower ) : ?>
         <section class="section-partnership" <?php if (get_sub_field( 'section_id' )) : ?> id="<?php echo get_sub_field( 'section_id' ); ?>" <?php endif; ?>>
             <div class="container">
-                <div class="section-team__inner">
+                <div class="section-partnership__inner">
                     <?php if (!empty($editor)) : ?>
                         <div class="editor">
                             <?= $editor; ?>
                         </div>
                     <?php endif; ?>
 
+                       <ul class="section-partnership__list">
                     <?php foreach ( $list as $index => $item ) :
                         $icon = $item['icon'];
                         $title = $item['title'];
                         $text = $item['text']; ?>
-                        <ul class="list">
-                            <li class="list__item">
-                                <?= display_image( $icon, 27, 36, 'list__item-icon' ); ?>
+                     
+                            <li class="section-partnership__item">
+                                <?= display_image( $icon, 38, 36, 'section-partnership__icon' ); ?>
 
-                                <div class="list__item">
-                                    <div class="list__item">
                                         <?php if ( $title ) : ?>
-                                            <span class="list__item-title"><?= $title; ?></span>
+                                            <span class="pretitle"><?= $title; ?></span>
                                         <?php endif; ?>
 
                                         <?php if ( $text ) : ?>
-                                            <span class="list__item-text"><?= $text; ?></span>
+                                            <p><?= $text; ?></p>
                                         <?php endif; ?>
-                                    </div>
-                                </div>
+                                 
                             </li>
-                        </ul>
+                   
                     <?php endforeach; ?>
+                         </ul>
 
                     <?php if ($link) :
                             $link_url    = $link['url'];
                             $link_title  = $link['title'];
                             $link_target = $link['target'] ?: '_self';
                         ?>
-                            <a class="button button--yellow" href="<?= esc_url($link_url); ?>" target="<?= esc_attr($link_target); ?>">
+                            <a class="main-button" href="<?= esc_url($link_url); ?>" target="<?= esc_attr($link_target); ?>">
                                 <?= esc_html($link_title); ?>
                             </a>
                     <?php endif; ?>

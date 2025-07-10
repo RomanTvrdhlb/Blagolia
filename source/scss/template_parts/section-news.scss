@@ -1,6 +1,15 @@
 @use '../mixins/breakpoint' as *;
 @use '../mixins/mini' as *;
+@use '../components/slider' as *;
+@use '../components/post-card' as *;
 
 .section-news {
-
+padding-bottom: var(--default-padding);
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        gap: var(--default-gap)
+    }
+    @include post-card;
+    @include main-slider;
 }

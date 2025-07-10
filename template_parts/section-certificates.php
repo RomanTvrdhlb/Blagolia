@@ -22,7 +22,7 @@ if ( ! $shower ) : ?>
                 'order'          => 'DESC',
             ) );
             if ( $certificates_query->have_posts() ) : ?>
-                <ul class="section-certificates__items">
+                <ul class="section-certificates__list">
                     <?php while ( $certificates_query->have_posts() ) : $certificates_query->the_post(); ?>
                         <li>
                             <div class="certificate">
@@ -32,7 +32,7 @@ if ( ! $shower ) : ?>
                                     <?php endif; ?>
                                 </div>
                                 <span class="certificate__title"><?php the_title(); ?></span>
-                                <p class="certificate__excerpt"><?php the_excerpt(); ?></p>
+                               <?php the_excerpt(); ?>
                             </div>
                         </li>
                     <?php endwhile; ?>

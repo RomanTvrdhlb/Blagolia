@@ -1,6 +1,16 @@
 @use "../mixins/breakpoint" as *;
 @use "../mixins/disable-mob-hover" as *;
+@use "../components/review-card" as *;
+@use "../components/review-slider" as *;
 
 .section-review {
-
+padding-bottom: var(--default-padding);
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        gap: var(--default-gap)
+    }
+   
+    @include review-card;
+    @include review-slider;
 }

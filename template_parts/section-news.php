@@ -7,13 +7,13 @@
 
         <section class="section-news" >
             <div class="container">
-                <div class="section-advantage__inner">
+                <div class="section-news__inner">
 					<div class="editor">
                         <?=$editor?>
                     </div>
 
                     <?php if (!empty($posts)) : ?>
-                        <div class="section-products__slider">
+                        <div class="main-slider" data-slider="auto">
                             <div class="swiper-container">
                                 <ul class="swiper-wrapper">
                                     <?php foreach ($posts as $post_id) : ?>
@@ -23,6 +23,7 @@
                                     <?php endforeach; ?>
                                 </ul>
                             </div>
+                            <div class="slider-pagination"></div>
                         </div>
                     <?php endif; ?>
                 </div>
