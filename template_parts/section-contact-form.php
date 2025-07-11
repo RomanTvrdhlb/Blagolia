@@ -4,9 +4,9 @@
 	$editor = get_sub_field( 'editor' );
 
 	if ( ! $shower ) : ?>
-        <section class="section-contact-form" <?php if (get_sub_field( 'section_id' )) : ?> id="<?php echo get_sub_field( 'section_id' ); ?>" <?php endif; ?>>
+        <section class="section-contact" <?php if (get_sub_field( 'section_id' )) : ?> id="<?php echo get_sub_field( 'section_id' ); ?>" <?php endif; ?>>
             <?php if (!empty($map)) : ?>
-                <div class="section-cta__map">
+                <div class="section-contact__map">
                     <iframe src="<?php echo $map; ?>" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             <?php endif; ?>

@@ -1,5 +1,6 @@
 <?php
     $shower  = get_sub_field( 'shower' );
+    $breadcrumbs = get_sub_field('breadcrumbs');
     $editor  = get_sub_field( 'editor' );
     $box     = get_sub_field( 'box' ); // группа ACF
     $image   = $box['image'] ?? null;  // картинка из группы
@@ -8,6 +9,10 @@
     if ( ! $shower ) : ?>
         <section class="section-about" <?php if ( get_sub_field( 'section_id' ) ) : ?> id="<?php echo esc_attr( get_sub_field( 'section_id' ) ); ?>" <?php endif; ?>>
             <div class="container">
+                <?php if ($breadcrumbs) {
+                    get_breadcrumbs(); // предполагается, что это твоя функция
+                } ?>
+
                 <div class="section-about__inner">
                     <div class="editor">
                         <?= $editor ?>

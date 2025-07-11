@@ -1,6 +1,20 @@
 @use '../mixins/breakpoint' as *;
 @use '../mixins/mini' as *;
 
-.section-contact-form {
+.section-contact {
+    padding-bottom: var(--default-padding);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(72px, 10.4167vw, 150px);
 
+
+    &__map {
+        display: flex;
+        height: 400px;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
 }

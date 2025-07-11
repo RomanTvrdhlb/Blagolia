@@ -555,7 +555,7 @@
   top: 0;
   position: fixed;
   z-index: 20;
-  background-color: var(--cl-c);
+  background-color: var(--cl-d);
 }
 .header__inner {
   padding: clamp(15px, 2.61vw, 25px) 0;
@@ -592,7 +592,7 @@
 
 .footer {
   position: relative;
-  background-color: var(--cl-c);
+  background-color: var(--cl-d);
 }
 .footer__inner {
   display: grid;
@@ -611,6 +611,61 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
+}
+
+.breadcrumbs {
+  position: relative;
+  width: 100%;
+  padding: 50px 0;
+}
+.breadcrumbs ul {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.breadcrumbs li {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.breadcrumbs li span {
+  display: inline-block;
+  color: var(--cl-g);
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: clamp(12px, 1.197vw, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.breadcrumbs li:not(:last-child)::after {
+  content: "\e902";
+  color: inherit;
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: clamp(12px, 1.197vw, 16px);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.breadcrumbs li a {
+  transition: all 0.3s;
+  display: inline-block;
+  color: var(--cl-i);
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: clamp(12px, 1.197vw, 16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.breadcrumbs li a:hover {
+  color: var(--cl-h);
 }
 @media (min-width: 576px) {
   .footer .logo {

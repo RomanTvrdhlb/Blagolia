@@ -1,3 +1,17 @@
 /* stylelint-disable */
 /* stylelint-disable */
+.section-contact {
+  padding-bottom: var(--default-padding);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(72px, 10.4167vw, 150px);
+}
+.section-contact__map {
+  display: flex;
+  height: 400px;
+}
+.section-contact__map iframe {
+  width: 100%;
+  height: 100%;
+}
 /*# sourceMappingURL=section-contact-form.css.map */

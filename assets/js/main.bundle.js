@@ -10,12 +10,14 @@
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_dinamicHeight__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/dinamicHeight */ "./source/js/components/dinamicHeight.js");
-/* harmony import */ var _components_modals__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/modals */ "./source/js/components/modals.js");
-/* harmony import */ var _components_form_validate__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/form-validate */ "./source/js/components/form-validate.js");
-/* harmony import */ var _components_acc__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/acc */ "./source/js/components/acc.js");
-/* harmony import */ var _components_post_filter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/post-filter */ "./source/js/components/post-filter.js");
-/* harmony import */ var _components_sliders__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/sliders */ "./source/js/components/sliders.js");
-/* harmony import */ var _components_mobile_menu__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/mobile-menu */ "./source/js/components/mobile-menu.js");
+/* harmony import */ var _components_fancybox__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/fancybox */ "./source/js/components/fancybox.js");
+/* harmony import */ var _components_modals__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/modals */ "./source/js/components/modals.js");
+/* harmony import */ var _components_form_validate__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/form-validate */ "./source/js/components/form-validate.js");
+/* harmony import */ var _components_acc__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/acc */ "./source/js/components/acc.js");
+/* harmony import */ var _components_post_filter__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/post-filter */ "./source/js/components/post-filter.js");
+/* harmony import */ var _components_sliders__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/sliders */ "./source/js/components/sliders.js");
+/* harmony import */ var _components_mobile_menu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/mobile-menu */ "./source/js/components/mobile-menu.js");
+
 
 
 // import './components/select';
@@ -137,6 +139,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /***/ }),
 
+/***/ "./source/js/components/fancybox.js":
+/*!******************************************!*\
+  !*** ./source/js/components/fancybox.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fancyapps/ui */ "./node_modules/@fancyapps/ui/dist/index.esm.js");
+
+document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll('[data-fancybox]');
+  const players = document.querySelectorAll('[data-player]');
+  if (items) {
+    _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox.bind('[data-fancybox]', {});
+  }
+  if (players) {
+    _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox.bind('[data-player]', {});
+  }
+});
+
+/***/ }),
+
 /***/ "./source/js/components/form-validate.js":
 /*!***********************************************!*\
   !*** ./source/js/components/form-validate.js ***!
@@ -197,7 +221,6 @@ document.addEventListener('DOMContentLoaded', function () {
   };
   mask('input[type="tel"]', '+1 (___) ___ ____');
   const formWrappers = document.querySelectorAll('.wpcf7');
-  console.log(formWrappers);
   for (const formWrapper of formWrappers) {
     const formSubmitBtn = formWrapper.querySelector('button[type="submit"]');
     formWrapper.setAttribute('data-loader', false);
@@ -215,7 +238,6 @@ document.addEventListener('DOMContentLoaded', function () {
           // loaderInstanse(formWrapper, true);
         });
       }
-      console.log(formWrapper);
       formWrapper.addEventListener('wpcf7invalid', function (event) {
         setTimeout(function () {
           (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_0__.addCustomClass)(formWrapper, 'loaded');

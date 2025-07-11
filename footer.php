@@ -16,19 +16,19 @@ if ($footer) {
     <div class="container">
         <div class="footer__inner">
             <div class="footer__box">
-                <a class="footer__logo" href="<?php echo home_url(); ?>" aria-label="logo">
+                <a class="logo" href="<?php echo home_url(); ?>" aria-label="logo">
                     <?php display_image($logo, 285, 95, ''); ?>
                 </a>
 
                 <?php if ($text) : ?>
-                    <span class="team-list__name"><?= esc_html($text); ?></span>
+                    <span class="footer__name"><?= esc_html($text); ?></span>
                 <?php endif; ?>
             </div>
 
             <?php wp_nav_menu(array(
                 'theme_location' => 'footer_nav',
                 'container' => 'nav',
-                'container_class' => 'main-nav',
+                'container_class' => 'footer-nav',
             )); ?>
 
             <div class="footer__links">
@@ -37,8 +37,9 @@ if ($footer) {
                     $email_title = $email['title'];
                     $email_target = $email['target'] ?? '_self';
                 ?>
-                    <a class="trigger-button" href="<?php echo esc_url($email_url); ?>"
+                    <a class="footer__link" href="<?php echo esc_url($email_url); ?>"
                         target="<?php echo esc_attr($email_target); ?>">
+                        <?= sprite( '16', '16', 'Email') ?>
                         <span><?php echo esc_html($email_title); ?></span>
                     </a>
                 <?php endif; ?>
@@ -48,14 +49,18 @@ if ($footer) {
                     $tel_title = $tel['title'];
                     $tel_target = $tel['target'] ?? '_self';
                 ?>
-                    <a class="trigger-button" href="<?php echo esc_url($tel_url); ?>"
+                    <a class="footer__link" href="<?php echo esc_url($tel_url); ?>"
                         target="<?php echo esc_attr($tel_target); ?>">
+                        <?= sprite( '16', '16', 'Phone') ?>
                         <span><?php echo esc_html($tel_title); ?></span>
                     </a>
                 <?php endif; ?>
 
                 <?php if ($worktime) : ?>
-                    <span class="team-list__name"><?= esc_html($worktime); ?></span>
+                    <span class="footer__link">
+                        <?= sprite( '16', '16', 'Clock') ?>
+                        <?= esc_html($worktime); ?>
+                    </span>
                 <?php endif; ?>
             </div>
         </div>

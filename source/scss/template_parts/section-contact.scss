@@ -63,10 +63,28 @@
       }
     }
 
+    &:last-of-type {
+      a {
+        grid-column: 1 / -1;
+      }
+    }
+
     .pretitle {
       @include for-mobile {
         margin-bottom: 8px;
       }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    li {
+      display: grid;
+      grid-template-columns: minmax(160px, auto) 1fr;
+      grid-gap: 16px;
     }
 
     a {
@@ -83,11 +101,6 @@
 
       @include hover {
         color: var(--neutral-900);
-      }
-
-      b {
-        color: var(--neutral-600);
-        font-weight: 500;
       }
 
       @include mobile {
