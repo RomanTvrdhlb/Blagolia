@@ -147,7 +147,7 @@
   --neutral-900: #000f06;
   --main-green: #007833;
   --main-yellow: #fcc833;
-  --scrollbar-thumb: #1397D6;
+  --scrollbar-thumb: #fcc833;
   --scrollbar-track: rgba(0, 0, 0, 0.07);
   --scrollbar-track-hover: transparent;
   --overlay-bg: rgba(0, 0, 0, 0.5);
@@ -439,6 +439,18 @@ h4,
   opacity: 0.7;
 }
 
+.logo {
+  width: clamp(97px, 12.1528vw, 175px);
+  max-height: 36px;
+  height: auto;
+  display: flex;
+}
+.logo img,
+.logo svg {
+  width: 100%;
+  height: auto;
+}
+
 /* stylelint-disable */
 .main-button {
   max-width: 400px;
@@ -461,6 +473,11 @@ h4,
 }
 .main-button--transparent {
   color: var(--main-yellow);
+  background: transparent;
+}
+.main-button--white {
+  color: var(--neutral-100);
+  border-color: var(--neutral-100);
   background: transparent;
 }
 
@@ -501,6 +518,11 @@ h4,
   .editor .wpcf7 {
     max-width: 580px;
     margin-top: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  :root {
+    --container-offset: 16px;
   }
 }
 @media (max-width: 767px) {
@@ -545,6 +567,12 @@ h4,
     color: var(--neutral-700);
     box-shadow: 0 8px 16px rgba(252, 200, 51, 0.3);
   }
+  .main-button--white:hover {
+    background: var(--main-yellow);
+    border-color: var(--main-yellow);
+    color: var(--neutral-700);
+    box-shadow: 0 8px 16px rgba(252, 200, 51, 0.3);
+  }
   .telegram-btn:hover {
     background-color: var(--cl-j);
   }
@@ -559,6 +587,12 @@ h4,
   }
   .main-button--transparent:active {
     background: var(--main-yellow);
+    color: var(--neutral-700);
+    box-shadow: 0 8px 16px rgba(252, 200, 51, 0.3);
+  }
+  .main-button--white:active {
+    background: var(--main-yellow);
+    border-color: var(--main-yellow);
     color: var(--neutral-700);
     box-shadow: 0 8px 16px rgba(252, 200, 51, 0.3);
   }

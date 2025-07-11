@@ -1,10 +1,10 @@
 /* stylelint-disable */
 
 @mixin burger {
-  --burger-width: 28px;
-  --burger-height: 38px;
+  --burger-width: 24px;
+  --burger-height: 36px;
   --burger-line-height: 2px;
-  --border-radius: 0;
+  --border-radius: 4px;
 
   position: relative;
   border: none;
@@ -46,10 +46,6 @@
     transform: translate(-50%,-50%);
     transition: transform 0.3s ease-in-out, opacity .5s, background 0.3s ease-in-out;
     border-radius: var(--border-radius);
-  }
-
-  &:hover{
-   opacity: .7;
   }
 
   &.active {

@@ -1,17 +1,8 @@
-@use '../mixins/breakpoint' as *;
-@use '../mixins/burger' as *;
-@use '../mixins/disable-mob-hover' as *;
+@use "../mixins/breakpoint" as *;
+@use "../mixins/burger" as *;
+@use "../mixins/disable-mob-hover" as *;
 @use "../mixins/mini" as *;
-@use '../components/main-components/main-nav' as *;
-
-@keyframes boxShadow {
-  0% {
-	box-shadow: 0px 10px 25px -3px #363F4D00;
-  }
-  100% {
-	box-shadow: 0px 10px 25px -3px #363F4D26;
-  }
-}
+@use "../components/main-components/main-nav" as *;
 
 .header {
   left: 0;
@@ -19,82 +10,75 @@
   top: 0;
   position: fixed;
   z-index: 20;
-  background-color: var(--cl-c);
-
+  background: var(--main-green);
+  transition: box-shadow .3s;
+  &.sticky{
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, .2);
+  }
 
   &__inner {
-	padding: clamp(15px, 2.61vw, 25px) 0;
-	display: grid;
-	grid-template-columns: clamp(50px, 13.04vw, 195px) 1fr auto;
-	align-items: center;
-	gap: clamp(20px, 2.61vw, 45px);
+    padding: clamp(16px, 1.6667vw, 24px) 0;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: clamp(20px, 4.0972vw, 59px);
 
-	@include tablet {
-	  grid-template-columns: auto clamp(110px, 25.42vw,195px) 1fr auto;
-	}
+    & > .main-nav {
+      @include tablet {
+        display: none;
+      }
+    }
+
+    @include laptop {
+      gap: 32px;
+    }
+
+    @include tablet {
+      padding: 4px 0;
+      grid-template-columns: auto 1fr;
+    }
   }
 
-  &__wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap: 20px;
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 
-	@include tablet {
-	  overflow-y: auto;
-	  width: 100%;
-	  align-items: flex-start;
-	  background-color: var(--cl-a);
-	  flex-direction: column-reverse;
-	  padding: 20px;
-	  gap: 40px;
-	}
+    .main-button {
+      height: clamp(40px, 3.0556vw, 44px);
+      padding: 8px clamp(16px, 1.6667vw, 24px);
+      font-size: clamp(16px, 1.25vw, 18px);
+    }
 
-
-	.trigger-button {
-	  @include tablet {
-		order: -1;
-		width: 100%;
-		margin-top: auto;
-		flex-shrink: 0;
-	  }
-	}
-
-
-  }
-
-  .trigger-button {
-	&.hidden-for-tablet {
-	  @include tablet {
-		margin-left: auto;
-	  }
-
-	  @include mobile {
-		span {
-		  display: none;
-		}
-	  }
-	}
+    @include tablet {
+      display: none;
+    }
   }
 
   .burger {
-	color: var(--cl-h);
+    color: var(--neutral-100);
 
-	&.active {
-	  color: var(--cl-e);
-	}
+    &.active {
+      color: var(--neutral-100);
+    }
 
-	@include for-tablet {
-	  display: none;
-	}
+    @include hover {
+      color: var(--main-yellow);
+    }
 
-	@include tablet {
-	  justify-self: end;
-	  @include burger;
-	}
+    @include for-tablet {
+      display: none;
+    }
+
+    @include tablet {
+      justify-self: end;
+      @include burger;
+    }
+  }
+
+  @include tablet {
+    backdrop-filter: blur(10px);
   }
 
   @include main-nav;
 }
-
-

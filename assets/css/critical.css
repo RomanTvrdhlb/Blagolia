@@ -232,7 +232,7 @@
   --neutral-900: #000f06;
   --main-green: #007833;
   --main-yellow: #fcc833;
-  --scrollbar-thumb: #1397D6;
+  --scrollbar-thumb: #fcc833;
   --scrollbar-track: rgba(0, 0, 0, 0.07);
   --scrollbar-track-hover: transparent;
   --overlay-bg: rgba(0, 0, 0, 0.5);
@@ -523,6 +523,18 @@ h4,
   opacity: 0.7;
 }
 
+.logo {
+  width: clamp(97px, 12.1528vw, 175px);
+  max-height: 36px;
+  height: auto;
+  display: flex;
+}
+.logo img,
+.logo svg {
+  width: 100%;
+  height: auto;
+}
+
 html {
   box-sizing: border-box;
   width: 100%;
@@ -548,7 +560,7 @@ body {
   background-color: var(--body-bg);
   -webkit-text-size-adjust: 100%;
   overflow: hidden;
-  padding-top: calc(var(--header-height));
+  padding-top: var(--header-height);
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100%;
@@ -815,14 +827,14 @@ select:-webkit-autofill:focus {
   }
 }
 @media (min-width: 1025px) {
-  body.home section:first-of-type {
-    padding-top: calc(var(--default-padding) + 30px);
-  }
   .hidden-for-tablet {
     display: none !important;
   }
 }
 @media (max-width: 1024px) {
+  :root {
+    --container-offset: 16px;
+  }
   body {
     grid-template-rows: 1fr auto;
   }

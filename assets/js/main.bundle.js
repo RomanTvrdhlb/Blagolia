@@ -528,6 +528,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const mainSwiperBreakPoint = window.matchMedia("(min-width: 1024px)");
   const reviewSwiperBreakPoint = window.matchMedia("(min-width: 1240px)");
   const productSlider = document.querySelector(".products-slider");
+  const heroSliders = document.querySelectorAll(".section-hero__slider");
   const mainSwiperContainers = document.querySelectorAll(".main-slider .swiper-container");
   const reviewSwiperContainers = document.querySelectorAll(".review-slider .swiper-container");
   const mainSwiperInstances = new Map();
@@ -604,7 +605,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   if (productSlider) {
     const container = productSlider.querySelector(".swiper-container");
-    const contorls = document.querySelector('.product-controls');
+    const contorls = document.querySelector(".product-controls");
     const prevBtn = contorls.querySelector(".slider-btn.prev");
     const nextBtn = contorls.querySelector(".slider-btn.next");
     const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](container, {
@@ -626,6 +627,28 @@ document.addEventListener("DOMContentLoaded", function () {
           slidesPerView: 3
         }
       }
+    });
+  }
+  if (heroSliders) {
+    heroSliders.forEach(function (slider) {
+      const container = slider.querySelector(".swiper-container");
+      const paginationEl = slider.querySelector(".slider-pagination");
+      console.log(paginationEl);
+      const mainSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](container, {
+        modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.EffectFade, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay],
+        spaceBetween: 0,
+        slidesPerView: 1,
+        effect: "fade",
+        loop: true,
+        speed: 800,
+        autoplay: {
+          delay: 3500
+        },
+        pagination: {
+          el: paginationEl,
+          clickable: true
+        }
+      });
     });
   }
   mainSwiperBreakPoint.addEventListener("change", initOrDestroyMainSwipers);

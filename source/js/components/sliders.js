@@ -1,10 +1,11 @@
 import Swiper from "swiper";
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation, EffectFade, Autoplay } from "swiper/modules";
 
 document.addEventListener("DOMContentLoaded", function () {
   const mainSwiperBreakPoint = window.matchMedia("(min-width: 1024px)");
   const reviewSwiperBreakPoint = window.matchMedia("(min-width: 1240px)");
   const productSlider = document.querySelector(".products-slider");
+  const heroSliders = document.querySelectorAll(".section-hero__slider");
 
   const mainSwiperContainers = document.querySelectorAll(
     ".main-slider .swiper-container"
@@ -92,10 +93,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  
   if (productSlider) {
     const container = productSlider.querySelector(".swiper-container");
-    const contorls = document.querySelector('.product-controls');
+    const contorls = document.querySelector(".product-controls");
     const prevBtn = contorls.querySelector(".slider-btn.prev");
     const nextBtn = contorls.querySelector(".slider-btn.next");
 
@@ -118,6 +118,33 @@ document.addEventListener("DOMContentLoaded", function () {
           slidesPerView: 3,
         },
       },
+    });
+  }
+
+  if (heroSliders) {
+    heroSliders.forEach(function (slider) {
+      const container = slider.querySelector(".swiper-container");
+      const paginationEl = slider.querySelector(
+        ".slider-pagination"
+      );
+
+      console.log(paginationEl);
+
+      const mainSwiper = new Swiper(container, {
+        modules: [Pagination, EffectFade, Autoplay],
+        spaceBetween: 0,
+        slidesPerView: 1,
+        effect: "fade",
+        loop: true,
+        speed: 800,
+        autoplay: {
+          delay: 3500,
+        },
+        pagination: {
+          el: paginationEl,
+          clickable: true,
+        },
+      });
     });
   }
 

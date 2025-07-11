@@ -1,6 +1,137 @@
 @use "../mixins/breakpoint" as *;
 @use "../mixins/disable-mob-hover" as *;
+@use "../mixins/mini" as *;
 
 .section-hero {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin-bottom: var(--default-padding);
+//   padding: clamp(50px, 8.4028vw, 121px) 0;
+     padding: 16px 0;  
+
+  .swiper-container{
+    width: 100%;
+  }
+
+  .editor {
+    max-width: 706px;
+    width: 100%;
+    gap: clamp(16px, 1.6667vw, 24px);
+
+    .row {
+      justify-content: flex-start;
+      margin-top: 40px;
+
+      .main-button{
+        height: clamp(54px, 4.0972vw, 59px);
+        padding: 16px clamp(24px, 4.4444vw, 64px);
+
+        @include mobile{
+            width: 100%;
+            max-width: 100%;
+        }
+      }
+
+      @include mobile{
+        gap: 16px;
+        max-width: 100%;
+        flex-direction: column;
+        margin-top: auto;
+      }
+    }
+
+   
+
+    p {
+            max-width: clamp(500px, 49.0278vw, 706px);
+      text-align: start;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: clamp(18px, 1.3889vw, 20px);
+      line-height: 145%;
+      color: var(--neutral-100);
+    }
+
+     @include headers {
+            max-width: clamp(500px, 49.0278vw, 706px);
+      text-align: start;
+      color: var(--neutral-100);
+    }
+
+    @include mobile{
+        height: 100%;
+        flex-grow: 1;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+  }
+
+  .swiper-wrapper{
+        pointer-events: none;
+  }
+
+  &__wrapp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--gap);
+    height: fit-content;
+
+    @include for-mobile{
+ min-height: calc(clamp(500px, 48.6111vw, 700px) - 32px);
+    }
+
+        @include mobile{
+    min-height: calc(700px - 32px);
+    }
+  }
+
+  &__slider{
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  &__slide{
+     width: 100%;
+     display: flex;
+    height: 100%;
+
+    img,
+    picture {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    
+    img,
+    picture {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &.mode{
+    padding-bottom: calc(36px + 16px);
+
+    .section-hero__bg{
+        inset: 0 0 calc(36px + 16px);
+    }
+
+    @include mobile{
+          padding-bottom: calc(36px + 16px + 16px);
+    }
+  }
+
 
 }

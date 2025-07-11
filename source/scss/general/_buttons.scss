@@ -34,6 +34,19 @@
       box-shadow: 0 8px 16px rgba(252, 200, 51, 0.3);
     }
   }
+
+  &--white {
+    color: var(--neutral-100);
+    border-color: var(--neutral-100);
+    background: transparent;
+
+    @include hover {
+      background: var(--main-yellow);
+      border-color: var(--main-yellow);
+      color: var(--neutral-700);
+      box-shadow: 0 8px 16px rgba(252, 200, 51, 0.3);
+    }
+  }
 }
 
 .telegram-btn {
