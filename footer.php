@@ -39,6 +39,7 @@ if ($footer) {
                 ?>
                     <a class="footer__link" href="<?php echo esc_url($email_url); ?>"
                         target="<?php echo esc_attr($email_target); ?>">
+                        <?= sprite( '16', '16', 'Email') ?>
                         <span><?php echo esc_html($email_title); ?></span>
                     </a>
                 <?php endif; ?>
@@ -50,12 +51,16 @@ if ($footer) {
                 ?>
                     <a class="footer__link" href="<?php echo esc_url($tel_url); ?>"
                         target="<?php echo esc_attr($tel_target); ?>">
+                        <?= sprite( '16', '16', 'Phone') ?>
                         <span><?php echo esc_html($tel_title); ?></span>
                     </a>
                 <?php endif; ?>
 
                 <?php if ($worktime) : ?>
-                    <span class="footer__link"><?= esc_html($worktime); ?></span>
+                    <span class="footer__link">
+                        <?= sprite( '16', '16', 'Clock') ?>
+                        <?= esc_html($worktime); ?>
+                    </span>
                 <?php endif; ?>
             </div>
         </div>

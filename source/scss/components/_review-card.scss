@@ -49,6 +49,7 @@
     &__bottom {
       display: grid;
       grid-template-columns: 1fr auto;
+      align-items: center;
       column-gap: clamp(16px, 1.6667vw, 24px);
     }
 

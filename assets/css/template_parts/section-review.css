@@ -49,6 +49,7 @@
 .section-review .review-card__bottom {
   display: grid;
   grid-template-columns: 1fr auto;
+  align-items: center;
   -moz-column-gap: clamp(16px, 1.6667vw, 24px);
        column-gap: clamp(16px, 1.6667vw, 24px);
 }

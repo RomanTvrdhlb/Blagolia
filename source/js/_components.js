@@ -1,4 +1,5 @@
 import './components/dinamicHeight';
+import './components/fancybox';
 import './components/modals';
 // import './components/select';
 import './components/form-validate';

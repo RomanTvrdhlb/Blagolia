@@ -44,6 +44,19 @@
 .section-contact__item:first-of-type a {
   max-width: 230px;
 }
+.section-contact__item:last-of-type a {
+  grid-column: 1/-1;
+}
+.section-contact__item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.section-contact__item li {
+  display: grid;
+  grid-template-columns: minmax(160px, auto) 1fr;
+  grid-gap: 16px;
+}
 .section-contact__item a {
   display: flex;
   align-items: center;
@@ -56,10 +69,6 @@
   transition: all 0.3s;
   width: -moz-fit-content;
   width: fit-content;
-}
-.section-contact__item a b {
-  color: var(--neutral-600);
-  font-weight: 500;
 }
 .section-contact__item p {
   font-family: var(--font-family);

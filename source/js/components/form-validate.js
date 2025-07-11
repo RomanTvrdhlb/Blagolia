@@ -63,8 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const formWrappers = document.querySelectorAll('.wpcf7');
 
-    console.log(formWrappers)
-
     for (const formWrapper of formWrappers) {
         const formSubmitBtn = formWrapper.querySelector('button[type="submit"]');
         formWrapper.setAttribute('data-loader', false)
@@ -84,8 +82,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     // loaderInstanse(formWrapper, true);
                 })
             }
-
-            console.log(formWrapper)
 
             formWrapper.addEventListener('wpcf7invalid', function (event) {
                 setTimeout(function () {

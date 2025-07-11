@@ -86,6 +86,7 @@
 		// '/hooks/display_services_card.php',
 
 		'/hooks/display_breadcrumbs.php',
+		'/hooks/display_editors_blocks.php',
 		'/hooks/display_gallery.php',
 		'/hooks/display_post_content.php',
 		'/hooks/display_icon_link_list.php',

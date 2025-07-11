@@ -2,5 +2,21 @@
 @use '../mixins/mini' as *;
 
 .section-about {
+    padding-bottom: var(--default-padding);
 
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: var(--default-gap);
+    }
+
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px var(--gap);
+
+        @include tablet {
+            grid-template-columns: 100%;
+        }
+    }
 }
