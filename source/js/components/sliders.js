@@ -128,8 +128,6 @@ document.addEventListener("DOMContentLoaded", function () {
         ".slider-pagination"
       );
 
-      console.log(paginationEl);
-
       const mainSwiper = new Swiper(container, {
         modules: [Pagination, EffectFade, Autoplay],
         spaceBetween: 0,

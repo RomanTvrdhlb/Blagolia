@@ -13,9 +13,22 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 24px var(--gap);
 }
+.section-about__image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.section-about__image img, .section-about__image picture {
+  height: 100%;
+  width: 100%;
+}
 @media (max-width: 1024px) {
   .section-about__box {
     grid-template-columns: 100%;
+  }
+  .section-about__image {
+    max-height: 400px;
+    order: -1;
   }
 }
 /*# sourceMappingURL=section-about.css.map */

@@ -25,46 +25,21 @@
             tooltip: 'Accept class',
             menu: [
                 {
-                    text: 'Default Link',
+                    text: 'Yellow Button',
                     onclick: function () {
-                        updateLinkClass('');
+                        updateLinkClass('main-button');
                     }
                 },
                 {
-                    text: 'Blue Button',
+                    text: 'Transparent Button',
                     onclick: function () {
-                        updateLinkClass('main-button');
+                        updateLinkClass('main-button main-button--transparent');
                     }
                 },
                 {
                     text: 'White Button',
                     onclick: function () {
                         updateLinkClass('main-button main-button--white');
-                    }
-                },
-                {
-                    text: 'Call Button',
-                    onclick: function () {
-                        updateLinkClass('main-button main-button--call');
-                    }
-                },
-                {
-                    text: 'Border Button',
-                    onclick: function () {
-                        updateLinkClass('main-button main-button--transparent');
-                    }
-                },
-
-                {
-                    text: 'Phone',
-                    onclick: function () {
-                        updateLinkClass('custom-link phone');
-                    }
-                },
-                {
-                    text: 'Mail',
-                    onclick: function () {
-                        updateLinkClass('custom-link mail');
                     }
                 }
             ]

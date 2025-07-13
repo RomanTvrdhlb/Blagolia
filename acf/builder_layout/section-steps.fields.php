@@ -12,7 +12,7 @@
 				'required'          => 0,
 				'conditional_logic' => [],
 				'wrapper'           => [
-					'width' => '50',
+					'width' => '25',
 					'class' => '',
 					'id'    => '',
 				],
@@ -22,6 +22,15 @@
 				'ui_on_text'        => __( 'Hide', 'ACF' ),
 				'ui_off_text'       => __( 'Show', 'ACF' ),
 			] )
+				->addTrueFalse('breadcrumbs', [
+				'label' => __('Show breadcrumbs?', 'ACF'),
+				'instructions' => __('Activate to show the breadcrumbs.', 'ACF'),
+				'wrapper' => ['width' => '25'],
+				'default_value' => 0,
+				'ui' => 1,
+				'ui_on_text' => __('Show', 'ACF'),
+				'ui_off_text' => __('Hide', 'ACF'),
+			])
 			->addText('section_id',[
 				'label'             => __( 'ID fields', 'ACF' ),
 				'instructions'      => __( 'You can set a unique id for the section (And add them to the navigation)', 'ACF' ),
@@ -31,6 +40,7 @@
 					'id'    => '',
 				],
 			])
+			
 			->addWysiwyg('editor', [
 				'label' => 'WYSIWYG Field',
 				'instructions' => '',

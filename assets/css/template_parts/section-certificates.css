@@ -28,7 +28,41 @@
   align-items: center;
   gap: clamp(8px, 1.1111vw, 16px);
 }
+.section-certificates .certificate__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.section-certificates .certificate__links a {
+  width: clamp(54px, 4.4444vw, 64px);
+  height: clamp(54px, 4.4444vw, 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--main-yellow);
+  transition: all 0.3s;
+}
+.section-certificates .certificate__links a i.sprite {
+  width: 28px;
+  height: auto;
+}
+.section-certificates .certificate__links a i.sprite svg {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+}
 .section-certificates .certificate__thumb {
+  position: relative;
+  z-index: 1;
   display: flex;
   width: 100%;
   height: clamp(220px, 29.1667vw, 420px);
@@ -39,6 +73,9 @@
   transition: all 0.3s;
   width: 100%;
   height: 100%;
+}
+.section-certificates .certificate__thumb:hover .certificate__links {
+  opacity: 1;
 }
 .section-certificates .certificate__title {
   font-family: var(--font-family);
@@ -71,12 +108,20 @@
   }
 }
 @media (hover: hover) {
-  .section-certificates .certificate:hover .certificate__thumb img, .section-certificates .certificate:hover .certificate__thumb picture {
+  .section-certificates .certificate__links a:hover {
+    background: rgb(248.347826087, 185.0434782609, 3.652173913);
+  }
+  .section-certificates .certificate:hover .certificate__thumb img,
+  .section-certificates .certificate:hover .certificate__thumb picture {
     transform: scale(1.04);
   }
 }
 @media (hover: none) {
-  .section-certificates .certificate:active .certificate__thumb img, .section-certificates .certificate:active .certificate__thumb picture {
+  .section-certificates .certificate__links a:active {
+    background: rgb(248.347826087, 185.0434782609, 3.652173913);
+  }
+  .section-certificates .certificate:active .certificate__thumb img,
+  .section-certificates .certificate:active .certificate__thumb picture {
     transform: scale(1.04);
   }
 }

@@ -3,22 +3,32 @@
 @use "../components/main-components/main-form" as *;
 
 .section-request {
-    padding: clamp(24px, 3.3333vw, 48px) 0 clamp(18px, 4.4444vw, 64px);
-    background: rgba(217, 219, 218, 0.55);
-    margin-bottom: 0 !important;
+  padding: clamp(24px, 3.3333vw, 48px) 0 clamp(18px, 4.4444vw, 64px);
+  background: rgba(217, 219, 218, 0.55);
+  margin-bottom: 0 !important;
 
-    &__inner{
-
-
-        .editor{
-           .wpcf7{
-            max-width: 952px;
-            align-self: center;
-            margin-top: clamp(20px, 2.7778vw, 40px);
-           }
-        }
-        
+  [data-loader] {
+    &::before {
+      background-color: rgba(217, 219, 218, 0);
+      inset: -5px;
     }
+  }
 
-    @include main-form;
+  [data-loader="true"]{
+     &::before {
+      opacity: 1;
+     }
+  }
+
+  &__inner {
+    .editor {
+      .wpcf7 {
+        max-width: 952px;
+        align-self: center;
+        margin-top: clamp(20px, 2.7778vw, 40px);
+      }
+    }
+  }
+
+  @include main-form;
 }

@@ -20,29 +20,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// import './components/select';
 
 
-// import './components/comments';
 
 
-// import './components/big-calculator';
 
-// import './components/tabs';
-// import './components/calc';
-// import './components/quiz';
-// import './components/quiz-settings';
-// import './components/anchor';
-// import './components/hiddenText';
-// import './components/calendar';
-// import './components/toTop';
-// import './components/post';
-// import './components/filters';
-// import './components/animations';
-// import './components/tabs';
-// import './components/ajaxPostTabs';
-// import './components/ajaxLoadGallery';
-// import './components/barba';
 
 /***/ }),
 
@@ -655,7 +637,6 @@ document.addEventListener("DOMContentLoaded", function () {
     heroSliders.forEach(function (slider) {
       const container = slider.querySelector(".swiper-container");
       const paginationEl = slider.querySelector(".slider-pagination");
-      console.log(paginationEl);
       const mainSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](container, {
         modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.EffectFade, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay],
         spaceBetween: 0,

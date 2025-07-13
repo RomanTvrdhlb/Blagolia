@@ -1,0 +1,87 @@
+@use "../mixins/breakpoint" as *;
+@use "../mixins/disable-mob-hover" as *;
+
+@mixin pagination {
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    li {
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 5px 16px;
+        background: var(--neutral-100);
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        color: var(--neutral-700);
+        height: 54px;
+        min-width: 54px;
+        width: fit-content;
+
+        @include mobile {
+          font-family: var(--font-family2);
+          font-weight: 400;
+          line-height: 140%;
+        }
+      }
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 5px 16px;
+        background: var(--neutral-100);
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        color: var(--neutral-700);
+        height: 54px;
+        min-width: 54px;
+        transition: all 0.3s;
+        width: fit-content;
+
+        &.active {
+          pointer-events: none;
+          background: var(--main-yellow);
+        }
+
+        .sprite {
+          width: 16px;
+          height: 16px;
+          margin-right: 3px;
+          color: inherit;
+          transition: all 0.3s;
+
+          svg {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        @include mobile {
+          font-family: var(--font-family2);
+          font-weight: 400;
+          line-height: 140%;
+        }
+
+        @include hover {
+          color: var(--neutral-100);
+          background: var(--main-green);
+        }
+      }
+    }
+
+    @include ios{
+        gap: 5px;
+        justify-content: space-between;
+    }
+  }
+}

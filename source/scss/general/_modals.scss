@@ -21,14 +21,14 @@
     z-index: 5;
     right: 15px;
     top: 15px;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    filter: brightness(.5);
+    height: 20px;
     transition: all .3s;
-    color:  var(--cl-a);
-    opacity: .5;
+    color:  var(--neutral-900);
 
     &:hover{
-      opacity: 1;
+      opacity: .7;
     }
   }
 

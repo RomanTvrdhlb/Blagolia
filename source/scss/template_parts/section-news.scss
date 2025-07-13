@@ -1,7 +1,7 @@
 @use '../mixins/breakpoint' as *;
 @use '../mixins/mini' as *;
 @use '../components/slider' as *;
-@use '../components/post-card' as *;
+@use '../components/product-card' as *;
 
 .section-news {
 padding-bottom: var(--default-padding);
@@ -10,6 +10,6 @@ padding-bottom: var(--default-padding);
         flex-direction: column;
         gap: var(--default-gap)
     }
-    @include post-card;
+    @include product-card;
     @include main-slider;
 }

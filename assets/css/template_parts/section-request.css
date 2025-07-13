@@ -5,6 +5,13 @@
   background: rgba(217, 219, 218, 0.55);
   margin-bottom: 0 !important;
 }
+.section-request [data-loader]::before {
+  background-color: rgba(217, 219, 218, 0);
+  inset: -5px;
+}
+.section-request [data-loader=true]::before {
+  opacity: 1;
+}
 .section-request__inner .editor .wpcf7 {
   max-width: 952px;
   align-self: center;
@@ -14,6 +21,11 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+.section-request .main-form__cta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(16px, 1.6667vw, 24px);
 }
 .section-request .main-form label {
   position: relative;
@@ -107,6 +119,7 @@
   width: 100%;
   position: relative;
   max-width: 245px;
+  padding: 16px 50px;
   margin-top: clamp(12px, 2.7778vw, 40px);
   align-self: center;
 }
@@ -131,5 +144,43 @@
 .section-request .main-form .wpcf7-response-output {
   display: none;
   position: absolute;
+}
+.section-request .main-form__box {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(16px, 1.6667vw, 24px);
+}
+.section-request .main-form__wrapp {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(16px, 1.6667vw, 24px);
+  height: 100%;
+}
+.section-request .main-form__wrapp .main-button {
+  margin-top: auto;
+  max-width: 249px;
+}
+.section-request .main-form__wrapp label textarea {
+  padding: 12px 10px 12px 16px;
+  height: clamp(227px, 17.0139vw, 245px);
+}
+@media (min-width: 768px) {
+  .section-request .main-form__wrapp .main-button {
+    align-self: flex-end;
+  }
+}
+@media (max-width: 767px) {
+  .section-request .main-form__cta {
+    grid-template-columns: 100%;
+  }
+  .section-request .main-form__wrapp .main-button {
+    max-width: 450px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 575px) {
+  .section-request .main-form__wrapp .main-button {
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=section-request.css.map */

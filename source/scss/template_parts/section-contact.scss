@@ -1,5 +1,6 @@
 @use "../mixins/breakpoint" as *;
 @use "../mixins/disable-mob-hover" as *;
+@use "../components/main-components/main-form" as *;
 
 .section-contact {
   padding-bottom: var(--default-padding);
@@ -124,4 +125,10 @@
       }
     }
   }
+
+  .wpcf7{
+    max-width: 100%;
+  }
+
+  @include main-form;
 }

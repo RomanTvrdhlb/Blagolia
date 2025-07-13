@@ -8,12 +8,21 @@ $gallery     = $media['gallery'] ?? [];
 $image       = $media['image'] ?? [];
 
 if (!$shower) : ?>
-    <?php if ($bg_content && !empty($gallery)) : ?>
-        <section class="section-hero mode" <?php if (get_sub_field('section_id')) : ?> id="<?php echo get_sub_field('section_id'); ?>" <?php endif; ?>>
+    <?php
+        $has_gallery = $bg_content && !empty($gallery);
+        $has_image = !$bg_content && !empty($image);
 
-        <?php elseif (!$bg_content && !empty($image)) : ?>
-            <section class="section-hero" <?php if (get_sub_field('section_id')) : ?> id="<?php echo get_sub_field('section_id'); ?>" <?php endif; ?>>
-            <?php endif; ?>
+        if ($has_gallery || $has_image) :
+            $section_classes = 'section-hero';
+            if ($has_gallery) {
+                $section_classes .= ' mode';
+            }
+
+            $section_id = get_sub_field('section_id');
+        ?>
+            <section class="<?= $section_classes ?>"<?= $section_id ? ' id="' . esc_attr($section_id) . '"' : '' ?>>
+        <?php endif; ?>
+
 
             <div class="section-hero__bg">
                 <?php if ($bg_content && !empty($gallery)) : ?>

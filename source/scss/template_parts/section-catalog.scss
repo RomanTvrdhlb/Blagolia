@@ -1,6 +1,83 @@
 @use "../mixins/breakpoint" as *;
 @use "../mixins/disable-mob-hover" as *;
+@use "../mixins/mini" as *;
+@use "../components/catalog-card" as *;
 
 .section-catalog {
+  padding-bottom: var(--default-padding);
 
+  .breadcrumbs {
+    margin-top: calc(var(--default-padding) * -1);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(24px, 4.4444vw, 64px);
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--default-gap) var(--gap);
+
+    .editor {
+      max-width: 900px;
+      align-self: center;
+      grid-column: 1/-1;
+
+      @include tablet {
+        order: -2;
+      }
+    }
+  }
+
+  &__item {
+    &:nth-child(even) {
+      @include for-small-tablet {
+        .catalog-card {
+          &__image {
+            grid-column: 1/2;
+            grid-row: 1;
+          }
+        }
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px var(--gap);
+
+    @include tablet {
+      margin-top: -12px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    img,
+    picture {
+      height: 100%;
+      width: 100%;
+    }
+
+    @include tablet {
+      max-height: 400px;
+      order: -1;
+    }
+  }
+
+  .pretitle {
+    @include tablet {
+      font-family: var(--font-family2);
+      font-weight: 400;
+    }
+  }
+
+  @include catalog-card;
 }

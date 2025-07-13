@@ -9,38 +9,42 @@
   flex-direction: column;
   gap: var(--default-gap);
 }
-.section-news .post-card__thumb {
-  width: 100%;
-  display: flex;
-  height: 300px;
-  overflow: hidden;
-}
-.section-news .post-card__thumb img,
-.section-news .post-card__thumb picture {
-  transition: all 0.3s;
-  width: 100%;
-  height: 100%;
-}
-.section-news .post-card__date {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: clamp(12px, 0.9722vw, 14px);
-  color: var(--neutral-600);
-  margin-top: calc(clamp(8px, 0.8333vw, 12px) * -1);
-}
-.section-news .post-card__body {
+.section-news .product-card {
+  padding: var(--gap);
   display: flex;
   flex-direction: column;
-  gap: var(--gap);
-  padding: var(--gap);
+  gap: clamp(16px, 2.2222vw, 32px);
   border: 1px solid var(--neutral-200);
-  border-top: none;
+  height: clamp(521px, 63.09vw, 646px);
 }
-.section-news .post-card__excerpt {
+.section-news .product-card__thumb {
+  display: flex;
+  align-items: center;
+  height: clamp(300px, 34.18vw, 350px);
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: rgba(242, 243, 242, 0.5);
+}
+.section-news .product-card__thumb img,
+.section-news .product-card__thumb picture {
+  transition: all 0.3s;
+  height: 100%;
+  width: auto;
+}
+.section-news .product-card__body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: clamp(8px, 1.1111vw, 16px);
+}
+.section-news .product-card__body p {
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 18px;
+  font-size: clamp(16px, 1.25vw, 18px);
   line-height: 150%;
+  margin-bottom: auto;
   color: var(--neutral-600);
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -48,12 +52,38 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.section-news .post-card__title {
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: clamp(22px, 1.9444vw, 28px);
+.section-news .product-card__body .main-button {
+  height: clamp(53px, 4.0972vw, 59px);
+  margin-top: clamp(8px, 1.1111vw, 16px);
+  max-width: 100%;
+  width: 100%;
   color: var(--neutral-700);
-  line-height: 105%;
+}
+.section-news .product-card.mode {
+  gap: initial;
+  padding: 0;
+  height: 100%;
+}
+.section-news .product-card.mode .product-card__date {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--neutral-600);
+  margin-top: calc(clamp(2px, 0.5556vw, 8px) * -1);
+}
+.section-news .product-card.mode .product-card__body {
+  padding: var(--gap);
+}
+.section-news .product-card.mode .product-card__body .main-button {
+  max-width: 219px;
+  padding: 10px 10px;
+  margin-top: clamp(2px, 0.5556vw, 8px);
+}
+.section-news .product-card.mode .product-card__thumb {
+  height: 300px;
+}
+.section-news .product-card.mode .product-card__thumb img, .section-news .product-card.mode .product-card__thumb picture {
+  width: 100%;
 }
 .section-news .main-slider {
   width: 100%;
@@ -91,10 +121,6 @@
   }
 }
 @media (max-width: 1024px) {
-  .section-news .post-card .main-button {
-    width: 100%;
-    max-width: 100%;
-  }
   .section-news .main-slider .swiper-slide {
     width: 464px;
   }
@@ -102,16 +128,30 @@
     max-height: 550px;
   }
 }
+@media (max-width: 1024px) and (min-width: 576px) {
+  .section-news .product-card__body p {
+    -webkit-line-clamp: 2;
+  }
+}
+@media (max-width: 575px) {
+  .section-news .product-card.mode .product-card__date {
+    margin-top: 0;
+  }
+  .section-news .product-card.mode .product-card__body .main-button {
+    margin-top: 0;
+    max-width: 100%;
+  }
+}
 @media (hover: hover) {
-  .section-news .post-card:hover .post-card__thumb img,
-  .section-news .post-card:hover .post-card__thumb picture {
-    transform: scale(1.04);
+  .section-news .product-card:hover .product-card__thumb img,
+  .section-news .product-card:hover .product-card__thumb picture {
+    transform: scale(1.03);
   }
 }
 @media (hover: none) {
-  .section-news .post-card:active .post-card__thumb img,
-  .section-news .post-card:active .post-card__thumb picture {
-    transform: scale(1.04);
+  .section-news .product-card:active .product-card__thumb img,
+  .section-news .product-card:active .product-card__thumb picture {
+    transform: scale(1.03);
   }
 }
 /*# sourceMappingURL=section-news.css.map */

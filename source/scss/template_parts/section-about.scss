@@ -19,4 +19,20 @@
             grid-template-columns: 100%;
         }
     }
+
+    &__image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    img,picture{
+        height: 100%;
+        width: 100%;
+    }
+
+    @include tablet{
+        max-height: 400px;
+        order: -1;
+    }
+  }
 }
