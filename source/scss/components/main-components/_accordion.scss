@@ -30,6 +30,7 @@
         height: 24px;
         transition: all 0.3s;
         display: flex;
+        flex-shrink: 0;
 
         svg {
           width: 100%;

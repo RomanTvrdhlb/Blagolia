@@ -12,6 +12,7 @@
     "@fancyapps/ui": "^5.0.36",
     "del": "^6.1.1",
     "gsap": "^3.12.7",
+    "intl-tel-input": "^25.3.1",
     "just-validate": "^3.3.3",
     "lottie-web": "^5.12.2",
     "merge-stream": "^2.0.0",

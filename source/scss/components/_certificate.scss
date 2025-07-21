@@ -12,7 +12,47 @@
     align-items: center;
     gap: clamp(8px, 1.1111vw, 16px);
 
-    &__thumb{
+    &__links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      backdrop-filter: blur(10px);
+      opacity: 0;
+      transition: all .3s;
+
+      a {
+        width: clamp(54px, 4.4444vw, 64px);
+        height: clamp(54px, 4.4444vw, 64px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--main-yellow);
+        transition: all .3s;
+
+        i.sprite {
+          width: 28px;
+          height: auto;
+
+          svg {
+            width: 100%;
+            object-fit: cover;
+            height: auto;
+          }
+        }
+
+        @include hover {
+          background: darken(#fcc833, 10%);
+        }
+      }
+    }
+
+    &__thumb {
+      position: relative;
+      z-index: 1;
       display: flex;
       width: 100%;
       height: clamp(220px, 29.1667vw, 420px);
@@ -20,17 +60,23 @@
 
       img,
       picture {
-        transition: all .3s;
+        transition: all 0.3s;
         width: 100%;
         height: 100%;
       }
 
-      @include tablet{
+      @include tablet {
         height: clamp(220px, 46.88vw, 480px);
       }
 
       @include for-mobile {
         margin-bottom: clamp(8px, 1.1111vw, 16px);
+      }
+
+      &:hover{
+        .certificate__links{
+          opacity: 1;
+        }
       }
     }
 
@@ -43,22 +89,23 @@
       line-height: 100%;
     }
 
-   p {
+    p {
       font-family: var(--font-family);
       font-weight: 500;
-      font-size: clamp(12px,1.76vw, 18px);
+      font-size: clamp(12px, 1.76vw, 18px);
       line-height: 150%;
       text-align: center;
       color: var(--neutral-600);
       max-width: 280px;
     }
 
-     @include hover{
-    .certificate__thumb{
-        img,picture{
-            transform: scale(1.04);
+    @include hover {
+      .certificate__thumb {
+        img,
+        picture {
+          transform: scale(1.04);
         }
+      }
     }
-  }
   }
 }

@@ -8,40 +8,55 @@ $gallery     = $media['gallery'] ?? [];
 $image       = $media['image'] ?? [];
 
 if (!$shower) : ?>
-    <section class="section-hero" <?php if (get_sub_field('section_id')) : ?> id="<?php echo get_sub_field('section_id'); ?>" <?php endif; ?>>
-        <div class="section-hero__media">
-            <?php if ($bg_content && !empty($gallery)) : ?>
-                <div class="section-hero__slider">
-                    <div class="swiper-container">
-                        <ul class="swiper-wrapper">
-                            <?php foreach ($gallery as $image) : ?>
-                                <li class="swiper-slide">
-                                    <div class="section-hero__slide">
-                                        <?= wp_get_attachment_image($image['ID'], 'full'); ?>
-                                    </div>
-                                </li>
-                            <?php endforeach; ?>
-                        </ul>
-                        <span class="swiper-pagination"></span>
+    <?php
+        $has_gallery = $bg_content && !empty($gallery);
+        $has_image = !$bg_content && !empty($image);
+
+        if ($has_gallery || $has_image) :
+            $section_classes = 'section-hero';
+            if ($has_gallery) {
+                $section_classes .= ' mode';
+            }
+
+            $section_id = get_sub_field('section_id');
+        ?>
+            <section class="<?= $section_classes ?>"<?= $section_id ? ' id="' . esc_attr($section_id) . '"' : '' ?>>
+        <?php endif; ?>
+
+
+            <div class="section-hero__bg">
+                <?php if ($bg_content && !empty($gallery)) : ?>
+                    <div class="section-hero__slider">
+                        <div class="swiper-container">
+                            <ul class="swiper-wrapper">
+                                <?php foreach ($gallery as $image) : ?>
+                                    <li class="swiper-slide">
+                                        <div class="section-hero__slide">
+                                            <?= wp_get_attachment_image($image['ID'], 'full'); ?>
+                                        </div>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                            <span class="slider-pagination"></span>
+                        </div>
                     </div>
-                </div>
 
-            <?php elseif (!$bg_content && !empty($image)) : ?>
-                <div class="section-hero__image">
-                    <?= wp_get_attachment_image($image['ID'], 'full'); ?>
-                </div>
-            <?php endif; ?>
-
-        </div>
-
-        <div class="container">
-            <div class="section-hero__wrapp">
-                <?php if (!empty($editor)) : ?>
-                    <div class="editor">
-                        <?= $editor; ?>
+                <?php elseif (!$bg_content && !empty($image)) : ?>
+                    <div class="section-hero__image">
+                        <?= wp_get_attachment_image($image['ID'], 'full'); ?>
                     </div>
                 <?php endif; ?>
+
             </div>
-        </div>
-    </section>
-<?php endif; ?>
+
+            <div class="container">
+                <div class="section-hero__wrapp">
+                    <?php if (!empty($editor)) : ?>
+                        <div class="editor">
+                            <?= $editor; ?>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            </div>
+            </section>
+        <?php endif; ?>

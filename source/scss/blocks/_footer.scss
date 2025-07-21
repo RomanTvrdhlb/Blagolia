@@ -1,26 +1,106 @@
 @use "../mixins/breakpoint" as *;
+@use "../mixins/disable-mob-hover" as *;
 
 .footer {
   position: relative;
-  background-color: var(--cl-d);
- 
-  .logo {
-    @include for-mobile {
-      margin-right: auto;
+  background: var(--main-green);
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(16px, 1.5278vw, 22px);
+    @include for-small-tablet{
+    max-width: 416px;
+    }
+
+    @include small-tablet{
+      max-width: 500px;
+    }
+  }
+
+  &__name {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--neutral-100);
+    width: 100%;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(16px, 1.6667vw, 24px);
+
+    a {
+      transition: all 0.3s;
+
+      @include hover {
+        color: var(--main-yellow);
+      }
+    }
+  }
+
+  &__link {
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--neutral-100);
+    white-space: nowrap;
+
+    .sprite {
+      width: 16px;
+      height: 16px;
+      display: flex;
+    }
+
+    svg,
+    img {
+      width: 16px;
+      height: 16px;
+      display: flex;
+      fill: #fcc833;
+    }
+  }
+
+  &-nav {
+    display: flex;
+    flex-direction: column;
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: clamp(16px, 1.6667vw, 24px) Min(14.33vw,215px);
+
+      a {
+        font-family: var(--font-family);
+        font-weight: 500;
+        transition: all .3s;
+        font-size: 18px;
+        color: var(--neutral-100);
+        white-space: nowrap;
+        @include hover {
+          color: var(--main-yellow);
+        }
+      }
+
+      @include laptop{
+        gap: clamp(16px, 1.6667vw, 24px) 50px;
+        flex-shrink: 0;
+      }
     }
   }
 
   &__inner {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr clamp(200px, 29.99vw, 350px) auto;
-    gap: 40px clamp(15px, 1.96vw, 20px);
-    padding: clamp(45px, 7.17vw, 75px) 0;
+    gap: 48px 32px;
+    display: flex;
+    justify-content: space-between;
+    padding: clamp(56px, 6.9444vw, 100px) 0;
 
-    @include mobile {
-      display: flex;
+    @include small-tablet {
       flex-direction: column;
     }
   }
 }
-

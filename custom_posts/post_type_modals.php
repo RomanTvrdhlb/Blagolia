@@ -50,13 +50,13 @@
 
 	function customize_modal_link_results( $results, $query ) {
 		foreach ( $results as &$result ) {
-			if ( isset($result['post_type']) && $result['post_type'] === 'modals' ) {
+			if ( $result['post_type'] == 'modals' ) {
 				$result['permalink'] = '/modal_' . $result['ID'];
 			}
 		}
+
 		return $results;
 	}
-
 
 	add_filter( 'wp_link_query', 'customize_modal_link_results', 10, 2 );
 

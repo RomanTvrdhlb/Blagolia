@@ -2,5 +2,34 @@
 @use "../mixins/disable-mob-hover" as *;
 
 .section-global {
+  padding-bottom: var(--default-padding);
 
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--default-gap);
+
+    .editor {
+      max-width: 1000px;
+      align-self: center;
+    }
+  }
+
+  &__image {
+    width: 100vw;
+    height: clamp(400px, 41.6667vw, 600px);
+    display: flex;
+    margin-top: var(--default-gap);
+
+    img,
+    picture {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    @include mobile {
+      max-height: 300px;
+    }
+  }
 }

@@ -3,6 +3,7 @@
 
 @mixin product-card {
   .product-card {
+    width: 100%;
     padding: var(--gap);
     display: flex;
     flex-direction: column;
@@ -15,6 +16,7 @@
       align-items: center;
       height: clamp(300px, 34.18vw, 350px);
       justify-content: center;
+      width: 100%;
       overflow: hidden;
       flex-shrink: 0;
       background: rgba(242, 243, 242, 0.5);
@@ -59,6 +61,49 @@
         max-width: 100%;
         width: 100%;
         color: var(--neutral-700);
+      }
+    }
+
+    &.mode {
+      gap: initial;
+      padding: 0;
+      height: 100%;
+
+      .product-card {
+        &__date {
+          font-family: var(--font-family);
+          font-weight: 400;
+          font-size: 14px;
+          color: var(--neutral-600);
+          margin-top: calc(clamp(2px, .5556vw, 8px) * -1);
+
+          @include mobile{
+            margin-top: 0;
+          }
+        }
+
+        &__body {
+          padding: var(--gap);
+
+          .main-button {
+            max-width: 219px;
+            padding: 10px 10px; 
+             margin-top: clamp(2px, .5556vw, 8px);
+
+             @include mobile{
+              margin-top: 0;
+              max-width: 100%;
+             }
+          }
+        }
+
+        &__thumb {
+          height: 300px;
+        
+          img,picture{
+            width: 100%;
+          }
+        }
       }
     }
 

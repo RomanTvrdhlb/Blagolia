@@ -6,12 +6,23 @@
     flex-direction: column;
     gap: 24px;
 
+    &__cta {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: clamp(16px, 1.6667vw, 24px);
+
+      @include small-tablet {
+        grid-template-columns: 100%;
+      }
+    }
+
     label {
-      position: relative;
       display: flex;
       flex-direction: column;
       gap: 4px;
       width: 100%;
+      position: relative;
+      z-index: 10;
 
       & > span:not([class]) {
         padding-left: 16px;
@@ -89,10 +100,120 @@
       }
     }
 
+    .iti {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      width: 100%;
+      gap: 8px;
+      border: solid 1px var(--neutral-300);
+      height: 50px;
+      padding: 0 16px 0 13px;
+      align-items: center;
+      position: relative !important;
+
+      &.active {
+        border-radius: 0;
+      }
+
+      input {
+        height: fit-content;
+        padding: 0 !important;
+        border: none;
+      }
+
+      .iti__dropdown-content {
+        top: 100% !important;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+        left: -1px !important;
+        position: absolute !important;
+        border-radius: 0;
+        width: calc(100% + 2px) !important;
+        max-width: 32.2581vw;
+        margin: 4px 0 0 0 !important;
+        max-height: 300px !important;
+        overflow-y: auto !important;
+      }
+
+      .iti__country-container {
+        position: static;
+      }
+
+      .iti__arrow {
+        margin: 0;
+        border: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='7' fill='none'%3E%3Cpath fill='%23666464' d='m1 1 4.342 5 4.342-5'/%3E%3Cpath stroke='%23666464' stroke-linecap='round' stroke-linejoin='round' d='m1 1 4.342 5 4.342-5'/%3E%3C/svg%3E");
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 6px;
+        display: block;
+      }
+
+      .iti__search-input,
+      .iti__a11y-text {
+        display: none !important;
+      }
+
+      .iti__selected-country-primary {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 7px;
+        padding: 0 0 2px 0;
+        background: transparent !important;
+      }
+
+      .iti__selected-dial-code {
+         font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        color: var(--neutral-500);
+
+        display: none !important;
+      }
+
+      &.active{
+        .iti__selected-dial-code {
+          color: var(--neutral-700);
+        }
+      }
+
+      .iti__country {
+        .iti__country-name {
+          margin-left: 7px;
+        }
+        .iti__dial-code {
+          color: var(--neutral-700);
+    
+        }
+      }
+
+      .iti__selected-country {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        &[aria-expanded="true"] {
+          .iti__arrow {
+            transform: scaleY(-1);
+          }
+        }
+      }
+
+      .iti__country-container {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        height: 100%;
+      }
+    }
+
     .main-button {
       width: 100%;
       position: relative;
       max-width: 245px;
+      padding: 16px 50px;
       margin-top: clamp(12px, 2.7778vw, 40px);
       align-self: center;
     }
@@ -123,6 +244,42 @@
           display: none;
           position: absolute;
         }
+      }
+    }
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(16px, 1.6667vw, 24px);
+    }
+
+    &__wrapp {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(16px, 1.6667vw, 24px);
+      height: 100%;
+
+      .main-button {
+        margin-top: auto;
+        max-width: 249px;
+
+        @include for-small-tablet {
+          align-self: flex-end;
+        }
+
+        @include small-tablet {
+          max-width: 450px;
+          margin-top: 0;
+        }
+
+        @include mobile {
+          max-width: 100%;
+        }
+      }
+
+      label textarea {
+        padding: 12px 10px 12px 16px;
+        height: clamp(227px, 17.0139vw, 245px);
       }
     }
   }

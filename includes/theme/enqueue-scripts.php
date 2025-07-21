@@ -12,16 +12,20 @@
 					wp_enqueue_script( 'vendors' );
 				}
 
+				$modal_done = get_field('modal_box', 'modals_options')['success_id'];
+				$modal_error   = get_field('modal_box', 'modals_options')['error_id'];
+
 				// 2. AJAX параметры
-				global $categorySlug;
+				// global $categorySlug;
 
 				wp_register_script( 'ajax_params', '', array(), null, false );
-				wp_add_inline_script( 'ajax_params', 'ajax_params = ' . json_encode( array(
+				wp_add_inline_script( 'ajax_params', 'window.ajax_params = ' . json_encode( array(
 						'ajax_url'      => admin_url( 'admin-ajax.php' ),
-						'once'          => wp_create_nonce( 'ajax_global' ),
-						'shortcodes'    => get_custom_shortcodes_list(),
-//						'category_slug' => $categorySlug,
-						'theme_url'      => THEME_URI,
+						'once'      	=> wp_create_nonce('ajax_global'),
+						// 'category_slug' => $categorySlug,
+						'themeUrl'      => THEME_URI,
+						'modalSuccessId'=> $modal_done[0],
+						'modalErrorId'=> $modal_error[0],
 					) ) . ';'
 				);
 				wp_enqueue_script( 'ajax_params' );

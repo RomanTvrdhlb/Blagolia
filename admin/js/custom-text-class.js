@@ -16,24 +16,6 @@
             tooltip: 'Add custom style to <P>',
             menu: [
                 {
-                    text: 'Default',
-                    onclick: function () {
-                        updateLinkClass('');
-                    }
-                },
-                {
-                    text: 'Custom label',
-                    onclick: function () {
-                        updateLinkClass('accent-label');
-                    }
-                },
-                {
-                    text: 'Custom label (white)',
-                    onclick: function () {
-                        updateLinkClass('accent-label white');
-                    }
-                },
-                {
                     text: 'h1',
                     onclick: function () {
                         updateLinkClass('h1');
@@ -58,9 +40,9 @@
                     }
                 },
                 {
-                    text: 'Small text',
+                    text: 'pretitle',
                     onclick: function () {
-                        updateLinkClass('small-text');
+                        updateLinkClass('pretitle');
                     }
                 },
             ]

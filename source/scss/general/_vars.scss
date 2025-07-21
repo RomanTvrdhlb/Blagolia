@@ -20,19 +20,12 @@
   --default-padding: clamp(72px, 10.4167vw, 150px);
   --default-gap: clamp(36px, 4.4444vw, 64px);
   --gap: clamp(16px, 1.6667vw, 24px);
-  //--header-height: 83px;
+  --header-height: 92px;
 
-  //@include laptop {
-  //  --header-height: 78px;
-  //}
-  //
-  //@include tablet {
-  //  --header-height: 67px;
-  //}
-  //
-  //@include small-tablet {
-  //  --header-height: 64px;
-  //}
+  @include tablet {
+     --header-height: 44px;
+    --container-offset: 16px;
+  }
 
   // --------------- figma vars -----------------------------
   --neutral-100: #f2f3f2;
@@ -48,7 +41,7 @@
 	--main-yellow: #fcc833;
 
   // --------------- default scroll variables ---------------
-  --scrollbar-thumb: #1397D6;
+  --scrollbar-thumb: #fcc833;
 
   // --scrollbar-thumb-hover: #00aff0;
   --scrollbar-track: rgba(0, 0, 0, 0.07);
@@ -76,8 +69,7 @@
 
 
   //-----------------custom loader----------------------------------
-  --loader: linear-gradient(90deg, rgba(108, 214, 133, 1) 0%, rgba(255, 255, 255, 1) 45%, rgba(255, 255, 255, 1) 55%, rgba(9, 146, 196, 1) 100%); // var(--loader);
-
+  --loader: conic-gradient(#007833, #fcc833, #007833);
 }
 
 

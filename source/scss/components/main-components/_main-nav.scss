@@ -1,31 +1,29 @@
-@use '../../mixins/breakpoint' as *;
-@use '../../mixins/disable-mob-hover' as *;
+@use "../../mixins/breakpoint" as *;
+@use "../../mixins/disable-mob-hover" as *;
 
-@mixin main-nav{
+@mixin main-nav {
   .main-nav {
+    ul {
+      display: flex;
+      align-items: center;
+      gap: clamp(20px, 2.2222vw, 32px);
 
-	ul {
-	  display: flex;
-	  align-items: center;
-	  gap: 20px;
+      @include tablet {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
-	  @include tablet {
-		flex-direction: column;
-		align-items: flex-start;
-	  }
+      a {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: clamp(16px, 1.25vw, 18px);
+        color: var(--neutral-100);
+        white-space: nowrap;
 
-	  a {
-		color: var(--cl-b);
-		font-family: var(--font-family);
-		font-size: 16px;
-		font-weight: normal;
-		line-height: 109%;
-		white-space: nowrap;
-
-		@include hover {
-		  color: var(--cl-e);
-		}
-	  }
-	}
+        @include hover {
+          color: var(--main-yellow);
+        }
+      }
+    }
   }
 }

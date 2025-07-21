@@ -1,9 +1,9 @@
 <?php
 	if ( ! defined( '_S_VERSION' ) ) {
-		define( '_S_VERSION', '1.0.5' );
+		define( '_S_VERSION', '1.0.7' );
 	}
 
-	define('PRINT_TEMPLATE_NAME',  true); // Set true to show the template used
+	define('PRINT_TEMPLATE_NAME',  false); // Set true to show the template used
 
 	define('BUILD', 	 get_template_directory_uri() . '/assets/');
 	define('THEME_SLUG', basename(get_template_directory()));
@@ -58,7 +58,7 @@
 	// Подключение дополнительных файлов
 
 	$helpers = array(
-		'/ajax-actions/load_blog_posts.php',
+		'/ajax-actions/load_blog_pagination.php',
 
 		'/helpers/fake_archive_pages.php',
 		'/helpers/clean_the_content.php',
@@ -81,9 +81,9 @@
 		'/hooks/display_sprite.php',
 		
 
+		'/hooks/display_catalog_card.php',
 		'/hooks/display_product_card.php',
 		'/hooks/display_post_card.php',
-		// '/hooks/display_services_card.php',
 
 		'/hooks/display_breadcrumbs.php',
 		'/hooks/display_editors_blocks.php',
@@ -91,9 +91,6 @@
 		'/hooks/display_post_content.php',
 		'/hooks/display_icon_link_list.php',
 		'/hooks/display_main_top.php',
-
-
-		'/includes/GoogleReviews/init.php'
 	);
 
 	foreach ( $helpers as $helper ) {

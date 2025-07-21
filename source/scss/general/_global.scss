@@ -27,12 +27,12 @@ body {
   width: 100%;
   margin: 0;
   will-change: font-size;
-  color: var(--cl-p);
+  color: var(--neutral-900);
   background-color: var(--body-bg);
   -webkit-text-size-adjust: 100%; // for text resize
   overflow: hidden;
 
-  padding-top:  calc(var(--header-height));
+  padding-top: var(--header-height);
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100%;
@@ -49,13 +49,8 @@ body {
     overflow: hidden; // disable scroll
   }
 
-  &.home{
-    section:first-of-type{
-      @include  for-tablet {
-        padding-top: calc(var(--default-padding) + 30px);
-      }
-    }
-    section:last-of-type{
+  &.home {
+    section:last-of-type {
       margin-bottom: var(--default-padding);
     }
   }
@@ -228,11 +223,11 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px transparent inset;
   transition: background-color 5000s ease-in-out 0s;
   background: -webkit-linear-gradient(
-                  top,
-                  rgba(255, 255, 255, 0) 0%,
-                  rgba(0, 174, 255, 0) 50%,
-                  rgba(255, 255, 255, 0) 51%,
-                  rgba(0, 174, 255, 0) 100%
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 174, 255, 0) 50%,
+    rgba(255, 255, 255, 0) 51%,
+    rgba(0, 174, 255, 0) 100%
   );
 }
 
@@ -286,7 +281,7 @@ select:-webkit-autofill:focus {
   justify-content: center;
 }
 
-[data-fancybox]{
+[data-fancybox] {
   outline: initial !important;
 }
 
@@ -296,35 +291,17 @@ select:-webkit-autofill:focus {
   }
 }
 
-
 .hidden-tablet {
   @include tablet {
     display: none !important;
   }
 }
 
-
-//.letter {
-//
-//  --index: calc(1vw + 1vh);
-//  --transition: ease-in-out;
-//  display: inline-block;
-//  text-shadow: 25px 0 35px rgba(0 0 0 / .4);
-//  position: relative;
-//  opacity: 0;
-//  transform: translateY(-100%);
-//  transition: opacity var(--transition), transform var(--transition);
-//}
-//
-//.header-content__slide.editor.active .letter {
-//  opacity: 1;
-//  transform: translateY(0);
-//}
-
-
+.iti--inline-dropdown .iti__country-list {
+  max-height: 170px !important;
+}
 
 // --------------- Overlay Include ---------------
 @include overlay;
 
 //----------------- Editor -----------------------
-

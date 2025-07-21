@@ -11,7 +11,7 @@
 				'required'          => 0,
 				'conditional_logic' => [],
 				'wrapper'           => [
-					'width' => '',
+					'width' => '50',
 					'class' => '',
 					'id'    => '',
 				],
@@ -36,6 +36,15 @@
 				'toolbar' => 'full',
 				'media_upload' => 1,
 				'delay' => 0,
+			])
+			->addRelationship('products', [
+				'label' => 'Select Products',
+				'instructions' => '',
+				'post_type' => ['products'],
+				'filters' => ['search'],
+				'min' => '',
+				'max' => '',
+				'return_format' => 'id',
 			]);
 	
 

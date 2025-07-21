@@ -13,28 +13,27 @@
                         </div>
                     <?php endif; ?>
 
-                      <ul class="section-features__list">
-                    <?php foreach ( $list as $index => $item ) :
-                        $icon = $item['icon'];
-                        $title = $item['title'];
-                        $text = $item['text']; ?>
-                      
-                            <li class="section-features__item">
-                                <?= display_image( $icon, 27, 36, 'section-features__icon' ); ?>
+                    <ul class="section-features__list">
+                        <?php foreach ( $list as $index => $item ) :
+                            $icon = $item['icon'];
+                            $title = $item['title'];
+                            $text = $item['text']; ?>
+                        
+                                <li class="section-features__item">
+                                    <?= display_image( $icon, 27, 36, 'section-features__icon' ); ?>
 
-                                <div class="section-features__wrapp">
-                                        <?php if ( $title ) : ?>
-                                            <span class="section-features__title pretitle"><?= $title; ?></span>
-                                        <?php endif; ?>
+                                    <div class="section-features__wrapp">
+                                            <?php if ( $title ) : ?>
+                                                <span class="section-features__title pretitle"><?= $title; ?></span>
+                                            <?php endif; ?>
 
-                                        <?php if ( $text ) : ?>
-                                            <p class="section-features__text"><?= $text; ?></p>
-                                        <?php endif; ?>
-                                </div>
-                            </li>
-                    
-                    <?php endforeach; ?>
-                        </ul>
+                                            <?php if ( $text ) : ?>
+                                                <p class="section-features__text"><?= $text; ?></p>
+                                            <?php endif; ?>
+                                    </div>
+                                </li>
+                        <?php endforeach; ?>
+                    </ul>
                 </div>
             </div>
         </section>

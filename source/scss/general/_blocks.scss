@@ -2,9 +2,9 @@
 @use "../blocks/header";
 @use "../blocks/footer";
 @use "../blocks/modals";
-//@use "../blocks/section-wrapper";
-////@use "../blocks/sections/section-comments";
-//@use "../blocks/sections/section-blog";
-//@use "../blocks/sections/section-tags";
-//@use "../blocks/sections/blog-archive";
+
+//---------------------------------------
+@use "../blocks/sections/section-product";
+@use "../blocks/sections/section-related";
+@use "../blocks/sections/section-single";
 

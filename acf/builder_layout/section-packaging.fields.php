@@ -61,9 +61,22 @@
 					'id' => '',
 				],
 			])
-					->addImage( 'icon', ['label' => 'Icon'])
-					->addText('title', ['label' => 'Title'])
-					->addText('text', ['label' => 'Description'])
+				->addWysiwyg('editor_list', [
+					'label' => 'WYSIWYG Field',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => [],
+					'wrapper' => [
+						'width' => '100',
+						'class' => '',
+						'id' => '',
+					],
+					'default_value' => '',
+					'tabs' => 'all',
+					'toolbar' => 'full',
+					'media_upload' => 1,
+					'delay' => 0,
+				])
 			->endRepeater();
 
 

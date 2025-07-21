@@ -1,25 +1,48 @@
 @use "../mixins/breakpoint" as *;
 @use "../mixins/mini" as *;
+@use "../mixins/disable-mob-hover" as *;
 @use "../components/post-card" as *;
+@use "../components/pagination" as *;
 
 .section-blog {
   padding-bottom: var(--default-padding);
+  
   &__inner {
     display: flex;
     flex-direction: column;
     gap: var(--default-gap);
   }
 
-  &__posts{
+  .editor {
+    h1 {
+      color: var(--neutral-700);
+    }
+  }
+
+  &__posts {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     gap: var(--gap);
 
-    @include mobile{
-        grid-template-columns: 100%;
+    @include mobile {
+      grid-template-columns: 100%;
     }
-}
+
+    .post-card {
+      .main-button {
+        width: 100%;
+        max-width: 100%;
+        color: var(--neutral-700);
+        background: transparent;
+
+        @include hover {
+          background: var(--main-yellow);
+          box-shadow: 0 8px 16px rgba(252, 200, 51, 0.3);
+        }
+      }
+    }
+  }
 
   @include post-card;
-
+  @include pagination;
 }

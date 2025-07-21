@@ -28,20 +28,13 @@
 			])
 				->addFields(editors(1))
 
-			->addLayout( 'popup_1', [
-				'label'   => 'Info popup',
-				'display' => 'block',
+			->addLayout( 'custom', [
+				'label'   => 'СTA №1',
+				'display' => 'table',
 				'min'     => '',
 				'max'     => '',
 			])
-				->addWysiwyg('editor', [
-				    'label' => false,
-				    'required' => 0,
-				    'tabs' => 'full',
-				    'toolbar' => 'all',
-				    'media_upload' => 0,
-				    'delay' => 0,
-				])
+				->addFields(editors(1))
 			->endFlexibleContent();
 
 

@@ -1,66 +1,75 @@
-@use '../../mixins/breakpoint' as *;
+@use "../../mixins/breakpoint" as *;
 
-.breadcrumbs{
+.breadcrumbs {
   position: relative;
   width: 100%;
   padding: 50px 0;
 
-  ul{
+  ul {
     display: inline-flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 8px;
   }
 
-  li{
+  li {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
 
-    span{
-      display: inline-block;
-      color: var(--cl-g);
-      text-align: center;
+    span {
+      display: inline-flex;
+      align-items: center;
       font-family: var(--font-family);
-      font-size: clamp(12px, 1.197vw, 16px);
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%;
+      font-weight: 500;
+      font-size: clamp(16px, 1.3889vw, 20px);
+      line-height: 145%;
+      color: var(--neutral-500);
+
+      @include tablet {
+        height: 44px;
+        line-height: 150%;
+      }
     }
 
     &:not(:last-child) {
-
-      &::after{
-        content: "\e902";
-        color: inherit;
-        font-family: 'icomoon' !important;
-        speak: never;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-        font-size: clamp(12px, 1.197vw, 16px);
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
+      &::after {
+        width: 16px;
+        height: 16px;
+        display: block;
+        content: "";
+        pointer-events: none;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        pointer-events: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none'%3E%3Cpath fill='%23313131' d='M8.933 8.473a.667.667 0 0 0 0-.946l-3.06-3.054a.667.667 0 1 1 .94-.946l3.06 3.06a2 2 0 0 1 0 2.826l-3.06 3.06a.666.666 0 0 1-.94-.946l3.06-3.054Z'/%3E%3C/svg%3E");
       }
     }
 
-
-    a{
-      transition: all .3s;
-      display: inline-block;
-      color: var(--cl-i);
-      text-align: center;
-      font-family: var(--font-family);
-      font-size: clamp(12px, 1.197vw, 16px);
+    a {
+      transition: all 0.3s;
+      display: inline-flex;
       font-style: normal;
-      font-weight: 400;
-      line-height: 150%;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: clamp(18px, 1.3889vw, 20px);
+      line-height: 145%;
+      align-items: center;
+      color: var(--neutral-700);
 
-      &:hover{
-        color: var(--cl-h);
+      &:hover {
+        color: var(--main-green);
+      }
+
+      @include tablet {
+        height: 44px;
+        line-height: 150%;
       }
     }
+  }
+
+  @include tablet {
+    padding: 16px 0 24px;
   }
 }

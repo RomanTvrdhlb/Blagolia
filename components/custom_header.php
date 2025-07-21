@@ -11,7 +11,7 @@
 <header class="header fixed-block" role="banner">
     <div class="container">
         <div class="header__inner">
-            <a class="header__logo" href="<?php echo home_url(); ?>" aria-label="logo">
+            <a class="logo" href="<?php echo home_url(); ?>" aria-label="logo">
 				<?php display_image( $logo, 285, 95, '' ); ?>
             </a>
 
@@ -27,9 +27,9 @@
                     $contact_link_title = $contact_link['title'];
                     $contact_link_target = $contact_link['target'] ?? '_self';
                 ?>
-                    <a class="trigger-button" href="<?php echo esc_url($contact_link_url); ?>"
+                    <a class="main-button main-button--white" href="<?php echo esc_url($contact_link_url); ?>"
                         target="<?php echo esc_attr($contact_link_target); ?>">
-                        <span><?php echo esc_html($contact_link_title); ?></span>
+                        <?php echo esc_html($contact_link_title); ?>
                     </a>
                 <?php endif; ?>
 
@@ -38,9 +38,9 @@
                     $order_link_title = $order_link['title'];
                     $order_link_target = $order_link['target'] ?? '_self';
                 ?>
-                    <a class="trigger-button" href="<?php echo esc_url($order_link_url); ?>"
+                    <a class="main-button" href="<?php echo esc_url($order_link_url); ?>"
                         target="<?php echo esc_attr($order_link_target); ?>">
-                        <span><?php echo esc_html($order_link_title); ?></span>
+                       <?php echo esc_html($order_link_title); ?>
                     </a>
                 <?php endif; ?>
             </div>
